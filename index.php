@@ -69,7 +69,7 @@
 	<section class="serviceMainTitle">
 		<div class="serviceMainTitleArea">
 			<div class="container">
-				<p>Our Service</p>
+				<h2>Our Service</h2>
 			</div>
 		</div>
 	</section>
@@ -85,6 +85,9 @@
 					<div class="button-more">
 						<a href="/ad-tokiwa/service/road-sign/"><span>Read more</span></a>
 					</div>
+				</div>
+				<div class="serviceAreaThumb is-sp">
+					<img src="http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_1-1.jpg" alt="">
 				</div>
 			</div>
 		</div>
@@ -102,6 +105,9 @@
 						<a href="/ad-tokiwa/ad-recruit/"><span>Read more</span></a>
 					</div>
 				</div>
+				<div class="serviceAreaThumb is-sp">
+					<img src="http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_2.jpg" alt="">
+				</div>
 			</div>
 		</div>
 	</section>
@@ -117,6 +123,9 @@
 					<div class="button-more">
 						<a href="/ad-tokiwa/service/production/"><span>Read more</span></a>
 					</div>
+				</div>
+				<div class="serviceAreaThumb is-sp">
+					<img src="http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_3.jpg" alt="">
 				</div>
 			</div>
 		</div>

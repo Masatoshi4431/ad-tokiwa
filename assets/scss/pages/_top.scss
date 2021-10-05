@@ -30,10 +30,14 @@
 				color: #fff;
 				font-family: 'Noto Serif JP', serif;
 				font-weight: normal;
+				left: 40px;
+				position: relative;
 				text-align: center;
 
 				@include for-device(phone) {
 					@include font-size(36);
+
+					left: 15px;
 					width: 100%;
 				}
 
@@ -122,7 +126,6 @@
 		}			
 	}
 
-	/*  News */
 	.section-news {
 		background: $color-light-gray;
 		padding: 80px 0;
@@ -212,15 +215,28 @@
 		}
 	}
 
-	/* service */
 	.serviceMainTitle {
 		background: #fff;
+		padding: 100px 0 60px;
+
+		@include for-device(phone) {
+			padding: 50px 0 0;
+		}
 		
-		p {
-			font-size: 4rem;
+		h2 {
+			@include font-size(60);
+
+			font-style: italic;
+
+			@include for-device(tablet) {
+				@include font-size(40);
+			}
+
+			@include for-device(phone) {
+				@include font-size(40);
+			}
 		}
 	}
-	
 	
 	.section-service {
 		background: #fff;
@@ -229,7 +245,6 @@
 		width: 100%;
 
 		@include for-device(phone) {
-			border-top: 1px solid $color-gray;
 			height: auto;
 		}
 
@@ -246,24 +261,40 @@
 			height: 100%;
 			width: 100%;
 
+			@include for-device(tablet) {
+				display: none;
+			}
+
 			@include for-device(phone) {
 				display: none;
 			}
 		}
 
 		&.is-ad {
+			@include for-device(phone) {
+				border-top: 1px solid $color-light-gray;
+			}
+
 			&::before {
 				background-image: url(http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_2.jpg);
 			}				
 		}
 
 		&.is-production {
+			@include for-device(phone) {
+				border-top: 1px solid $color-light-gray;
+			}
+
 			&::before {
 				background-image: url(http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_3.jpg);
 			}				
 		}
 
 		.serviceArea {
+			@include for-device(phone) { 
+				padding: 0 0 20px;
+			}
+
 			.serviceAreaBox {
 				height: 100vh;
 				padding-top: 10%;
@@ -312,10 +343,17 @@
 					}
 				}
 			}
+
+			.serviceAreaThumb {
+				img {
+					height: 250px;
+					object-fit: cover;
+					width: 100%;
+				}
+			}
 		}
 	}
 
-	/*  other  */
 	.section-other {
 		background: #fff;
 		border-top: 1px solid $color-gray;
@@ -403,7 +441,6 @@
 		}
 	}
 
-	/*  work */
 	.section-work {
 		background: #fff;
 		border-top: 1px solid $color-gray;
