@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/* //////////////////////////////////////////////////////////////////// */
+/* ///// COMMON /////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////// */
+
+/* ※※※※※ ↓ ↓ ↓ font確認用 本番環境では抹消のこと ↓ ↓ ↓ ※※※※※ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+/* ==================================================
+	一覧ページ
+================================================== */
+body {
+    font-family: 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    background: none !important;
+}
+a.link {
+    color: #009977 !important;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+a.link::after {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #009977;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+a.link:hover::after {
+    bottom: -4px;
+    opacity: 1;
+    visibility: visible;
+}
+.ui.header {
+    display: none;
+}
+.el-header {
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+.search-form-content {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.el-form-item__label {
+    color: #2f2725 !important;
+    font-weight: bold;
+}
+.el-input-group__append {
+    border-radius: 0 50px 50px 0;
+}
+.el-input-group__append, .el-input-group__prepend {
+    background-color: #009977;
+    border: 1px solid #009977;
+}
+.across-search-word button.across-search-word-button {
+    background-color: #009977;
+    border-color: #009977;
+}
+.el-button {
+    border: 1px solid #009977;
+}
+.el-button--primary {
+    background-color: #009977;
+    border-color: #009977;
+    border-radius: 0 50px 50px 0;
+}
+.el-icon-search:before {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.el-input__inner {
+    border: 1px solid #747473;
+    border-radius: 50px 0 0 50px;
+    border-right: none;
+}
+.el-input__inner:hover {
+    border-color: #009977 !important;
+}
+.el-input.is-active .el-input__inner, .el-input__inner:focus {
+    border-color: #009977 !important;
+}
+.el-input__inner::-webkit-input-placeholder {
+    color: #8f8d8d !important;
+}
+.el-input__inner:-ms-input-placeholder {
+    color: #8f8d8d !important;
+}
+.el-input__inner::-ms-input-placeholder {
+    color: #8f8d8d !important;
+}
+.el-input__inner::placeholder {
+    color: #8f8d8d !important;
+}
+.link-content {
+    padding-bottom: 20px;
+}
+section.el-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.ui.raised.card, .ui.raised.cards > .card {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.ui.card, .ui.cards > .card {
+    border-radius: 0;
+}
+.ui.cards > .card {
+    margin: 0 40px 40px 0 !important;
+    border: 1px solid #707070;
+    width: calc(calc(100% - 80px) / 3);
+}
+.ui.cards > .card:nth-of-type(3n) {
+    margin-right: 0 !important;
+}
+.ui.card > .image, .ui.cards > .card > .image {
+    background: none;
+    /*height: 270px;*/
+}
+.kv-image-element {
+    /*height: 270px;*/
+}
+.kv-object-fit {
+    width: 100%;
+    /*height: 270px;*/
+    /*object-fit: cover !important;*/
+}
+.ui.card > .content, .ui.cards > .card > .content {
+    border-top: none;
+    margin: 0 0 15px;
+    padding: 0 20px;
+}
+.ui.card > .content > .description, .ui.cards > .card > .content > .description {
+    color: #2f2725;
+}
+.kv-multi-line-element {
+    color: #dd7f4e;
+    font-weight: bold;
+    width: 100% !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+}
+.kv-multi-line-element div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+body label.element-label {
+    display: block;
+    background: #e0e0dd;
+    padding: 5px 0 5px 10px;
+    margin-bottom: 15px;
+}
+body label.element-label::before {
+    /*content: "ー";*/
+    /*color: #009977;*/
+}
+.kv-element-has-value {
+    padding-bottom: 15px;
+}
+.kv-number-element {
+    padding-left: 1.2em;
+}
+.kv-text-element {
+    padding-left: 1.2em;
+    line-height: 1.6 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+}
+.ui.card .meta, .ui.cards > .card .meta {
+    color: #2f2725;
+}
+.ui.card > .extra, .ui.cards > .card > .extra {
+    border-top: 1px solid #707070 !important;
+}
+.ui.cards a.card, .ui.link.card, .ui.link.cards .card, a.ui.card {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+ui.link.cards .raised.card:hover, .ui.link.raised.card:hover, .ui.raised.cards a.card:hover, a.ui.raised.card:hover {
+    border: 1px solid #707070;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0.5;
+}
+.ui.cards a.card:hover, .ui.link.card:hover, .ui.link.cards .card:hover, a.ui.card:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform: none;
+    transform: none;
+}
+.el-pagination {
+    text-align: center;
+    color: #2f2725;
+}
+.el-pager li.active {
+    color: #009977 !important;
+}
+.el-pager li:hover {
+    color: #009977 !important;
+}
+.el-pagination button:disabled {
+    color: #8f8d8d;
+}
+
+/* ==================================================
+	詳細ページ
+================================================== */
+.ui.items .ui.item.raised {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.ql-editor {
+    width: 20%;
+    background: #8e8e8d;
+    text-align: center;
+    margin: 40px auto;
+}
+.ql-editor p a {
+    color: #fff;
+    display: block;
+    padding: 21px 0 !important;
+}
+.ql-editor p a:hover {
+    background: #009977;
+    -webkit-transition: 0.3s ease-in-out !important;
+    -moz-transition: 0.3s ease-in-out !important;
+    -o-transition: 0.3s ease-in-out !important;
+    transition: 0.3s ease-in-out !important;
+}
+.ql-editor[data-v-55af2ba9] {
+    display: none !important;
+}
+.index-link {
+    width: 19.5%;
+    background: #8e8e8d;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 !important;
+}
+.index-link a {
+    color: #fff !important;
+    display: block;
+    padding: 20px 0 !important;
+}
+.index-link a:hover {
+    background: #009977 !important;
+    -webkit-transition: 0.3s ease-in-out !important;
+    -moz-transition: 0.3s ease-in-out !important;
+    -o-transition: 0.3s ease-in-out !important;
+    transition: 0.3s ease-in-out !important;
+}
+
+
+/* //////////////////////////////////////////////////////////////////// */
+/* ///// TB /////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+/* ==================================================
+	一覧ページ
+================================================== */
+    .el-header {
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+    section.el-container {
+        width: 100%;
+    }
+    .ui.container {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .ui.cards > .card {
+        margin: 0 2% 60px !important;
+    }
+    .ui.cards > .card:nth-of-type(2n) {
+        margin-right: 2% !important;
+    }
+    .ui.stackable.cards > .card {
+        width: calc(100% - 4%) !important;
+    }
+    .ui.stackable.cards {
+        display: flex !important;
+    }
+    .el-form-item__label {
+        line-height: 1.8em;
+    }
+	
+/* ==================================================
+	詳細ページ
+================================================== */
+    .ql-editor {
+        width: 40%;
+    }
+    .index-link {
+        width: 38.4%;
+    }
+}
+
+
+/* //////////////////////////////////////////////////////////////////// */
+/* ///// SP /////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 599px) {
+
+/* ==================================================
+	一覧ページ
+================================================== */
+    .el-header {
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+    section.el-container {
+        width: 100%;
+    }
+    .ui.container {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .ui.cards > .card {
+        margin: 0 2% 40px !important;
+    }
+    .ui.cards > .card:nth-of-type(2n) {
+        margin-right: 2% !important;
+    }
+    .ui.stackable.cards > .card {
+        width: calc(100% - 4%) !important;
+    }
+    .ui.stackable.cards {
+        display: flex !important;
+    }
+    .el-form-item__label {
+        line-height: 1.8em;
+    }
+	
+/* ==================================================
+	詳細ページ
+================================================== */
+    .ql-editor {
+        width: 60%;
+    }
+    .index-link {
+        width: 54.7%;
+    }
+}

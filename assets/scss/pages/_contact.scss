@@ -1,0 +1,220 @@
+.main {
+	&.contact {
+		padding-top: 80px;
+
+		@include for-device(phone) {
+			padding-top: 60px;
+		}
+
+		.section-text {
+			text-align: center;
+		}
+
+		.contactForm {
+			margin-top: 40px;
+		}
+
+		.formItem {
+			@include display-flex();
+
+			border-bottom: 1px solid $color-gray;
+			padding: 25px 0;
+
+			@include for-device(phone) {
+				@include flex-wrap(wrap);
+
+				padding: 15px 0;
+			}
+					
+			dt {	
+				@include font-size(15);
+
+				font-weight: bold;
+				position: relative;
+				width: 30%;
+				
+				.formItem_required {
+					
+					background: $color-green;
+					color: #fff;
+	    			font-size: 0.8rem;
+    				font-weight: normal;
+    				padding: 2px 15px;
+    				position: absolute;
+    				right: 50px;
+
+				}
+				
+				.formItem_any {
+					
+					background: #F0EFEF;
+	    			font-size: 0.8rem;
+    				font-weight: normal;
+    				padding: 2px 15px;
+    				position: absolute;
+    				right: 50px;
+
+				}
+
+				@include for-device(phone) {
+					@include font-size(13);
+
+					width: 100%;
+				}
+			}
+
+			dd {
+				@include font-size(15);
+
+				width: 70%;
+
+				@include for-device(phone) {
+					@include font-size(13);
+
+					margin-top: 10px;
+					width: 100%;
+				}
+			}
+
+			span {
+				&.wpcf7-list-item { 
+					display: block; 
+					margin-bottom: 10px;
+
+					input {
+						margin-right: 5px;
+					}
+				}
+			}
+
+			&_text {
+				.wpcf7-text,
+				.wpcf7-textarea {
+					@include font-size(15);
+
+					background: $color-light-gray;
+					border: none;
+					padding: 15px 10px;
+					width: 80%;
+
+					@include for-device(phone) {
+						@include font-size(13);
+
+						padding: 15px 0;
+						width: 100%;
+					}
+
+					&.wpcf7-validates-as-tel {
+						width: 60%;
+
+						@include for-device(phone) {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		.formItemPrivacy {
+			background: $color-light-gray;
+			margin-top: 20px;
+			padding: 40px 0;
+
+			@include for-device(phone) {
+				padding: 20px;
+			}
+
+			&_text {
+				@include font-size(15);
+
+				text-align: center;
+
+				@include for-device(phone) {
+					@include font-size(13);
+				}
+
+				a {
+					color: $color-text;
+					text-decoration: underline;
+				}
+			}
+
+			&_button {
+				margin-top: 20px;
+				text-align: center;
+			}
+
+			.wpcf7-list-item-label {
+				@include font-size(15);
+
+				@include for-device(phone) {
+					@include font-size(13);
+				}
+			}
+		}
+
+		.formItemSubmit {
+			margin-top: 40px;
+			text-align: center;
+
+			@include for-device(phone) {
+				margin-top: 20px;
+			}
+
+			input {
+				@include font-size(15);
+
+				background: $color-green;
+				color: #fff;
+				cursor: pointer;
+				font-weight: bold;
+				padding: 20px 0;
+				max-width: 250px;
+				width: 100%;
+
+				@include for-device(phone) {
+					@include font-size(13);
+				}
+			}
+		}
+		
+		.contactSend_notes {
+			
+			@include font-size(13);
+
+				color: $color-light-black;
+				margin-top: 90px;
+
+				@include for-device(phone) {
+					@include font-size(11);
+				}
+		
+		}
+		
+		//上部の必須項目テキスト撤去
+		.screen-reader-response {
+			
+			display: none;
+			
+			}
+		
+		//input横の文言を折り返す
+		.wpcf7-not-valid-tip {
+			
+			color: #FF000A;
+			display: block;
+			margin-top: 5px;
+			
+			}
+		
+		//入力ミスしたときの注意書き、送信された後の注意書き　ページ下部
+		.wpcf7-response-output {
+			
+			color: #FF000A;
+			margin: 50px 0 0;
+			text-align: center;
+			
+		}
+		
+	}
+}

@@ -1,0 +1,156 @@
+.main{
+	&.single{
+		padding-top: 120px;
+
+		@include for-device(phone) {
+			padding-top: 100px;
+		}
+
+		.singleHead {
+			&_inner {
+				@include display-flex();
+				@include justify-content(space-between);
+
+				@include for-device(phone) {
+					@include flex-wrap(wrap);
+				}
+			}
+
+			.singleHeadDesc {
+				margin-right: 5%;
+				width: 40%;
+
+				@include for-device(phone) {
+					margin-right: 0;
+					order: 2;
+					width: 100%;
+				}
+
+				&_title {
+					@include font-size(26);
+
+					color: $color-text;
+					line-height: $line-height-head;
+
+					@include for-device(phone) {
+						@include font-size(18);
+						margin-top: 20px;
+					}
+				}
+
+				&_client {
+					color: $color-light-black;
+					margin-top: 60px;
+
+					@include for-device(phone) {
+						margin-top: 20px;
+					}
+				}
+
+				&_adress {
+					color: $color-light-black;
+					margin-top: 10px;					
+				}
+
+				&_period {
+					color: $color-light-black;
+
+					.-slash {
+						&::before {
+							content: "/";
+							margin: 0 10px;
+							position: relative;
+
+							@include for-device(phone) {
+								margin: 0 5px;
+							}
+						}
+					}
+				}
+
+				&_comment {
+					color: $color-light-black;
+					border-top: 1px solid $color-gray;
+					margin-top: 20px;
+					padding-top: 20px;
+				}
+			}
+
+			.singleHeadThumb {
+				width: 55%;
+
+				@include for-device(phone) {
+					order: 1;
+					width: 100%;
+				}
+
+				&_main {
+					width: 100%;
+
+					img {
+						height: 360px;
+						object-fit: cover;
+						width: 100%;
+
+						@include for-device(phone) {
+							height: auto;
+						}
+					}
+				}
+
+				&_sub {
+					@include display-flex();
+					@include justify-content(space-between);
+
+					margin-top: 10px;
+
+					.-left {
+						width: 48%;
+
+						img {
+							height: auto;
+							object-fit: cover;
+							width: 100%;
+
+							@include for-device(phone) {
+								height: auto;
+							}
+						}
+					}	
+
+					.-right {
+						width: 48%;
+
+						img {
+							height: auto;
+							object-fit: cover;
+							width: 100%;
+
+							@include for-device(phone) {
+								height: auto;
+							}
+						}
+					}				
+				}
+			}
+		}
+
+		.singleBody {
+			margin-top: 60px;
+
+			@include for-device(phone) {
+				margin-top: 40px;
+			}
+
+			p {
+				& + p {
+					margin-top: 40px;
+
+					@include for-device(phone) {
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+}
