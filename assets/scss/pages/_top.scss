@@ -1,0 +1,457 @@
+.top {
+	padding-bottom: 0;
+
+	.mainvisual {
+		background: rgba(0, 0, 0, .10);
+		height: 100vh;
+		position: relative;
+		width: 100%;
+
+		@include for-device(phone) {
+			height: 600px;
+		}
+
+		.mainvisualHead {
+			padding-top: 80px;
+			position: absolute;
+			right: 0;
+			left: 0;
+			margin: auto;
+			top: 24%;
+
+			@include for-device(phone) {
+				padding-top: 60px;
+				top: 30%;
+			}
+
+			&_title {
+				@include font-size(80);
+
+				color: #fff;
+				font-family: 'Noto Serif JP', serif;
+				font-weight: normal;
+				text-align: center;
+
+				@include for-device(phone) {
+					@include font-size(36);
+					width: 100%;
+				}
+
+				span {
+					margin-right: -40px;
+
+					@include for-device(phone) {
+						margin-right: -20px;
+					}
+				}
+			}
+
+			&_lead {
+				@include font-size(40);
+
+				color: #fff;
+				font-weight: normal;
+				margin-top: 120px;
+				text-align: center;
+
+				@include for-device(phone) {
+					@include font-size(20);
+
+					margin-top: 20px;
+				}
+			}
+		}
+
+		.mainvisualMovie {
+			bottom: 0;
+			left: 0;
+			position: fixed;
+			right: 0;
+			top: 0;
+			z-index: -999;
+
+			&_inner {
+				height: 56.25vw;
+				left: 50%; 
+				min-height: 100%;
+				min-width: 100%;
+				position: absolute;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 177.77777778vh;
+				z-index: -999;
+
+				video {
+					width: 100%;	
+				}			
+			}
+		}
+	}
+
+	.section-about {
+		background: rgba(0, 0, 0, .10);
+		height: 100vh;
+		position: relative;
+		width: 100%;
+
+		@include for-device(phone) {
+			height: 600px;
+		}
+
+		.aboutArea {
+			position: absolute;
+			right: 0;
+			left: 0;
+			margin: auto;
+			top: 30%;
+
+			&_title {
+				@include font-size(60);
+
+				color: #fff;
+				text-align: center;
+
+				@include for-device(phone) {
+					@include font-size(40);
+				}
+			}
+
+			&_button {
+				margin-top: 40px;
+			}
+		}			
+	}
+
+	/*  News */
+	.section-news {
+		background: $color-light-gray;
+		padding: 80px 0;
+
+		@include for-device(phone) {
+			padding: 40px 0;
+		}
+
+		.section-news-title {
+			h2 {
+				@include font-size(60);
+
+				color: $color-green;
+
+				@include for-device(phone) {
+					@include font-size(40);
+				}
+			}
+
+			h3 {
+				@include font-size(16);
+
+				color: $color-light-black;
+				font-size: 16px;
+				font-weight: normal;
+				margin-top: 10px;
+
+				@include for-device(phone) {
+					@include font-size(13);
+				}
+			}
+		}
+
+		.newsArea {
+			margin: 40px auto 0;
+			max-width: 1000px;
+			width: 100%;
+
+			@include for-device(phone) {
+				margin-top: 20px;
+			}
+
+			ul {
+				li {
+					margin-top: 20px;
+
+					dl {
+						@include display-flex();
+						@include font-size(15);
+
+						border-bottom: 1px solid $color-gray;
+						color: $color-text;
+						padding: 0 0 20px;
+
+						@include for-device(phone) {
+							@include flex-wrap(wrap);
+							@include font-size(14);
+
+							padding-bottom: 10px;
+						}
+
+						dt {
+							width: 20%;
+
+							@include for-device(phone) {
+								width: 100%;
+							}
+						}
+
+						dd {
+							font-weight: bold;
+							width: 80%;
+
+							@include for-device(phone) {
+								margin-top: 5px;
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.button-more {
+			margin-top: 40px;
+			text-align: center;
+		}
+	}
+
+	/* service */
+	.serviceMainTitle {
+		background: #fff;
+		
+		p {
+			font-size: 4rem;
+		}
+	}
+	
+	
+	.section-service {
+		background: #fff;
+		height: 100vh;
+		position: relative;
+		width: 100%;
+
+		@include for-device(phone) {
+			border-top: 1px solid $color-gray;
+			height: auto;
+		}
+
+		&::before {
+			background-image: url(http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_1-1.jpg);
+			background-position: right;
+			background-size: contain;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			position: absolute;
+			content: "";
+			top: 0px;
+			right: 0px;
+			height: 100%;
+			width: 100%;
+
+			@include for-device(phone) {
+				display: none;
+			}
+		}
+
+		&.is-ad {
+			&::before {
+				background-image: url(http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_2.jpg);
+			}				
+		}
+
+		&.is-production {
+			&::before {
+				background-image: url(http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_3.jpg);
+			}				
+		}
+
+		.serviceArea {
+			.serviceAreaBox {
+				height: 100vh;
+				padding-top: 10%;
+
+				@include for-device(phone) {
+					height: auto;
+					padding: 40px 0;
+					width: 100%;
+				}
+
+				&_number {
+					@include font-size(80);
+
+					color: $color-green;
+					font-style: italic;
+
+					@include for-device(phone) {
+						@include font-size(50);
+					}
+				}
+
+				&_title {
+					@include font-size(80);
+
+					color: $color-green;
+
+					@include for-device(phone) {
+						@include font-size(50);
+					}
+				}
+
+				&_lead {	
+					margin-top: 20px;
+				}
+
+				&_text {
+					margin-top: 20px;
+				}
+
+				.button-more {
+					margin-top: 40px;
+					width: 20%;
+
+					@include for-device(phone) {
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	/*  other  */
+	.section-other {
+		background: #fff;
+		border-top: 1px solid $color-gray;
+
+		.otherArea {
+			@include display-flex();
+			@include justify-content(space-between);
+
+			padding: 40px 0;
+
+			@include for-device(phone) {
+				@include flex-wrap(wrap);
+			}
+		}
+
+		.otherBox {
+			padding: 20px 5%;
+			width: 50%;
+
+			@include for-device(phone) {
+				width: 100%;
+			}
+
+			.number {
+				@include font-size(60);
+
+				color: $color-green;
+				font-style: italic;
+				font-weight: bold;
+
+				@include for-device(phone) {
+					@include font-size(40);
+				}
+			}
+
+			h2 {
+				@include font-size(50);
+
+				color: $color-green;
+				margin-top: 20px;		
+
+				@include for-device(phone) {
+					@include font-size(40);
+
+					margin-top: 10px;
+				}
+			}
+
+			h3 {
+				@include font-size(16);
+
+				color: $color-light-black;
+				font-weight: normal;
+				margin-top: 10px;		
+
+				@include for-device(phone) {
+					@include font-size(13);
+				}		
+			}
+
+			.text {
+				color: $color-light-black;
+				margin-top: 20px;
+			}
+
+			.button-more {
+				margin-top: 40px;
+
+				span {
+					max-width: 260px;
+				}
+			}
+
+			.thumbnail {
+				margin-top: 40px;
+
+				img {
+					border: 1px solid $color-gray;
+				}
+			}
+
+			&.is-rentLand {
+				border-left: 1px solid $color-gray; 
+			}
+		}
+	}
+
+	/*  work */
+	.section-work {
+		background: #fff;
+		border-top: 1px solid $color-gray;
+		padding: 80px 0;
+
+		@include for-device(phone) {
+			padding: 40px 0;
+		}
+
+		.heading {
+			h2 {
+				@include font-size(80);
+
+				color: $color-green;
+
+				@include for-device(phone) {
+					@include font-size(50);
+				}
+			}
+
+			h3 {
+				@include font-size(16);
+
+				color: $color-light-black;
+				font-weight: normal;
+				margin-top: 10px;
+
+				@include for-device(phone) {
+					@include font-size(13);
+				}
+			}
+		}
+
+		.thumbnail {
+			margin-top: 60px;
+			width: 100%;
+
+			@include for-device(phone) {
+				margin-top: 40px;
+			}
+		}
+
+		.button-more {
+			margin-top: 60px;
+
+			@include for-device(phone) {
+				margin-top: 30px;
+			}
+		}
+	}
+}

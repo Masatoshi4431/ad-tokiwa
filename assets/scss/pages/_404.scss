@@ -1,0 +1,66 @@
+.main{
+	&.notfound {
+		padding-top: 80px;
+
+		@include for-device(phone) {
+			padding-top: 60px;
+		}
+
+		.notfoundHead {
+			@include align-items(center);
+			@include display-flex();
+
+			background: $color-green;
+			color: #fff;
+			height: 400px;
+			text-align: center;
+
+			@include for-device(phone) {
+				height: 200px;
+			}
+
+			&_title {
+				@include font-size(60);
+
+				font-style: italic;
+
+				@include for-device(phone) {
+					@include font-size(40);
+				}
+			}
+
+			&_lead {
+				@include font-size(24);
+
+				margin-top: 40px;
+
+				@include for-device(phone) {
+					@include font-size(16);
+
+					margin-top: 20px;
+				}
+			}
+		}
+
+		.notfoundMain {
+			margin-top: 100px;
+
+			@include for-device(phone) {
+				margin-top: 50px;
+			}
+
+			p {
+				font-weight: bold;
+				text-align: center;
+			}
+		}
+		.notfoundMore {
+			margin-top: 60px;
+			text-align: center;
+
+			@include for-device(phone) {
+				margin-top: 30px;
+			}
+		}
+	}
+}

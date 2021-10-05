@@ -1,0 +1,222 @@
+.main{	
+	&.works{
+		padding-top: 80px;
+
+		@include for-device(phone) {
+			padding-top: 60px;
+		}
+
+		.postNav {
+			margin: 0 auto;
+			max-width: 800px;
+			width: 100%;
+
+			&List {
+				@include display-flex();
+				@include justify-content(space-around);
+
+				li {
+					@include font-size(15);
+
+					background: #fff;
+					cursor: pointer;
+					padding: 20px 0;
+					text-align: center;
+					width: 33%;
+
+					@include for-device(phone) {
+						@include font-size(13);
+					}
+
+					&.is-select {
+						background: $color-green;
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.is-hide {
+			display: none;
+		}
+
+	  	.worksBox {
+	  		@include display-flex();
+
+	  		@include for-device(phone) {
+	  			@include flex-wrap(wrap);
+	  		}
+
+	  		&.is-second {
+	  			@include justify-content(flex-end);
+
+	  			.worksBoxMain {
+	  				@include for-device(phone) {
+		  				order: 2;
+		  			}
+	  			}
+
+	  			.worksBox_img {
+	  				@include for-device(phone) {
+		  				order: 1;
+		  			}	  			
+		  		}
+	  		}
+
+	  		&_img {
+	  			width: 50%;
+
+	  			@include for-device(phone) {
+	  				width: 100%;
+	  			}
+	  		}
+
+	  		.worksBoxMain {
+	  			padding: 40px 5%;
+	  			width: 40%;
+
+	  			@include for-device(phone) {
+	  				padding: 20px 20px;
+	  				width: auto;
+	  			}
+
+	  			&_title {
+	  				@include font-size(24);
+
+	  				@include for-device(phone) {
+	  					@include font-size(18);
+	  				}
+	  			}
+
+	  			&_text {
+	  				margin-top: 20px;
+	  			}
+
+	  			.worksBoxMainMore {
+	  				margin-top: 40px;
+	  				text-align: center;
+
+	  				@include for-device(phone) {
+	  					margin-top: 20px;
+	  				}
+	  			}
+	  		}
+	  	}
+
+	  	.worksHead {
+	  		text-align: center;
+
+	  		&_title {
+	  			@include font-size(24);
+
+	  			@include for-device(phone) {
+	  				@include font-size(20);
+	  			}
+
+	  			&::after {
+	  				border-bottom: 2px solid $color-green;
+	  				bottom: -20px;
+	  				content: "";
+	  				display: block;
+	  				left: 0;
+	  				margin: auto;
+	  				position: relative;
+	  				right: 0;
+	  				width: 80px;
+
+		  			@include for-device(phone) {
+		  				bottom: -10px;
+		  				width: 40px;
+		  			}
+	  			}
+	  		}
+	  	}
+
+		.worksPost {
+			@include display-flex();
+			@include flex-wrap(wrap);
+			@include justify-content(space-around);
+
+			margin-top: 40px;
+
+			@include for-device(phone) {
+				margin-top: 20px;
+			}
+
+			li {
+				@include display-flex();
+
+				background: #fff;
+				border: 1px solid $color-gray;
+				margin-top: 40px;
+				width: 30%;
+
+				@include for-device(phone) {
+					width: 100%;
+					margin-top: 20px;
+				}
+			}
+
+			.worksPostBox {
+				p {
+					@include font-size(14);
+
+					color: $color-light-black;
+					margin-top: 10px;
+					padding: 0 20px;
+
+					@include for-device(phone) {
+						@include font-size(13);
+					}
+				}
+
+				h2 {
+					@include font-size(18);
+
+					color: $color-text;
+					line-height: $line-height-head;
+					margin-top: 10px;
+					padding: 0 20px 20px;
+
+					@include for-device(phone) {
+						@include font-size(16);
+					}
+				}
+			}
+		}
+
+		.worksPostNav {
+			@include display-flex();
+			@include justify-content(center);
+
+			margin-top: 60px;
+
+			.pages {
+				display: none;
+			}
+
+			.smaller,
+			.larger,
+			.current {
+				@include font-size(16);
+
+				background: #fff;
+				border: 1px solid $color-gray;
+				color: $color-text;
+				margin-right: 10px;
+				padding: 10px 15px;
+			}
+
+			.nextpostslink,
+			.previouspostslink {
+				@include font-size(16);
+
+				background: $color-light-gray;
+				border: 1px solid $color-gray;
+				color: $color-text;
+				margin-right: 10px;
+				padding: 10px 10px;
+			}
+		}
+	}
+}

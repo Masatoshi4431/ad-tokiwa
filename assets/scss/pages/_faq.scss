@@ -1,0 +1,177 @@
+.main {
+	&.faq {
+		padding-top: 80px;
+
+		@include for-device(phone) {
+			padding-top: 60px;
+		}
+
+		.faqNav {
+			.faqNavList {
+				@include display-flex();
+				@include font-size(16);
+
+				font-weight: bold;
+
+				@include for-device(phone) {
+					@include flex-wrap(wrap);
+					@include font-size(13);
+					@include justify-content(space-between);
+				}
+
+				li {
+					border-bottom: 1px solid $color-light-black;
+					margin-right: 40px;
+					padding-bottom: 10px;
+					transition: .2s;
+
+					@include for-device(phone) {
+						margin-right: 0;
+						margin-top: 20px;
+						text-align: center;
+						width: 48%;
+					}
+
+					a {
+						color: $color-text;
+					}
+
+					&:hover {
+						border-bottom: 1px solid $color-green;
+
+						a {
+							color: $color-green;
+						}
+					}
+				}
+			}
+		}
+
+		.faqBox {
+			.faqBoxList {
+				margin-top: 80px;
+
+				@include for-device(phone) {
+					margin-top: 40px;
+				}
+
+				&_title {
+					@include font-size(24);
+
+					margin-bottom: 40px;
+
+					@include for-device(phone) {
+						@include font-size(18);
+
+						margin-bottom: 20px;
+					}					
+				}
+
+				.faqBoxListItem {
+					border: 2px solid $color-green;
+					margin-top: 20px;
+					padding: 20px;
+
+					@include for-device(phone) {
+						padding: 10px;
+					}
+
+					&_questionMark {
+						background: $color-green;
+						color: #fff;
+						font-weight: bold;
+						display: inline-block;
+						height: 30px;
+						line-height: 26px;
+						margin-right: 10px;
+						text-align: center;
+						width: 30px;
+
+						@include for-device(phone) {
+							height: 25px;
+							line-height: 23px;
+							width: 25px;
+						}
+					}
+
+					&_title {
+						@include for-device(phone) {
+							width: 78%;
+						}
+					}
+
+					&_answerMark {
+						border: 2px solid $color-green;
+						color: $color-green;
+						font-weight: bold;
+						display: inline-block;
+						height: 30px;
+						line-height: 26px;
+						margin-right: 10px;
+						text-align: center;
+						width: 30px;
+
+						@include for-device(phone) {
+							height: 25px;
+							line-height: 21px;
+							width: 25px;
+						}
+					}
+
+					&_text {
+						@include for-device(phone) {
+							width: 78%;
+						}
+					}
+
+
+					dt {
+						@include display-flex();
+
+						position: relative;
+
+ 						&::before,
+ 						&::after {
+ 							background: $color-green;
+ 							border-radius: 2px;
+							content: "";
+							display: block;
+							height: 2px;
+							position: absolute;
+							right: 20px;
+							top: 50%;
+							transform: translateY(-50%);
+							width: 18px;
+
+							@include for-device(phone) {
+								height: 1px;
+								right: 10px;
+								width: 15px;
+							}						
+ 						}
+						&::after {
+							transform: translateY(-50%) rotate(90deg);
+							transition: 0.5s;								
+						} 
+
+	 					&.is-active {
+ 							&::after {
+								transform: rotate(0);
+								transition: 0.5s;								
+ 							}
+						}
+					}
+
+					dd {
+						display: none;
+						padding-top: 20px;
+					}
+
+					.faqBoxListItemAnswer {
+						@include display-flex();
+					}			
+				}
+			}
+		}
+	}
+}

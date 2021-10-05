@@ -1,0 +1,465 @@
+/* ==============================================
+
+	page用ヘッダー
+
+===============================================*/
+	.pageHeader {
+		background: #fff;
+		border-bottom: 1px solid $color-light-gray;
+		position: fixed;
+		width: 100%;
+		z-index: 999;
+
+		&_inner {
+			@include align-items(center);
+			@include display-flex();
+			@include justify-content(space-between);
+			
+			height: 80px;
+			margin: 0 auto;
+			max-width: 1200px;
+			width: 100%;
+
+			@include for-device(phone) {
+				height: 60px;
+				padding: 0 20px;
+				width: auto;
+			}
+		}
+
+		&_logo {
+			img {
+				height: 26px;
+				width: auto;
+
+				@include for-device(phone) {
+					height: 19px;
+					position: relative;
+					top: 4px;
+				}
+			}
+		}
+
+		&Nav {
+			@include for-device(tablet) {
+				display: none;
+			}
+
+			@include for-device(phone) {
+				display: none;
+			}
+
+			&Sub {
+				display: none;
+				background: rgba(255,255,255,0.95);
+				height: 180px;
+				left: 0;
+				margin: auto;
+				max-width: 1000px;
+				right: 0;
+				position: absolute;
+				top: 80px;
+				width: 100%;	
+
+				&Area {
+					@include display-flex();
+					@include justify-content(space-between);
+				
+				}
+
+				&Head {
+					margin-left: 5%;
+				    position: relative;
+				    top: 30px;
+
+					&_title {
+						@include font-size(30);
+					}
+
+					&_lead {
+						@include font-size(13);
+					}
+				}
+
+				&List {
+				    position: relative;
+				    top: 50px;
+
+					p {
+						& + p {
+							margin-top: 20px;
+						}
+					}
+				}
+
+				&_img {
+					position: relative;
+					top: 3px;
+
+					img {
+						height: 180px;
+						object-fit: cover;
+					}
+				}
+			}
+
+			ul {
+				@include display-flex();
+
+				align-items: center;
+				font-size: 15px;
+				font-weight: bold;
+				height: 80px;
+				justify-content: flex-end;
+
+
+				li {
+					&:nth-child(n+2) {
+						margin-left: 40px;
+					}
+
+					a {
+						color: $color-text;
+
+						&:hover {
+							color: $color-green;
+						}
+					}
+				}
+			}
+
+			&Social {
+				li {
+					width: 10%;
+
+					.icon-size {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+
+		.sppageHeaderNav {
+			display: none;
+
+			@include for-device(tablet) {
+				display: block;
+			}
+
+			@include for-device(phone) {
+				display: block;
+			}
+
+			span {
+				background-color: $color-text;
+				display: block;
+				height: 2px;
+				position: absolute;
+				right: 20px;
+				width: 26px;
+
+				&:nth-child(1) {
+					top: 22px;
+				}
+
+				&:nth-child(2) {
+					top: 30px;
+				}
+
+				&:nth-child(3) {
+					top: 38px;
+				}
+			}
+
+			&.is-active {
+				span {
+					transition: all 0.3s;
+
+					&:nth-child(1) {
+						top: 30px;
+						transform: rotate(140deg);
+					}
+
+					&:nth-child(2) {
+						display: none;
+					}
+
+					&:nth-child(3) {
+						top: 30px;
+						transform: rotate(-315deg);
+					}
+				}		
+			}
+		}
+	}
+
+	.spHeaderMenu {
+		background: #fff;
+		display: none;
+		position: fixed;
+		transform: .2s;
+		width: 100%;
+		z-index: 888;
+
+		&.is-open {
+			display: block;
+		}
+
+		.spHeaderMenuBox {
+			background: $color-light-gray;
+			position: absolute;
+			top: 60px;
+			width: 100%;
+			z-index: 888;
+		}
+
+		.spHeaderMenuList {
+			border-top: 1px solid $color-gray;
+
+			li {
+				@include font-size(13);
+
+				border-bottom: 1px solid $color-gray;
+				position: relative;
+
+				span {
+					background-color: $color-text;
+					display: block;
+					height: 2px;
+					position: absolute;
+					right: 10px;
+					top: 25px;
+					width: 18px;
+
+					&:nth-child(2) {
+						top: 25px;
+						transform: rotate(90deg);
+					}		
+				}
+
+				&.is-active {
+					background: $color-green;
+					color: #fff;
+
+					span {
+						background-color: #fff;
+						
+						&:nth-child(2) {
+							background-color: #fff;
+							transform: rotate(0deg);
+						}			
+					}				
+				}
+
+				a {
+					color: $color-text;
+					display: block;
+					padding: 15px 20px;
+				}
+
+				ul {
+					background: #fff;
+
+					li {
+						&:last-child {
+							border-bottom: 0px;
+						}
+					}
+				}
+			}
+
+			.spHeaderMenuDown {
+				padding: 15px 20px;
+			}
+		}
+	}
+
+/* ==============================================
+
+	TOP用ヘッダー
+
+===============================================*/
+	.header {
+		position: fixed;
+		width: 100%;
+		z-index: 999;
+
+		&.is-change {
+			background: #fff;
+
+			.header_logo {
+				.is-before {
+					display: none;
+				}
+
+				.is-after {
+					display: block;
+				}
+			}
+
+			.headerNav {
+				display: none;
+			}
+
+			.pageHeaderNav {
+				display: block;
+
+				@include for-device(tablet) {
+					display: none;
+				}
+
+				@include for-device(phone) {
+					display: none;
+				}
+			}
+
+			.sppageHeaderNav {
+				span {
+					background-color: $color-text;
+				}
+			}
+		}
+
+		&_inner {
+			@include align-items(center);
+			@include display-flex();
+			@include justify-content(space-between);
+			
+			height: 80px;
+			margin: 0 auto;
+			max-width: 1200px;
+			width: 100%;
+
+			@include for-device(phone) {
+				height: 60px;
+				padding: 0 20px;
+				width: auto;
+			}
+		}
+
+		&_logo {
+			.is-after {
+				display: none;
+			}
+			img {
+				height: 26px;
+				width: auto;
+
+				@include for-device(phone) {
+					height: 18px;
+				}
+			}
+		}
+
+		&Nav {
+			@include for-device(tablet) {
+				display: none;
+			}
+
+			@include for-device(phone) {
+				display: none;
+			}
+
+			.is-hover-menu {
+				display: none;
+			}
+
+			ul {
+				@include display-flex();
+
+				align-items: center;
+				font-size: 15px;
+				font-weight: bold;
+				height: 80px;
+				justify-content: flex-end;
+
+
+				li {
+					&:nth-child(n+2) {
+						margin-left: 40px;
+					}
+
+					a {
+						color: #fff;
+
+						&:hover {
+							color: $color-green;
+						}
+					}
+				}
+				.pageHeaderNavSubList {
+
+					a {
+						color: $color-text;
+					}
+				}
+			}
+
+			&Social {
+				li {
+					width: 10%;
+
+					.icon-size {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+
+		.pageHeaderNav {
+			display: none;
+		}
+
+		.sppageHeaderNav {
+			display: none;
+
+			@include for-device(tablet) {
+				display: block;
+			}
+
+			@include for-device(phone) {
+				display: block;
+			}
+
+			span {
+				background-color: #fff;
+				display: block;
+				height: 2px;
+				position: absolute;
+				right: 20px;
+				width: 26px;
+
+				&:nth-child(1) {
+					top: 22px;
+				}
+
+				&:nth-child(2) {
+					top: 30px;
+				}
+
+				&:nth-child(3) {
+					top: 38px;
+				}
+			}
+
+			&.is-active {
+				span {
+					transition: all 0.3s;
+
+					&:nth-child(1) {
+						top: 30px;
+						transform: rotate(140deg);
+					}
+
+					&:nth-child(2) {
+						display: none;
+					}
+
+					&:nth-child(3) {
+						top: 30px;
+						transform: rotate(-315deg);
+					}
+				}		
+			}
+		}
+	}

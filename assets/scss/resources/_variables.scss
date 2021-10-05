@@ -1,0 +1,39 @@
+/*=============================================================
+
+	font-family
+
+============================================================= */
+$font-family    : 'Roboto','Noto Sans JP',"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+$font-family-en :  YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";;
+
+
+/*=============================================================
+
+	color
+
+============================================================= */
+$color-green       : #009977;
+$color-light-black : #646464;
+$color-text        : #323223;
+$color-gray        : #dcdcdc;
+$color-light-gray  : #f5f5f5;
+
+
+/*=============================================================
+
+	line-height
+
+============================================================= */
+$line-height-head : 1.3;
+$line-height-body : 1.7;
+$line-height-base : 2;
+
+
+/*=============================================================
+
+	break point
+
+============================================================= */
+$for-tablet-landscape-up	: 1120px;
+$for-tablet-portrait-up		: 768px;
+$for-phone                  : $for-tablet-portrait-up - 1px;

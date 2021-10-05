@@ -1,0 +1,262 @@
+.main {
+	&.rentLand {
+		padding-top: 80px;
+
+		@include for-device(phone) {
+			padding-top: 60px;
+		}
+
+		.heading {
+			.text-center {
+				text-align: center;
+
+				@include for-device(phone) {
+					text-align: left;
+				}
+			}
+		}
+
+		.pointList {
+			margin-top: 40px;
+
+			@include for-device(phone) {
+				margin-top: 30px;
+			}
+
+			dl {
+				margin-top: 20px;
+
+				dt {
+					@include font-size(18);
+
+					font-weight: bold;
+
+					@include for-device(phone) {
+						@include font-size(16);
+					}
+				}
+
+				dd {
+					@include font-size(16);
+
+					line-height: $line-height-body;
+					margin-top: 10px;
+					
+					@include for-device(phone) {
+						@include font-size(13);
+					}
+				}	
+			}
+		}
+
+		.rentLandStep {
+			@include display-flex();
+			@include flex-wrap(wrap);
+			@include justify-content(space-between);
+
+			.rentLandStepBox {
+				@include align-items(center);
+				@include display-flex();
+				@include justify-content(space-between);
+
+				border: 2px solid $color-green;
+				margin-top: 50px;
+				padding: 20px 5%;
+				position: relative;
+				width: 100%;
+
+				@include for-device(phone) {
+					@include flex-wrap(wrap);
+
+					margin-top: 25px;
+					padding: 10px 5% 20px;
+				}
+
+				&::before {
+					@include font-size(13);
+
+					background: $color-green;
+					border-radius: 50%;
+					color: #fff;
+					content: "1～2日";
+					font-weight: bold;
+					height: 60px;
+					left: -30px;
+					line-height: 60px;
+					position: absolute;
+					text-align: center;
+					top: -30px;
+					width: 60px;
+
+					@include for-device(phone) {
+						@include font-size(13);
+
+						height: 50px;
+						left: -10px;
+						line-height: 50px;
+						top: -10px;
+						width: 50px;
+					}					
+				}
+
+				&_number {
+					@include font-size(60);
+
+					color: $color-green;
+					font-style: italic;
+					font-weight: bold;
+					text-align: center;
+					width: 10%;
+
+					@include for-device(phone) {
+						@include font-size(40);
+
+						width: 100%;
+					}
+				}
+
+				dl {
+					text-align: center;
+					width: 20%;
+
+					@include for-device(phone) {
+						width: 100%;
+					}
+
+					dt {
+						@include font-size(16);
+
+						font-weight: bold;
+
+						@include for-device(phone) {
+							@include font-size(13);
+						}
+					}
+
+					dd {
+						margin-top: 10px;
+
+						@include for-device(phone) {
+							text-align: center;
+						}
+
+						img {
+							height: 80px;
+							width: auto;
+
+							@include for-device(phone) {
+								height: auto;
+								width: 25%;
+							}
+						}
+					}
+				}
+
+				&_text {
+					@include font-size(16);
+
+					width: 70%;
+
+					@include for-device(phone) {
+						@include font-size(13);
+
+						margin-top: 10px;
+						width: 100%;
+					}
+
+					span {
+						@include font-size(13);
+
+						color: $color-light-black;
+
+						@include for-device(phone) {
+							@include font-size(11);
+						}
+					}	
+				}
+
+				&.is-next {
+					&::after {
+						bottom: -58px;
+						content: " ";
+						border-style: solid;
+						border-color:  $color-green transparent transparent transparent;
+						border-width: 20px ;
+						position: absolute;
+						left: 0;
+						right: 0;
+						margin: auto;
+						height: 0px;
+						width: 0px;
+
+						@include for-device(phone) {
+							bottom: -38px;
+							border-width: 15px;
+						}
+					}
+
+					&:last-child {
+						&::after {
+							display: none;
+						}
+					}
+				}
+
+				&:nth-child(3) {
+					.rentLandStepBox_text {
+						@include for-device(phone) {
+							text-align: center;
+						}
+					}
+				}
+
+				&:nth-child(5) {
+					.rentLandStepBox_text {
+						@include for-device(phone) {
+							text-align: center;
+						}
+					}
+				}
+			}			
+		}
+
+		.rentLandRemoval {
+			@include display-flex();
+			@include justify-content(space-between);
+
+			margin-top: 50px;
+
+			li {
+				width: 30%;
+
+				.rentLandRemovalBox {
+					dd {
+						h4 {
+							@include font-size(18);
+							margin-top: 20px;
+						}
+
+						p {
+							margin-top: 10px;
+						}
+					}
+				}	
+			}
+
+			&_text {
+				margin-top: 20px;
+			}
+
+			&_notes {
+				@include font-size(13);
+
+				color: $color-light-black;
+				margin-top: 10px;
+
+				@include for-device(phone) {
+					@include font-size(11);
+				}
+			}
+		}
+	}
+}

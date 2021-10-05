@@ -1,0 +1,564 @@
+.main {
+	&.service {
+		padding-top: 80px;
+
+		@include for-device(phone) {
+			padding-top: 60px;
+		}
+
+		.heading {
+			.text-center {
+				text-align: center;
+			}
+		}
+
+		.serviceWorries {
+			background: $color-green;
+			padding: 60px 0 50px;
+
+			@include for-device(phone) {
+				padding: 30px 0 25px;
+			}
+
+			&_title {
+				@include font-size(30);
+
+				color: #fff;
+				text-align: center;
+
+				@include for-device(phone) {
+					@include font-size(18);
+				}
+			}
+
+			&_img {
+				margin-top: 60px;
+				text-align: center;
+
+				@include for-device(phone) {
+					margin-top: 30px;
+				}
+
+				img {
+					height: auto;
+					width: 50%;
+
+					@include for-device(phone) {
+						width: 90%;
+					}
+				}				
+			}
+
+			.serviceWorriesBox {
+				background: #fff;
+				margin: 20px auto 0;
+				padding: 30px 30px 20px;
+				max-width: 1000px;
+				width: 100%;
+
+				@include for-device(phone) {
+					margin-top: 10px;
+					padding: 20px 15px 10px;
+					width: 90%;
+				}
+
+				&_title {
+					@include font-size(24);
+
+					color: $color-green;
+
+					@include for-device(phone) {
+						@include font-size(18);
+					}		
+				}
+
+				dl {
+					margin-top: 30px;
+
+					@include for-device(phone) {
+						margin-top: 20px;
+					}
+
+					&:nth-child(n+3) {
+						margin-top: 20px;
+
+						@include for-device(phone) {
+							margin-top: 20px;
+						}
+					}
+
+					dt {
+						@include font-size(16);
+
+						font-weight: bold;
+
+						@include for-device(phone) {
+							@include font-size(13);
+						}
+
+						&::before {
+							color: $color-green;
+							content: "■";
+							position: relative;
+						}
+					}
+
+					dd {
+						@include font-size(16);
+
+						color: $color-light-black;
+						line-height: $line-height-body;
+						margin-top: 10px;
+
+						@include for-device(phone) {
+							@include font-size(13);
+						}
+					}					
+				}			
+			}
+		}
+
+		.serviceFollow {
+			@include display-flex();
+			@include flex-wrap(wrap);
+			@include justify-content(space-between);
+
+			.serviceFollowBox {
+				@include align-items(center);
+				@include display-flex();
+				@include justify-content(space-between);
+
+				border: 2px solid $color-green;
+				margin-top: 50px;
+				padding: 20px 5%;
+				position: relative;
+				width: 100%;
+
+				@include for-device(phone) {
+					@include flex-wrap(wrap);
+
+					margin-top: 30px;
+					padding: 10px 5% 20px;
+				}
+
+				&_number {
+					@include font-size(60);
+
+					color: $color-green;
+					font-style: italic;
+					font-weight: bold;
+					text-align: center;
+					width: 10%;
+
+					@include for-device(phone) {
+						@include font-size(40);
+
+						width: 100%;
+					}
+				}
+
+				dl {
+					text-align: center;
+					width: 20%;
+
+					@include for-device(phone) {
+						width: 100%;
+					}
+
+					dt {
+						@include font-size(16);
+
+						font-weight: bold;
+
+						@include for-device(phone) {
+							@include font-size(13);
+						}
+					}
+
+					dd {
+						margin-top: 10px;
+
+						@include for-device(phone) {
+							text-align: center;
+						}
+
+						img {
+							height: 80px;
+							width: auto;
+
+							@include for-device(phone) {
+								height: auto;
+								width: 30%;
+							}
+						}
+					}
+				}
+
+				&_text {
+					@include font-size(16);
+
+					width: 70%;
+
+					@include for-device(phone) {
+						@include font-size(13);
+
+						margin-top: 10px;
+						width: 100%;
+					}				
+				}
+
+				&.is-or {
+					padding: 30px 2%;
+					width: 49%;
+
+					&::after {
+						content: " ";
+						border-style: solid;
+						border-color:  $color-green transparent transparent transparent;
+						border-width: 20px ;
+						position: absolute;
+						left: 0;
+						right: 0;
+						margin: auto;
+						height: 0px;
+						top: -35px;
+						width: 0px;
+
+						@include for-device(phone) {
+							border-width: 12px;
+							top: -23px;
+						}
+					}
+
+					.serviceFollowBox {
+						&_number {
+							width: 10%;
+
+							@include for-device(phone) {
+								text-align: center;
+								width: 100%;
+							}
+						}
+
+						dl {
+							width: 20%;
+						}
+
+						&_text {
+							width: 50%;
+
+							@include for-device(phone) {
+								width: 100%;
+							}
+						}
+					}
+
+					&-text {
+						&::after {
+							@include font-size(24);
+
+							bottom: -8px;
+							color: $color-green;
+							content: "or";
+							font-weight: bold;
+							position: absolute;
+							left: -18px;
+							right: 0;
+							margin: auto;
+							height: 0px;
+							width: 0px;
+
+							@include for-device(phone) {
+								@include font-size(18);
+
+								bottom: 0;
+							}
+						}						
+					}
+				}
+
+				&.is-next {
+					&::after {
+						bottom: -58px;
+						content: " ";
+						border-style: solid;
+						border-color:  $color-green transparent transparent transparent;
+						border-width: 20px ;
+						position: absolute;
+						left: 0;
+						right: 0;
+						margin: auto;
+						height: 0px;
+						width: 0px;
+
+						@include for-device(phone) {
+							bottom: -38px;
+							border-width: 12px;
+						}
+					}
+
+					&:last-child {
+						&::after {
+							display: none;
+						}
+					}
+				}
+
+				&.is-next-top {
+					&::after {
+						bottom: 0;
+						content: " ";
+						border-style: solid;
+						border-color:  $color-green transparent transparent transparent;
+						border-width: 20px ;
+						position: absolute;
+						left: 0;
+						right: 0;
+						margin: auto;
+						height: 0px;
+						top: -120%;
+						width: 0px;
+
+						@include for-device(phone) {
+							border-width: 12px;
+							top: -105%;
+						}
+					}
+				}
+			}			
+		}
+
+		.serviceLineup {
+			@include display-flex();
+			@include flex-wrap(wrap);
+			@include justify-content(space-between);
+
+			margin-top: 20px;
+
+			.serviceLineupBox {
+				margin-top: 40px;
+				width: 48%;
+
+				@include for-device(phone) {
+					margin-top: 20px;
+					width: 100%;
+				}
+
+				dl {
+					dd {
+						h4 {
+							@include font-size(24);
+
+							margin-top: 20px;
+
+							@include for-device(phone) {
+								@include font-size(18);
+
+								margin-top: 10px;
+							}
+						}
+
+						p {
+							margin-top: 10px;
+						}
+					}
+				}
+			}
+		}
+
+		.servicePost {
+			@include display-flex();
+
+			margin-top: 40px;
+
+			@include for-device(phone) {
+				@include flex-wrap(wrap);
+
+				margin-top: 20px;
+			}
+
+			li {
+				@include display-flex();
+
+				width: 30%;
+
+				@include for-device(phone) {
+					width: 100%;
+				}
+
+				&:nth-child(n+2) {
+					margin-left: 3%;
+
+					@include for-device(phone) {
+						margin-left: 0;
+						margin-top: 20px;
+					}
+				}
+			}
+
+			dl {
+				dd {
+					p {
+						@include font-size(13);
+						
+						color: $color-light-black;
+						margin-top: 10px;
+					}
+
+					h2 {
+						@include font-size(18);
+
+						color: $color-text;
+						line-height: $line-height-head;
+						margin-top: 10px;
+
+						@include for-device(phone) {
+							@include font-size(16);
+						}
+					}
+				}
+			}
+		}
+
+		.servicePostMore {
+			margin-top: 40px;
+			text-align: center;
+		}
+
+		.serviceBoxList {
+			@include display-flex();
+			@include flex-wrap(wrap);
+			@include justify-content(space-between);
+
+			li {
+				@include display-flex();
+
+				margin-top: 40px;
+				width: 48%;
+
+				@include for-device(phone) {
+					margin-top: 30px;
+					width: 100%;
+				}
+			}
+
+			&Item {
+				position: relative;
+
+				dl {
+					dt {
+						width: 100%;
+					}
+
+					dd {
+						height: 250px;
+
+						@include for-device(phone) {
+							height: auto;
+						}
+
+						h2 {
+							@include font-size(18);
+
+							margin-top: 20px;
+						}
+
+						p {
+							margin-top: 10px;
+						}
+					}
+				}
+
+				.button-more {
+					text-align: center;
+
+					@include for-device(phone) {
+						margin-top: 30px;
+					}
+				}
+			}
+		}
+
+		.serviceCard {
+			@include display-flex();
+			@include justify-content(space-between);
+
+			@include for-device(phone) {
+				@include flex-wrap(wrap);
+			}
+
+			dt {
+				order: 2;
+				width: 50%;
+
+				@include for-device(phone) {
+					margin-top: 20px;
+					width: 100%;
+				}
+			}
+
+			dd {
+				margin-right: 5%;
+				order :1;
+				width: 45%;
+
+				@include for-device(phone) {
+					margin-right: 0;
+					width: 100%;
+				}
+
+				p {
+					margin-top: 40px;
+
+					@include for-device(phone) {
+						margin-top: 20px;
+					}
+
+					& + p {
+						margin-top: 20px;
+
+						@include for-device(phone) {
+							margin-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.service-top {
+		.heading {
+			.text-center {
+				@include for-device(phone) {
+					text-align: left;
+				}
+			}
+		}			
+	}
+
+	&.road-sign {
+		.heading {
+			.text-center {
+				@include for-device(phone) {
+					text-align: left;
+				}
+			}
+		}
+
+		.serviceBox {
+			.button {
+				margin-top: 40px;
+			}
+		}	
+	}
+
+	&.jrAd {
+		.section-title {
+			@include font-size(32);
+
+			@include for-device(phone) {
+				@include font-size(24);
+			}
+		}
+	}
+}

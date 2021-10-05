@@ -1,0 +1,94 @@
+.main {
+	&.company {
+		padding-top: 80px;
+
+		@include for-device(phone) {
+			padding-top: 60px;
+		}
+
+		.section-title {
+			@include for-device(phone) {
+				@include font-size(24);
+			}
+		}
+
+		.section-lead {
+			margin-bottom: 40px;
+
+			@include for-device(phone) {
+				margin-bottom: 20px;
+			}
+		}
+
+		.companyList {
+			@include display-flex();
+
+			border-bottom: 1px solid $color-gray;
+			padding: 20px 0;
+
+			dt {
+				@include font-size(16);
+
+				font-weight: bold;
+				width: 30%;
+
+				@include for-device(phone) {
+					@include font-size(13);
+				}
+			}
+
+			dd {
+				@include font-size(16);
+
+				line-height: $line-height-body;
+				width: 70%;
+
+				@include for-device(phone) {
+					@include font-size(13);
+				}
+			}				
+		}
+
+		.companyMap {
+			border: 1px solid #dcdcdc;
+			height: 0;
+			margin-top: 60px;
+			overflow: hidden;
+			padding-bottom: 56.25%;
+			position: relative;
+
+			@include for-device(phone) {
+				margin-top: 30px;
+			}
+
+			iframe {
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;				
+			}
+		}
+		.companyMap iframe,
+		.companyMap object,
+		.companyMap embed {
+			-webkit-filter: grayscale(100%);
+			-moz-filter: grayscale(100%);
+			-ms-filter: grayscale(100%);
+			-o-filter: grayscale(100%);
+			filter: grayscale(100%);
+			-webkit-transition: all 0.7s ease;
+			-moz-transition: all 0.7s ease;
+			-o-transition: all 0.7s ease;
+			transition: all  0.7s ease;
+
+			&:hover {
+				-webkit-filter: grayscale(0%);
+				-moz-filter: grayscale(0%);
+				-ms-filter: grayscale(0%);
+				-o-filter: grayscale(0%);
+				filter: grayscale(0%);				
+			}
+		}
+	}
+}
