@@ -21,7 +21,7 @@
 	<section class="section">
 		<div class="section_inner">
 			<div class="heading">
-				<p class="text-center">デッドスペース等の有効活用で不労所得を増やしませんか？<br>所有している土地が小さい、あるいはいびつでどう活用していいかわからない<br class="is-pc">土地は広いけど建物建ててテナントとして貸すのも初期費用が高い<br class="is-pc">不動産を持て余しておりませんか？<br>設置やメンテナンス、退去時の撤去まで一貫して弊社が責任を持って遂行いたします。<br>費用も管理するご面倒もございません。<br>地主様には毎年、看板設置使用料を一括前払いにてお支払いいたします。</p>			
+				<p class="text-center">空きスペースを有効活用して収益にしませんか？<br>弊社専門のスタッフが現地を確認し最適なサイズ、賃料をご提示させていただきます。<br>設置やメンテナンス、退去時の撤去まで一貫して弊社が責任を持って行います。<br>面倒な手続きや、管理もすべてお任せください。<br>地主様には毎年、看板設置使用料を一括前払いにてお支払いいたします。</p>			
 			</div>
 		</div>	
 	</section>
@@ -73,6 +73,7 @@
 				<?php foreach($rent_land_removal as $display) : ?>
 					<li>
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/rent-land/<?php echo $display['img']; ?>.jpg" alt="<?php echo $display['title']; ?>">
+						<p class="rentLand_caption"><?php echo $display['title']; ?></p>
 					</li>
 				<?php endforeach; ?>
 			</ul>
