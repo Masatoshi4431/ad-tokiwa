@@ -215,4 +215,17 @@ $(function() {
         $tab_list.removeClass("is-select");
         $(this).addClass('is-select');
     });
+
+/*=================================================================
+
+    OPENING アニメーション
+
+================================================================= */
+    setTimeout(function(){
+        $('.js-opening-logo').fadeIn(1600);
+    },500);
+    setTimeout(function(){
+        $('.js-opening').fadeOut(500);
+    },3800);
+
 });
