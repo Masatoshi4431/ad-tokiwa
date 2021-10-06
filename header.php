@@ -85,7 +85,7 @@
 			</div>
 			<div class="pageHeaderNav">
 				<ul class="js-headerNav-target">
-					<li><a href="/company/">会社概要</a></li>
+					<li><a href="/ad-tokiwa/company/">会社概要</a></li>
 					<li class="js-hover"><a href="">取扱サービス</a>
 						<div class="pageHeaderNavSub js-hover-menu">
 							<div class="pageHeaderNavSubArea">

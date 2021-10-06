@@ -82,6 +82,7 @@
 					<?php endforeach; ?>
 				</div>
 				<div class="faqBoxList" id="other-service">
+					<div id="rent-land">
 					<h2 class="faqBoxList_title">その他のサービス</h2>
 					<?php foreach($etc as $display) : ?>
 						<dl class="faqBoxListItem">
@@ -97,6 +98,7 @@
 							</dd>
 						</dl>
 					<?php endforeach; ?>
+				</div>
 				</div>
 			</div>
 		</div>				

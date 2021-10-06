@@ -1,5 +1,8 @@
 <?php  /* Template Name: お問い合わせ */ ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<?php wp_head(); ?>
 <?php get_header("pages"); ?>
+
 
 <main class="main contact js-headerMain">
 
@@ -27,4 +30,5 @@
 
 </main>
 
+<?php wp_footer();?>
 <?php get_footer(); ?>

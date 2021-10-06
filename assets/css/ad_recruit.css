@@ -262,6 +262,13 @@ ui.link.cards .raised.card:hover, .ui.link.raised.card:hover, .ui.raised.cards a
     transition: 0.3s ease-in-out !important;
 }
 
+/* ==================================================
+	iframe
+================================================== */
+iframe {
+	height: 6000px;
+}
+
 
 /* //////////////////////////////////////////////////////////////////// */
 /* ///// TB /////////////////////////////////////////////////////////// */
@@ -308,6 +315,12 @@ ui.link.cards .raised.card:hover, .ui.link.raised.card:hover, .ui.raised.cards a
     .index-link {
         width: 38.4%;
     }
+/* ==================================================
+	iframe
+================================================== */
+	iframe {
+		height: 20300px;
+	}	
 }
 
 
@@ -356,4 +369,11 @@ ui.link.cards .raised.card:hover, .ui.link.raised.card:hover, .ui.raised.cards a
     .index-link {
         width: 54.7%;
     }
+	
+/* ==================================================
+	iframe
+================================================== */
+	iframe {
+		height: 15200px;
+	}	
 }
