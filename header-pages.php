@@ -13,8 +13,20 @@
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Questrial&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
 	<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PQDS9ZP');</script>
+	<!-- End Google Tag Manager -->
 </head>
 <body class="js-page-transition">
+	
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQDS9ZP"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
 	<header class="pageHeader js-headerScroll">
 		<div class="pageHeader_inner">
@@ -56,8 +68,8 @@
 					<li><a href="/ad-tokiwa/contact/">お問い合わせ</a></li>
 					<li>
 						<ul class="pageHeaderNavSocial">
-							<li><a href="#"><i class="fab fa-facebook-square icon-size"></i></a></li>
-							<li><a href="#"><i class="fab fa-instagram icon-size"></i></a></li>
+							<li><a href="https://www.facebook.com/tokiwa1976/" target="_blank"><i class="fab fa-facebook-square icon-size"></i></a></li>
+							<li><a href="https://www.instagram.com/tokiwa_1976/" target="_blank"><i class="fab fa-instagram icon-size"></i></a></li>
 						</ul>
 					</li>							
 				</ul>

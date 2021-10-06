@@ -6,7 +6,7 @@
 	<title><?php bloginfo('name'); wp_title('|', true, 'right'); ?></title>
 		<?php page_description(); ?>
 	
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css?<?php echo time(); ?>">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;900&display=swap" rel="stylesheet">
@@ -15,8 +15,20 @@
 	<link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
 	<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PQDS9ZP');</script>
+	<!-- End Google Tag Manager -->
 </head>
 <body>
+	
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQDS9ZP"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
 	<header class="header js-headerScroll js-header-change">
 		<div class="header_inner">
@@ -59,8 +71,8 @@
 					<li><a href="/ad-tokiwa/contact/">お問い合わせ</a></li>
 					<li>
 						<ul class="pageHeaderNavSocial">
-							<li><a href="#"><i class="fab fa-facebook-square icon-size"></i></a></li>
-							<li><a href="#"><i class="fab fa-instagram icon-size"></i></a></li>
+							<li><a href="https://www.facebook.com/tokiwa1976/" target="_blank"><i class="fab fa-facebook-square icon-size"></i></a></li>
+							<li><a href="https://www.instagram.com/tokiwa_1976/" target="_blank"><i class="fab fa-instagram icon-size"></i></a></li>
 						</ul>
 					</li>							
 				</ul>
@@ -98,8 +110,8 @@
 					<li><a href="/ad-tokiwa/contact/">お問い合わせ</a></li>
 					<li>
 						<ul class="pageHeaderNavSocial">
-							<li><a href="#"><i class="fab fa-facebook-square icon-size"></i></a></li>
-							<li><a href="#"><i class="fab fa-instagram icon-size"></i></a></li>
+							<li><a href="https://www.facebook.com/tokiwa1976/" target="_blank"><i class="fab fa-facebook-square icon-size"></i></a></li>
+							<li><a href="https://www.instagram.com/tokiwa_1976/" target="_blank"><i class="fab fa-instagram icon-size"></i></a></li>
 						</ul>
 					</li>							
 				</ul>
