@@ -44,12 +44,12 @@
 			<div class="footerAreaSocial">
 				<ul>				
 					<li>
-						<a href="#">
+						<a href="https://www.facebook.com/tokiwa1976/" target="_blank">
 							<i class="fab fa-facebook-square icon-size"></i>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="https://www.instagram.com/tokiwa_1976/" target="_blank">
 							<i class="fab fa-instagram icon-size"></i>
 						</a>
 					</li>
