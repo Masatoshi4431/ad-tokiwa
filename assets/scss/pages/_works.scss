@@ -135,9 +135,15 @@
 		.worksPost {
 			@include display-flex();
 			@include flex-wrap(wrap);
-			@include justify-content(space-around);
+			@include justify-content(space-between);
 
 			margin-top: 40px;
+
+			&::after {
+				display: block;
+				content:"";
+				width: 30%;
+			}
 
 			@include for-device(phone) {
 				margin-top: 20px;
