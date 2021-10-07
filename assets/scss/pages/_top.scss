@@ -30,8 +30,10 @@
 				color: #fff;
 				font-family: 'Noto Serif JP', serif;
 				font-weight: normal;
-				left: 40px;
-				position: relative;
+				position: absolute;
+				left: 70px;
+				right: 0;
+				margin: auto;
 				text-align: center;
 
 				@include for-device(phone) {

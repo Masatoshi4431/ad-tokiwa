@@ -32,7 +32,7 @@
 				    $args = array(
 				        'paged' => $paged,
 				        'post_type' => 'post',
-				        'posts_per_page' => 12,
+				        'posts_per_page' => 11,
 				        'cat' => $catid,
 				    );
 				    $query = new WP_Query($args);

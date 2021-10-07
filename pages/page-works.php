@@ -40,7 +40,7 @@
 					    $args = array(
 					        'paged' => $paged,
 					        'post_type' => 'post',
-					        'posts_per_page' => 12,
+					        'posts_per_page' => 1,
 					    );
 					    $query = new WP_Query($args);
 					?>
@@ -70,7 +70,7 @@
 					    $args = array(
 					        'paged' => $paged,
 					        'post_type' => 'post',
-					        'posts_per_page' => 12,
+					        'posts_per_page' => 1,
 					        'category_name' => 'road-sign',
 					    );
 					    $query = new WP_Query($args);
