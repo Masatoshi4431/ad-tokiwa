@@ -1,2 +1,9 @@
 // JavaScript Document
-$("#placeholder").removeAttr('placeholder');
+        $('iframe')
+        .on('load', function(){
+            try {
+                $(this).height(this.contentWindow.document.documentElement.scrollHeight);
+            } catch (e) {
+            }
+        })
+        .trigger('load');

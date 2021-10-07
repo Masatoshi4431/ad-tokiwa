@@ -182,6 +182,7 @@ body label.element-label::before {
 .ui.card > .extra, .ui.cards > .card > .extra {
     border-top: 1px solid #707070 !important;
 }
+/*
 .ui.cards a.card, .ui.link.card, .ui.link.cards .card, a.ui.card {
     -webkit-transition: .3s;
     transition: .3s;
@@ -200,6 +201,36 @@ ui.link.cards .raised.card:hover, .ui.link.raised.card:hover, .ui.raised.cards a
     -webkit-transform: none;
     transform: none;
 }
+*/
+a.kv-file-element img.kv-object-fit {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+a.kv-file-element img.kv-object-fit:hover {
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0.5;
+}
+
+a div.kv-text-element {
+    width: 80%;
+    text-align: center;
+    color: #fff;
+	background: #8e8e8d;
+	margin: 20px auto 0 !important;
+    padding: 20px 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+a div.kv-text-element:hover {
+    background: #009977;
+    -webkit-transition: 0.3s ease-in-out !important;
+    -moz-transition: 0.3s ease-in-out !important;
+    -o-transition: 0.3s ease-in-out !important;
+    transition: 0.3s ease-in-out !important;
+}
+
+
 .el-pagination {
     text-align: center;
     color: #2f2725;
@@ -266,7 +297,7 @@ ui.link.cards .raised.card:hover, .ui.link.raised.card:hover, .ui.raised.cards a
 	iframe
 ================================================== */
 iframe {
-	height: 6000px;
+	height: 5200px;
 }
 
 

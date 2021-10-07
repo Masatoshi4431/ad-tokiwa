@@ -16,7 +16,7 @@
 			</div>
 			<div class="notfoundMore">
 				<div class="button-more">
-					<span><a href="<?php echo esc_url( home_url( '/' ) ); ?>">ホームに戻る</a></span>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><span>ホームに戻る</span></a>
 				</div>
 			</div>
 		</div>
