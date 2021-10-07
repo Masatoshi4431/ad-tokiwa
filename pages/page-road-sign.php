@@ -99,7 +99,7 @@
 	<section class="section">
 		<div class="section_inner">
 			<h2 class="section-title">Line up</h2>
-			<h3  class="section-lead">一般看板製品一覧</h3>
+			<h3  class="section-lead">ロードサイン製品一覧</h3>
 			<ul class="serviceLineup">
 				<?php foreach($roadSign_lineup as $key) : ?>
 					<li class="serviceLineupBox">
@@ -118,8 +118,7 @@
 
 	<section class="section">
 		<div class="section_inner">
-			<h2 class="section-title">Works</h2>
-			<h3  class="section-lead">製作実績</h3>		
+			<h2 class="section-titleWorks">Works<span class="section-leadWorks">製作実績</span></h2>		
 			<ul class="servicePost">
 				<?php 
 					$works_post = get_posts(
@@ -135,8 +134,10 @@
 							<dl>
 								<dt><?php the_post_thumbnail(''); ?></dt>
 								<dd>
+									<?php /*
 									<p><?php the_time('Y.m.d'); ?></p>
 									<h2><?php the_title(); ?></h2>
+									*/ ?>
 								</dd>
 							</dl>
 						</a>

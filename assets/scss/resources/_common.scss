@@ -114,8 +114,8 @@ body {
 .section-lead {
 	@include font-size(16);
 
-	color: $color-light-black;
-	font-weight: normal;
+	color: $color-text;
+	font-weight: bold;
 	margin-left: 40px;
 	margin-top: 20px;
 

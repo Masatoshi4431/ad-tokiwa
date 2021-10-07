@@ -17,7 +17,7 @@
 			</div>
 		</div>
 		<div class="pageVisualThumb">
-			<img src="http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/img-1.jpg" alt="">
+			<img src="http://conrize-demo.net<?php echo $masterLink; ?>/wp-content/uploads/2021/10/img-1.jpg" alt="">
 		</div>
 	</section>
 
@@ -32,7 +32,7 @@
 				    $args = array(
 				        'paged' => $paged,
 				        'post_type' => 'post',
-				        'posts_per_page' => 11,
+				        'posts_per_page' => 12,
 				        'cat' => $catid,
 				    );
 				    $query = new WP_Query($args);

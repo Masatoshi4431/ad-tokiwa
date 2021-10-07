@@ -30,10 +30,8 @@
 				color: #fff;
 				font-family: 'Noto Serif JP', serif;
 				font-weight: normal;
-				position: absolute;
-				left: 70px;
-				right: 0;
-				margin: auto;
+				left: 40px;
+				position: relative;
 				text-align: center;
 
 				@include for-device(phone) {
@@ -251,7 +249,7 @@
 		}
 
 		&::before {
-			background-image: url(http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_1-1.jpg);
+			background-image: url(http://conrize-demo.net<?php echo $masterLink; ?>/wp-content/uploads/2021/10/service_bg_1-1.jpg);
 			background-position: right;
 			background-size: contain;
 			background-attachment: fixed;
@@ -278,7 +276,7 @@
 			}
 
 			&::before {
-				background-image: url(http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_2.jpg);
+				background-image: url(http://conrize-demo.net<?php echo $masterLink; ?>/wp-content/uploads/2021/10/service_bg_2.jpg);
 			}				
 		}
 
@@ -288,7 +286,7 @@
 			}
 
 			&::before {
-				background-image: url(http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_3.jpg);
+				background-image: url(http://conrize-demo.net<?php echo $masterLink; ?>/wp-content/uploads/2021/10/service_bg_3.jpg);
 			}				
 		}
 

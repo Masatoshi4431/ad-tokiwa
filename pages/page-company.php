@@ -21,14 +21,14 @@
 	<section class="section">
 		<div class="section_inner">
 			<div class="heading">
-				<p class="text-center">常磐広告は創業40年を迎え、茨城県中⼼とした関東⼀円で様々な分野‧業種のお客様のニーズに応えてまいりました。<br>ロードサインをはじめとした屋外広告業はもとより、株式会社ジェイアール東⽇本企画代理店として交通広告の展開、最新鋭のデジタルサイネージの取扱いまで、これからも総合広告業として‧モノづくりの企業として、お客様に寄り添える企業を⽬指し、社員⼀同歩んでまいります。</p>		
+				<p class="text-center">常磐広告は創業40年を迎え、茨城県中⼼とした関東⼀円で様々な分野‧業種のお客様のニーズに応えてまいりました。<br>ロードサインをはじめとした屋外広告業はもとより、株式会社ジェイアール東⽇本企画代理店として交通広告の展開、<br>最新鋭のデジタルサイネージの取扱いまで、これからも総合広告業として‧モノづくりの企業として、お客様に寄り添える<br>企業を⽬指し、社員⼀同歩んでまいります。</p>		
 			</div>
 		</div>	
 	</section>
 
 	<section class="section">
 		<div class="section_inner">
-			<h2 class="section-title">Company Infomartion</h2>
+			<h2 class="section-title">Company infomartion</h2>
 			<h3 class="section-lead">会社情報</h3>
 			<?php foreach($overview as $display) : ?>
 				<dl class="companyList">
@@ -41,7 +41,7 @@
 
 	<section class="section">
 		<div class="section_inner">
-			<h2 class="section-title">Company History</h2>
+			<h2 class="section-title">Company history</h2>
 			<h3 class="section-lead">会社沿革</h3>
 			<?php foreach($history as $display) : ?>
 				<dl class="companyList">

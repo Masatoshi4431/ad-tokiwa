@@ -30,6 +30,8 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
+	<?php $masterLink = '/ad-tokiwa'; ?>
+
 	<div class="openingAnime js-opening">
     	<div class="openingAnime_logo js-opening-logo">
     		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/tokiwa-logo.png" alt="">
@@ -46,8 +48,8 @@
 			</h1>
 			<div class="headerNav">
 				<ul>
-					<li><a href="/ad-tokiwa/company/">会社概要</a></li>
-					<li class="js-hover"><a href="/ad-tokiwa/service/">取扱サービス</a>
+					<li><a href="<?php echo $masterLink; ?>/company/">会社概要</a></li>
+					<li class="js-hover"><a href="<?php echo $masterLink; ?>/service/">取扱サービス</a>
 						<div class="pageHeaderNavSub js-hover-menu">
 							<div class="pageHeaderNavSubArea">
 								<div class="pageHeaderNavSubHead">
@@ -55,26 +57,26 @@
 									<p class="pageHeaderNavSubHead_lead">取扱サービス</p>
 								</div>
 								<div class="pageHeaderNavSubList">
-									<p><a href="/ad-tokiwa/service/">取り扱いサービスTOP</a></p>
+									<p><a href="<?php echo $masterLink; ?>/service/">取り扱いサービスTOP</a></p>
 								</div>
 								<div class="pageHeaderNavSubList">
-									<p><a href="/ad-tokiwa/service/road-sign/">ロードサイン</a></p>
-									<p><a href="/ad-tokiwa/service/production/">看板製作</a></p>
+									<p><a href="<?php echo $masterLink; ?>/service/road-sign/">ロードサイン</a></p>
+									<p><a href="<?php echo $masterLink; ?>/service/production/">看板製作</a></p>
 								</div>
 								<div class="pageHeaderNavSubList">
-									<p><a href="/ad-tokiwa/service/jr-advertisement/">JR広告</a></p>
-									<p><a href="/ad-tokiwa/service/other-service/">その他サービス</a></p>
+									<p><a href="<?php echo $masterLink; ?>/service/jr-advertisement/">JR広告</a></p>
+									<p><a href="<?php echo $masterLink; ?>/service/other-service/">その他サービス</a></p>
 								</div>
 								<div class="pageHeaderNavSub_img">
-									<img src="https://conrize-demo.net/ad-tokiwa/wp-content/themes/conrize/module/images/common/drop-down-1.png" alt="">
+									<img src="https://conrize-demo.net<?php echo $masterLink; ?>/wp-content/themes/conrize/module/images/common/drop-down-1.png" alt="">
 								</div>
 							</div>
 						</div>
 					</li>
-					<li><a href="/ad-tokiwa/rent-land/">土地活用</a></li>
-					<li><a href="/ad-tokiwa/works/">製作実績</a></li>
-					<li><a href="/ad-tokiwa/faq/">よくある質問</a></li>
-					<li><a href="/ad-tokiwa/contact/">お問い合わせ</a></li>
+					<li><a href="<?php echo $masterLink; ?>/rent-land/">土地活用</a></li>
+					<li><a href="<?php echo $masterLink; ?>/works/">製作実績</a></li>
+					<li><a href="<?php echo $masterLink; ?>/faq/">よくある質問</a></li>
+					<li><a href="<?php echo $masterLink; ?>/contact/">お問い合わせ</a></li>
 					<li>
 						<ul class="pageHeaderNavSocial">
 							<li><a href="https://www.facebook.com/tokiwa1976/" target="_blank"><i class="fab fa-facebook-square icon-size"></i></a></li>
@@ -85,7 +87,7 @@
 			</div>
 			<div class="pageHeaderNav">
 				<ul class="js-headerNav-target">
-					<li><a href="/ad-tokiwa/company/">会社概要</a></li>
+					<li><a href="<?php echo $masterLink; ?>/company/">会社概要</a></li>
 					<li class="js-hover"><a href="">取扱サービス</a>
 						<div class="pageHeaderNavSub js-hover-menu">
 							<div class="pageHeaderNavSubArea">
@@ -94,26 +96,26 @@
 									<p class="pageHeaderNavSubHead_lead">取扱サービス</p>
 								</div>
 								<div class="pageHeaderNavSubList">
-									<p><a href="/ad-tokiwa/service/">取り扱いサービスTOP</a></p>
+									<p><a href="<?php echo $masterLink; ?>/service/">取り扱いサービスTOP</a></p>
 								</div>
 								<div class="pageHeaderNavSubList">
-									<p><a href="/ad-tokiwa/service/road-sign/">ロードサイン</a></p>
-									<p><a href="/ad-tokiwa/service/production/">看板製作</a></p>
+									<p><a href="<?php echo $masterLink; ?>/service/road-sign/">ロードサイン</a></p>
+									<p><a href="<?php echo $masterLink; ?>/service/production/">看板製作</a></p>
 								</div>
 								<div class="pageHeaderNavSubList">
-									<p><a href="/ad-tokiwa/service/jr-advertisement/">JR広告</a></p>
-									<p><a href="/ad-tokiwa/service/other-service/">その他サービス</a></p>
+									<p><a href="<?php echo $masterLink; ?>/service/jr-advertisement/">JR広告</a></p>
+									<p><a href="<?php echo $masterLink; ?>/service/other-service/">その他サービス</a></p>
 								</div>
 								<div class="pageHeaderNavSub_img">
-									<img src="https://conrize-demo.net/ad-tokiwa/wp-content/themes/conrize/module/images/common/drop-down-1.png" alt="">
+									<img src="https://conrize-demo.net<?php echo $masterLink; ?>/wp-content/themes/conrize/module/images/common/drop-down-1.png" alt="">
 								</div>
 							</div>
 						</div>
 					</li>
-					<li><a href="/ad-tokiwa/rent-land/">土地活用</a></li>
-					<li><a href="/ad-tokiwa/works/">製作実績</a></li>
-					<li><a href="/ad-tokiwa/faq/">よくある質問</a></li>
-					<li><a href="/ad-tokiwa/contact/">お問い合わせ</a></li>
+					<li><a href="<?php echo $masterLink; ?>/rent-land/">土地活用</a></li>
+					<li><a href="<?php echo $masterLink; ?>/works/">製作実績</a></li>
+					<li><a href="<?php echo $masterLink; ?>/faq/">よくある質問</a></li>
+					<li><a href="<?php echo $masterLink; ?>/contact/">お問い合わせ</a></li>
 					<li>
 						<ul class="pageHeaderNavSocial">
 							<li><a href="https://www.facebook.com/tokiwa1976/" target="_blank"><i class="fab fa-facebook-square icon-size"></i></a></li>
@@ -138,18 +140,18 @@
 				</li>
 				<li style="display: none;">
 					<ul>
-						<li><a href="/ad-tokiwa/service/">取扱いサービスTOP</a></li>
-						<li><a href="/ad-tokiwa/service/road-sign/">ロードサイン</a></li>
-						<li><a href="/ad-tokiwa/service/production/">看板製作</a></li>
-						<li><a href="/ad-tokiwa/service/jr-advertisement/">JR広告</a></li>
-						<li class="is-last"><a href="/ad-tokiwa/service/other-service/">その他サービス</a></li>
+						<li><a href="<?php echo $masterLink; ?>/service/">取扱いサービスTOP</a></li>
+						<li><a href="<?php echo $masterLink; ?>/service/road-sign/">ロードサイン</a></li>
+						<li><a href="<?php echo $masterLink; ?>/service/production/">看板製作</a></li>
+						<li><a href="<?php echo $masterLink; ?>/service/jr-advertisement/">JR広告</a></li>
+						<li class="is-last"><a href="<?php echo $masterLink; ?>/service/other-service/">その他サービス</a></li>
 					</ul>
 				</li>
 				<li><a href="#">空き看板情報</a></li>
-				<li><a href="/ad-tokiwa/rent-land/">土地活用</a></li>
-				<li><a href="/ad-tokiwa/works/">製作実績</a></li>
-				<li><a href="/ad-tokiwa/faq/">よくある質問</a></li>
-				<li><a href="/ad-tokiwa/contact/">お問い合わせ</a></li>
+				<li><a href="<?php echo $masterLink; ?>/rent-land/">土地活用</a></li>
+				<li><a href="<?php echo $masterLink; ?>/works/">製作実績</a></li>
+				<li><a href="<?php echo $masterLink; ?>/faq/">よくある質問</a></li>
+				<li><a href="<?php echo $masterLink; ?>/contact/">お問い合わせ</a></li>
 			</ul>
 		</div>
 	</div>
