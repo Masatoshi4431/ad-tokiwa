@@ -29,7 +29,7 @@
 	<section class="section">
 		<div class="serviceBox">
 			<div class="container">
-				<h2 class="title-border">取扱いサービス一覧</h2>
+				<h2 class="title-border">取り扱いサービス一覧</h2>
 				<ul class="serviceBoxList">
 					<?php foreach($service as $key) : ?>
 						<li>

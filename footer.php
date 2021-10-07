@@ -11,7 +11,7 @@
 				<dd>Contact<span>お問い合わせ</span></dd>
 			</dl>
 			<div class="button-more">
-				<a href="/ad-tokiwa/contact/"><span>Read more</span></a>
+				<a href="<?php echo $masterLink; ?>/contact/"><span>Read more</span></a>
 			</div>
 		</div>
 	</div>
@@ -22,7 +22,7 @@
 				<dd>FAQ<span>よくある質問</span></dd>
 			</dl>
 			<div class="button-more">
-				<a href="/ad-tokiwa/faq/<?php echo "#". $slug; ?>"><span>Read more</span></a>
+				<a href="<?php echo $masterLink; ?>/faq/<?php echo "#". $slug; ?>"><span>Read more</span></a>
 			</div>
 		</div>
 	</div>
