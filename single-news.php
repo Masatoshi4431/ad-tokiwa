@@ -10,7 +10,7 @@
 					<p class="singleNewsHead_time"><?php the_time('Y.m.d'); ?></p>
 				</div>
 				<div class="singleNewsBody">
-					<?php the_content(); ?>
+					<?php the_content("news"); ?>
 				</div>
 			<?php endwhile; endif; ?>
 		</div>

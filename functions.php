@@ -6,6 +6,7 @@ add_editor_style('admin.css');
 	News
 
 ============================================================ */
+
     function create_news_type() {
     	register_post_type( 'news',
     		array(
@@ -19,7 +20,6 @@ add_editor_style('admin.css');
     	);
     }
     add_action( 'init', 'create_news_type' );
-
 
 /* ============================================================
 
