@@ -7,7 +7,7 @@
 	$catid    = get_cat_ID($catname);
 ?>
 
-<main class="main works js-headerMain">
+<main class="main works js-headerMain js-target-area">
 
 	<section class="pageVisual">
 		<div class="pageVisualBox">

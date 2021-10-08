@@ -29,7 +29,7 @@
 				</dd>
 			</dl>
 			<div class="button-more">
-				<a href="/ad-tokiwa/contact/"><span>Read more</span></a>
+				<a href="<?php echo esc_url( home_url( '/contact/' )); ?>"><span>Read more</span></a>
 			</div>
 		</div>
 	</div>
@@ -46,7 +46,7 @@
 				</dd>
 			</dl>
 			<div class="button-more">
-				<a href="/ad-tokiwa/faq/<?php echo "#". $slug; ?>"><span>Read more</span></a>
+				<a href="<?php echo esc_url( home_url( '/faq/' )); ?><?php echo "#". $slug; ?>"><span>Read more</span></a>
 			</div>
 		</div>
 	</div>

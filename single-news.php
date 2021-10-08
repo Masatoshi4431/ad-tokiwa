@@ -1,6 +1,6 @@
 <?php get_header("pages"); ?>
 
-<main class="main singleNews js-headerMain">
+<main class="main singleNews js-headerMain js-target-area">
 
 	<section class="section">
 		<div class="container">

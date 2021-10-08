@@ -4,7 +4,7 @@
 		get_template_part('news');
 	}
 ?>
-<main class="main single js-headerMain">
+<main class="main single js-headerMain  js-target-area">
 
 	<section class="section">
 		<div class="container">

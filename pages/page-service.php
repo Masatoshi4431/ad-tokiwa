@@ -4,7 +4,7 @@
 ?>
 <?php get_header("pages"); ?>
 
-<main class="main service service-top js-headerMain">
+<main class="main service service-top js-headerMain js-target-area">
 
 	<section class="pageVisual">
 		<div class="pageVisualBox">
@@ -42,7 +42,7 @@
 									</dd>
 								</dl>
 								<div class="button-more">
-									<a href="/ad-tokiwa<?php echo $key['link']; ?>"><span>Read more</span></a>
+									<a href="<?php echo esc_url( home_url( $key['link'] )); ?>"><span>Read more</span></a>
 								</div>
 							</div>
 						</li>

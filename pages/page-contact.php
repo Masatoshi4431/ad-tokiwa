@@ -4,7 +4,7 @@
 <?php get_header("pages"); ?>
 
 
-<main class="main contact js-headerMain">
+<main class="main contact js-headerMain js-target-area">
 
 	<section class="pageVisual">
 		<div class="pageVisualBox">

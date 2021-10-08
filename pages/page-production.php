@@ -4,7 +4,7 @@
 ?>
 <?php get_header("pages"); ?>
 
-<main class="main service production js-headerMain">
+<main class="main service production js-headerMain js-target-area">
 
 	<section class="pageVisual">
 		<div class="pageVisualBox">
@@ -57,7 +57,7 @@
 			<h3  class="section-lead">一般看板製作までの流れ</h3>
 			<div class="serviceFollow">
 				<?php foreach($production_process as $display) : ?>
-					<div class="serviceFollowBox is-next">
+					<div class="serviceFollowBox is-next is-balloon-production">
 						<p class="serviceFollowBox_number"><?php echo $display['num']; ?></p>
 						<dl>
 							<dt><?php echo $display['title']; ?></dt>

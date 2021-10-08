@@ -4,7 +4,7 @@
 ?>
 <?php get_header("pages"); ?>
 
-<main class="main faq js-headerMain">
+<main class="main faq js-headerMain js-target-area">
 
 	<section class="pageVisual">
 		<div class="pageVisualBox">

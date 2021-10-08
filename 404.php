@@ -1,6 +1,6 @@
 <?php get_header("pages"); ?>
 
-<main class="main notfound js-headerMain">
+<main class="main notfound js-headerMain js-target-area">
 
 	<section class="notfoundHead">
 		<div class="container">
@@ -16,7 +16,7 @@
 			</div>
 			<div class="notfoundMore">
 				<div class="button-more">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><span>ホームに戻る</span></a>
+					<a href="<?php echo esc_url( home_url( '/service/' )); ?>"><span>ホームに戻る</span></a>
 				</div>
 			</div>
 		</div>

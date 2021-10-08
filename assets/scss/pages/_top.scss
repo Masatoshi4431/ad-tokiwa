@@ -32,6 +32,7 @@
 				font-weight: normal;
 				left: 0;
 				margin: auto;
+				padding-left: 60px;
 				position: absolute;
 				right: 0;
 				text-align: center;
@@ -39,6 +40,7 @@
 				@include for-device(phone) {
 					@include font-size(36);
 
+					padding-left: 40px;
 					width: 100%;
 				}
 
@@ -62,8 +64,26 @@
 				@include for-device(phone) {
 					@include font-size(20);
 
-					margin-top: 20px;
+					margin-top: 60px;
 				}
+			}
+
+			&_text {
+				@include font-size(24);
+
+				color: #fff;
+				font-family: 'Noto Serif JP', serif;
+				font-weight: normal;
+				line-height: $line-height-body;
+				margin-top: 60px;
+				text-align: center;
+
+				@include for-device(phone) {
+					@include font-size(13);	
+
+					margin-top: 30px;
+					padding: 0 20px;
+				}	
 			}
 		}
 
@@ -227,7 +247,6 @@
 		.title {
 			@include font-size(30);
 
-			font-family: $font-family-en;
 		}		
 	}
 
@@ -276,12 +295,19 @@
 		}
 
 		&.is-ad {
+			@include for-device(phone) {
+				border-top: 1px solid $color-light-gray;
+			}
+
 			&::after {
 				background-image: url("http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_2.jpg");
 			}				
 		}
 
 		&.is-production {
+			@include for-device(phone) {
+				border-top: 1px solid $color-light-gray;
+			}
 
 			&::after {
 				background-image: url("http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_3.jpg");
@@ -312,10 +338,16 @@
 					position: relative;
 					top: -7px;
 					width: 60px;
+
+					@include for-device(phone) {
+						width: 30px;
+					}
 				}
 
 				@include for-device(phone) {
-					@include font-size(40);
+					@include font-size(18);
+
+					top: -5px;
 				}		
 			}
 
@@ -323,7 +355,6 @@
 				@include font-size(100);
 
 				color: $color-green;
-				font-family: $font-family-en;
 				font-weight: 500;
 				margin-top: 20px;
 
@@ -335,7 +366,6 @@
 			&_lead {
 				@include font-size(16);
 
-				color: $color-light-black;
 				font-weight: normal;
 				margin-top: 10px;
 
@@ -351,8 +381,16 @@
 				width: 30%;
 
 				@include for-device(phone) {
+					@include font-size(13);
+
 					margin-top: 30px;
 					width: 100%;
+				}
+			}
+
+			&_img {
+				@include for-device(phone) {
+					margin-top: 40px;
 				}
 			}
 
@@ -360,6 +398,10 @@
 				display: inline-block;
 				margin-top: 60px;
 				text-align: left;
+
+				@include for-device(phone) {
+					margin-top: 30px;
+				}
 			}
 		}
 	}
@@ -370,7 +412,7 @@
 		padding: 60px 0;
 
 		@include for-device(phone) {
-			padding: 30px 0;
+			padding: 0;
 		}
 
 		.otherArea {
@@ -382,8 +424,12 @@
 			}
 
 			.otherAreaBox {
-				padding: 60px 4%;
+				padding: 60px 10%;
 				width: 50%;
+
+				@include for-device(tablet) {
+					padding: 50px 5%;
+				}
 
 				@include for-device(phone) {
 					width: 100%;
@@ -399,15 +445,33 @@
 				}
 
 				&_number {
-					@include font-size(80);
+					@include font-size(20);
 
 					color: $color-green;
-					font-style: italic;
-					font-weight: bold;
+					font-style: italic;	
+					line-height: 1;
+
+					&::before {
+						border-top: 2px solid $color-green;
+						content: "";
+						display: inline-block;
+						height: auto;
+						left: 0;
+						margin-right: 10px;
+						position: relative;
+						top: -7px;
+						width: 60px;
+
+						@include for-device(phone) {
+							width: 30px;
+						}
+					}
 
 					@include for-device(phone) {
-						@include font-size(50);
-					}
+						@include font-size(18);
+
+						top: -5px;
+					}		
 				}
 
 				&_title {
@@ -426,13 +490,11 @@
 				&_lead {
 					@include font-size(16);
 
-					color: $color-light-black;
 					font-weight: normal;
 					margin-top: 10px;						
 				}
 
 				&_text {
-					color: $color-light-black;
 					margin-top: 20px;					
 				}
 
@@ -470,7 +532,6 @@
 			&_lead {
 				@include font-size(16);
 
-				color: $color-light-black;
 				font-weight: normal;
 				margin: 10px 0 0 10px;
 
