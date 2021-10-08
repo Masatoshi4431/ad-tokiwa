@@ -1,7 +1,7 @@
 <?php  /* Template Name: お知らせ一覧 */ ?>
 <?php get_header("pages"); ?>
 
-<main class="main news js-headerMain">
+<main class="main news js-headerMain js-target-area">
 
 	<div class="heading">
 		<div class="container">

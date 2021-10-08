@@ -30,14 +30,17 @@
 				color: #fff;
 				font-family: 'Noto Serif JP', serif;
 				font-weight: normal;
-				left: 40px;
-				position: relative;
+				left: 0;
+				margin: auto;
+				padding-left: 60px;
+				position: absolute;
+				right: 0;
 				text-align: center;
 
 				@include for-device(phone) {
 					@include font-size(36);
 
-					left: 15px;
+					padding-left: 40px;
 					width: 100%;
 				}
 
@@ -61,8 +64,26 @@
 				@include for-device(phone) {
 					@include font-size(20);
 
-					margin-top: 20px;
+					margin-top: 60px;
 				}
+			}
+
+			&_text {
+				@include font-size(24);
+
+				color: #fff;
+				font-family: 'Noto Serif JP', serif;
+				font-weight: normal;
+				line-height: $line-height-body;
+				margin-top: 60px;
+				text-align: center;
+
+				@include for-device(phone) {
+					@include font-size(13);	
+
+					margin-top: 30px;
+					padding: 0 20px;
+				}	
 			}
 		}
 
@@ -215,54 +236,57 @@
 		}
 	}
 
-	.serviceMainTitle {
+	.top-service-head {
 		background: #fff;
-		padding: 100px 0 60px;
+		padding: 120px 0;
 
 		@include for-device(phone) {
 			padding: 50px 0 0;
 		}
 		
-		h2 {
-			@include font-size(60);
+		.title {
+			@include font-size(30);
 
-			font-style: italic;
-
-			@include for-device(tablet) {
-				@include font-size(40);
-			}
-
-			@include for-device(phone) {
-				@include font-size(40);
-			}
-		}
+		}		
 	}
-	
-	.section-service {
-		background: #fff;
-		height: 100vh;
-		position: relative;
-		width: 100%;
 
-		@include for-device(phone) {
+	.top-service {
+		@include align-items(center);
+		@include display-flex();
+
+		background: #fff;
+		height:100vh;
+		padding: 100px 0;
+		position: relative;
+		z-index: 100;
+
+		@include for-device(tablet) {
 			height: auto;
 		}
 
-		&::before {
-			background-image: url(http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_1-1.jpg);
+		@include for-device(phone) {
+			height: auto;
+			padding: 50px 0;
+		}
+
+		&::after {
+			background-image: url("http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_1-1.jpg");
 			background-position: right;
-			background-size: contain;
+			background-size: 60%;
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			position: absolute;
 			content: "";
 			top: 0px;
 			right: 0px;
-			height: 100%;
+			height:100%;
 			width: 100%;
+			z-index: -100;
 
 			@include for-device(tablet) {
-				display: none;
+				background-attachment: scroll;
+				height: 70%;
+				top: 15%;
 			}
 
 			@include for-device(phone) {
@@ -275,8 +299,8 @@
 				border-top: 1px solid $color-light-gray;
 			}
 
-			&::before {
-				background-image: url(http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_2.jpg);
+			&::after {
+				background-image: url("http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_2.jpg");
 			}				
 		}
 
@@ -285,173 +309,217 @@
 				border-top: 1px solid $color-light-gray;
 			}
 
-			&::before {
-				background-image: url(http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_3.jpg);
+			&::after {
+				background-image: url("http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_3.jpg");
 			}				
 		}
 
-		.serviceArea {
-			@include for-device(phone) { 
-				padding: 0 0 20px;
+		.container {
+			@include for-device(tablet) {
+				width: 100%;
 			}
+		}
 
-			.serviceAreaBox {
-				height: 100vh;
-				padding-top: 10%;
+		.serviceBox {
+			&_number {
+				@include font-size(20);
+
+				color: $color-green;
+				font-style: italic;	
+				line-height: 1;
+
+				&::before {
+					border-top: 2px solid $color-green;
+					content: "";
+					display: inline-block;
+					height: auto;
+					left: 0;
+					margin-right: 10px;
+					position: relative;
+					top: -7px;
+					width: 60px;
+
+					@include for-device(phone) {
+						width: 30px;
+					}
+				}
 
 				@include for-device(phone) {
-					height: auto;
-					padding: 40px 0;
-					width: 100%;
-				}
+					@include font-size(18);
 
-				&_number {
-					@include font-size(80);
+					top: -5px;
+				}		
+			}
 
-					color: $color-green;
-					font-style: italic;
+			&_title {
+				@include font-size(100);
 
-					@include for-device(phone) {
-						@include font-size(50);
-					}
-				}
+				color: $color-green;
+				font-weight: 500;
+				margin-top: 20px;
 
-				&_title {
-					@include font-size(80);
-
-					color: $color-green;
-
-					@include for-device(phone) {
-						@include font-size(50);
-					}
-				}
-
-				&_lead {	
-					margin-top: 20px;
-				}
-
-				&_text {
-					margin-top: 20px;
-				}
-
-				.button-more {
-					margin-top: 40px;
-					width: 20%;
-
-					@include for-device(phone) {
-						margin-top: 20px;
-					}
+				@include for-device(phone) {
+					@include font-size(50);
 				}
 			}
 
-			.serviceAreaThumb {
-				img {
-					height: 250px;
-					object-fit: cover;
+			&_lead {
+				@include font-size(16);
+
+				font-weight: normal;
+				margin-top: 10px;
+
+				@include for-device(phone) {
+					@include font-size(13);
+				}
+			}
+
+			&_text {
+				@include font-size(15);
+
+				margin-top: 60px;
+				width: 30%;
+
+				@include for-device(phone) {
+					@include font-size(13);
+
+					margin-top: 30px;
 					width: 100%;
+				}
+			}
+
+			&_img {
+				@include for-device(phone) {
+					margin-top: 40px;
+				}
+			}
+
+			.button-more {
+				display: inline-block;
+				margin-top: 60px;
+				text-align: left;
+
+				@include for-device(phone) {
+					margin-top: 30px;
 				}
 			}
 		}
 	}
 
-	.section-other {
+	.top-other {
 		background: #fff;
 		border-top: 1px solid $color-gray;
+		padding: 60px 0;
+
+		@include for-device(phone) {
+			padding: 0;
+		}
 
 		.otherArea {
 			@include display-flex();
 			@include justify-content(space-between);
 
-			padding: 40px 0;
-
 			@include for-device(phone) {
 				@include flex-wrap(wrap);
 			}
-		}
 
-		.otherBox {
-			padding: 20px 5%;
-			width: 50%;
+			.otherAreaBox {
+				padding: 60px 10%;
+				width: 50%;
 
-			@include for-device(phone) {
-				width: 100%;
-			}
-
-			.number {
-				@include font-size(60);
-
-				color: $color-green;
-				font-style: italic;
-				font-weight: bold;
+				@include for-device(tablet) {
+					padding: 50px 5%;
+				}
 
 				@include for-device(phone) {
-					@include font-size(40);
+					width: 100%;
 				}
-			}
 
-			h2 {
-				@include font-size(50);
+				&.is-border-left {
+					border-left: 1px solid $color-gray;
 
-				color: $color-green;
-				margin-top: 20px;		
-
-				@include for-device(phone) {
-					@include font-size(40);
-
-					margin-top: 10px;
+					@include for-device(phone) {
+						border-left: 0px;
+						border-top:  1px solid $color-gray;
+					}
 				}
-			}
 
-			h3 {
-				@include font-size(16);
+				&_number {
+					@include font-size(20);
 
-				color: $color-light-black;
-				font-weight: normal;
-				margin-top: 10px;		
+					color: $color-green;
+					font-style: italic;	
+					line-height: 1;
 
-				@include for-device(phone) {
-					@include font-size(13);
-				}		
-			}
+					&::before {
+						border-top: 2px solid $color-green;
+						content: "";
+						display: inline-block;
+						height: auto;
+						left: 0;
+						margin-right: 10px;
+						position: relative;
+						top: -7px;
+						width: 60px;
 
-			.text {
-				color: $color-light-black;
-				margin-top: 20px;
-			}
+						@include for-device(phone) {
+							width: 30px;
+						}
+					}
 
-			.button-more {
-				margin-top: 40px;
+					@include for-device(phone) {
+						@include font-size(18);
 
-				span {
-					max-width: 260px;
+						top: -5px;
+					}		
 				}
-			}
 
-			.thumbnail {
-				margin-top: 40px;
+				&_title {
+					@include font-size(50);
 
-				img {
-					border: 1px solid $color-gray;
+					color: $color-green;
+					margin-top: 20px;
+
+					@include for-device(phone) {
+						@include font-size(30);
+
+						margin-top: 10px;
+					}					
 				}
-			}
 
-			&.is-rentLand {
-				border-left: 1px solid $color-gray; 
+				&_lead {
+					@include font-size(16);
+
+					font-weight: normal;
+					margin-top: 10px;						
+				}
+
+				&_text {
+					margin-top: 20px;					
+				}
+
+				.button-more {
+					margin-top: 40px;
+				}
+
+				.thumbnail {
+					margin-top: 40px;
+				}
 			}
 		}
 	}
 
-	.section-work {
+	.top-works {
 		background: #fff;
 		border-top: 1px solid $color-gray;
-		padding: 80px 0;
+		padding: 100px 0;
 
 		@include for-device(phone) {
-			padding: 40px 0;
+			padding: 50px 0;
 		}
 
 		.heading {
-			h2 {
+			&_title {
 				@include font-size(80);
 
 				color: $color-green;
@@ -461,12 +529,11 @@
 				}
 			}
 
-			h3 {
+			&_lead {
 				@include font-size(16);
 
-				color: $color-light-black;
 				font-weight: normal;
-				margin-top: 10px;
+				margin: 10px 0 0 10px;
 
 				@include for-device(phone) {
 					@include font-size(13);
@@ -476,10 +543,9 @@
 
 		.thumbnail {
 			margin-top: 60px;
-			width: 100%;
 
 			@include for-device(phone) {
-				margin-top: 40px;
+				margin-top: 30px;
 			}
 		}
 

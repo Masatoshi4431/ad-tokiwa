@@ -35,6 +35,7 @@
 				dt {
 					@include font-size(60);
 
+					line-height: 1;
 					text-align: center;
 
 					@include for-device(phone) {
@@ -43,29 +44,33 @@
 				}
 
 				dd {
-					@include font-size(32);
+					@include align-items(center);
+					@include display-flex();
+					@include justify-content(center);
 
-					color: $color-green;
-					font-weight: bold;
-					text-align: center;
+					margin-top: 20px;
+				}
+			}
 
-					@include for-device(phone) {
-						@include font-size(24);
-					}
-					
-					span {
-						@include font-size(18);
+			&_title {
+				@include font-size(32);
 
-						color: $color-light-black;
-						font-weight: normal;
-						margin-left: 15px;
+				color: $color-green;
+				font-weight: bold;
+				margin-right: 15px;
+				text-align: center;
 
-						@include for-device(phone) {
-							@include font-size(15);
+				@include for-device(phone) {
+					@include font-size(24);
+				}				
+			}
 
-							margin-left: 5px;
-						}
-					}
+			&_text {
+				p {
+					@include font-size(14);
+
+					color: $color-light-black;
+					line-height: 1.5;
 				}
 			}
 

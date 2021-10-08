@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title><?php bloginfo('name'); wp_title('|', true, 'right'); ?></title>
-		<?php page_description(); ?>
+	<?php page_description(); ?>
 	
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;900&display=swap" rel="stylesheet">
@@ -15,6 +16,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
 	<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+	
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -34,6 +37,15 @@
     	<div class="openingAnime_logo js-opening-logo">
     		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/tokiwa-logo.png" alt="">
 		</div>
+		<div class="openingAnimeBox   js-opening-text">
+			<div class="mainvisualHeadArea">
+				<div class="mainvisualHead">
+					<h1 class="mainvisualHead_title"><span>看板の、</span>その先へ。</h1>
+					<h2 class="mainvisualHead_lead">Beyond the sign.</h2>
+					<h3 class="mainvisualHead_text">私たちは、消費者の方と直接的な結びつきはありません。<br class="is-pc">しかし、私たちの仕事はお客様のお客様なしに成り立ちません。<br>お客様の思いを、看板のその先へ伝える。<br>これが常磐広告の使命です。</h3>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<header class="header js-headerScroll js-header-change">
@@ -46,8 +58,8 @@
 			</h1>
 			<div class="headerNav">
 				<ul>
-					<li><a href="/ad-tokiwa/company/">会社概要</a></li>
-					<li class="js-hover"><a href="/ad-tokiwa/service/">取扱サービス</a>
+					<li><a href="<?php echo esc_url( home_url( '/company/' )); ?>">会社概要</a></li>
+					<li class="js-hover"><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取扱サービス</a>
 						<div class="pageHeaderNavSub js-hover-menu">
 							<div class="pageHeaderNavSubArea">
 								<div class="pageHeaderNavSubHead">
@@ -55,15 +67,15 @@
 									<p class="pageHeaderNavSubHead_lead">取扱サービス</p>
 								</div>
 								<div class="pageHeaderNavSubList">
-									<p><a href="/ad-tokiwa/service/">取り扱いサービスTOP</a></p>
+									<p><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取扱いサービスTOP</a></p>
 								</div>
 								<div class="pageHeaderNavSubList">
-									<p><a href="/ad-tokiwa/service/road-sign/">ロードサイン</a></p>
-									<p><a href="/ad-tokiwa/service/production/">看板製作</a></p>
+									<p><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></p>
+									<p><a href="<?php echo esc_url( home_url( '/service/production/' )); ?>">看板製作</a></p>
 								</div>
 								<div class="pageHeaderNavSubList">
-									<p><a href="/ad-tokiwa/service/jr-advertisement/">JR広告</a></p>
-									<p><a href="/ad-tokiwa/service/other-service/">その他サービス</a></p>
+									<p><a href="<?php echo esc_url( home_url( '/service/jr-advertisement/' )); ?>">JR広告</a></p>
+									<p><a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>">その他サービス</a></p>
 								</div>
 								<div class="pageHeaderNavSub_img">
 									<img src="https://conrize-demo.net/ad-tokiwa/wp-content/themes/conrize/module/images/common/drop-down-1.png" alt="">
@@ -71,10 +83,10 @@
 							</div>
 						</div>
 					</li>
-					<li><a href="/ad-tokiwa/rent-land/">土地活用</a></li>
-					<li><a href="/ad-tokiwa/works/">製作実績</a></li>
-					<li><a href="/ad-tokiwa/faq/">よくある質問</a></li>
-					<li><a href="/ad-tokiwa/contact/">お問い合わせ</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/rent-land/' )); ?>">土地活用</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/works/' )); ?>">製作実績</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/faq/' )); ?>">よくある質問</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/contact/' )); ?>">お問い合わせ</a></li>
 					<li>
 						<ul class="pageHeaderNavSocial">
 							<li><a href="https://www.facebook.com/tokiwa1976/" target="_blank"><i class="fab fa-facebook-square icon-size"></i></a></li>
@@ -85,7 +97,7 @@
 			</div>
 			<div class="pageHeaderNav">
 				<ul class="js-headerNav-target">
-					<li><a href="/ad-tokiwa/company/">会社概要</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/company/' )); ?>">会社概要</a></li>
 					<li class="js-hover"><a href="">取扱サービス</a>
 						<div class="pageHeaderNavSub js-hover-menu">
 							<div class="pageHeaderNavSubArea">
@@ -94,15 +106,15 @@
 									<p class="pageHeaderNavSubHead_lead">取扱サービス</p>
 								</div>
 								<div class="pageHeaderNavSubList">
-									<p><a href="/ad-tokiwa/service/">取り扱いサービスTOP</a></p>
+									<p><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取り扱いサービスTOP</a></p>
 								</div>
 								<div class="pageHeaderNavSubList">
-									<p><a href="/ad-tokiwa/service/road-sign/">ロードサイン</a></p>
-									<p><a href="/ad-tokiwa/service/production/">看板製作</a></p>
+									<p><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></p>
+									<p><a href="<?php echo esc_url( home_url( '/service/production/' )); ?>">看板製作</a></p>
 								</div>
 								<div class="pageHeaderNavSubList">
-									<p><a href="/ad-tokiwa/service/jr-advertisement/">JR広告</a></p>
-									<p><a href="/ad-tokiwa/service/other-service/">その他サービス</a></p>
+									<p><a href="<?php echo esc_url( home_url( '/service/jr-advertisement/' )); ?>">JR広告</a></p>
+									<p><a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>">その他サービス</a></p>
 								</div>
 								<div class="pageHeaderNavSub_img">
 									<img src="https://conrize-demo.net/ad-tokiwa/wp-content/themes/conrize/module/images/common/drop-down-1.png" alt="">
@@ -110,10 +122,11 @@
 							</div>
 						</div>
 					</li>
-					<li><a href="/ad-tokiwa/rent-land/">土地活用</a></li>
-					<li><a href="/ad-tokiwa/works/">製作実績</a></li>
-					<li><a href="/ad-tokiwa/faq/">よくある質問</a></li>
-					<li><a href="/ad-tokiwa/contact/">お問い合わせ</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/ad-recruit/' )); ?>">空き看板情報</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/rent-land/' )); ?>">土地活用</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/works/' )); ?>">製作実績</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/faq/' )); ?>">よくある質問</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/contact/' )); ?>">お問い合わせ</a></li>
 					<li>
 						<ul class="pageHeaderNavSocial">
 							<li><a href="https://www.facebook.com/tokiwa1976/" target="_blank"><i class="fab fa-facebook-square icon-size"></i></a></li>
@@ -131,25 +144,25 @@
 	<div class="spHeaderMenu js-spHeaderMenu">
 		<div class="spHeaderMenuBox">
 			<ul class="spHeaderMenuList">
-				<li><a href="/company/">会社概要</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/company/' )); ?>">会社概要</a></li>
 				<li class="spHeaderMenuDown js-accordion">
 					取り扱いサービス
 					<span></span><span></span>
 				</li>
 				<li style="display: none;">
 					<ul>
-						<li><a href="/ad-tokiwa/service/">取扱いサービスTOP</a></li>
-						<li><a href="/ad-tokiwa/service/road-sign/">ロードサイン</a></li>
-						<li><a href="/ad-tokiwa/service/production/">看板製作</a></li>
-						<li><a href="/ad-tokiwa/service/jr-advertisement/">JR広告</a></li>
-						<li class="is-last"><a href="/ad-tokiwa/service/other-service/">その他サービス</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取扱いサービスTOP</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/service/production/' )); ?>">看板製作</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/service/jr-advertisement/' )); ?>">JR広告</a></li>
+						<li class="is-last"><a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>">その他サービス</a></li>
 					</ul>
 				</li>
-				<li><a href="#">空き看板情報</a></li>
-				<li><a href="/ad-tokiwa/rent-land/">土地活用</a></li>
-				<li><a href="/ad-tokiwa/works/">製作実績</a></li>
-				<li><a href="/ad-tokiwa/faq/">よくある質問</a></li>
-				<li><a href="/ad-tokiwa/contact/">お問い合わせ</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/ad-recruit/' )); ?>">空き看板情報</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/rent-land/' )); ?>">土地活用</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/works/' )); ?>">製作実績</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/faq/' )); ?>">よくある質問</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/contact/' )); ?>">お問い合わせ</a></li>
 			</ul>
 		</div>
 	</div>

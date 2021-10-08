@@ -4,7 +4,7 @@
 ?>
 <?php get_header("pages"); ?>
 
-<main class="main service road-sign js-headerMain">
+<main class="main service road-sign js-headerMain js-target-area">
 
 	<section class="pageVisual">
 		<div class="pageVisualBox">
@@ -59,7 +59,7 @@
 				<?php foreach($roadSign_process as $display) : ?>
 		
 					<?php if(0 == strcmp($display['num'], '01')) : ?>
-						<div class="serviceFollowBox is-or-text">
+						<div class="serviceFollowBox is-or-text is-balloon">
 							<p class="serviceFollowBox_number"><?php echo $display['num']; ?></p>
 							<dl>
 								<dt><?php echo $display['title']; ?></dt>
@@ -70,7 +70,7 @@
 					<?php endif; ?>
 
 					<?php if(0 == strcmp($display['num'], '02')) : ?>
-						<div class="serviceFollowBox is-or">
+						<div class="serviceFollowBox is-or  is-balloon">
 							<p class="serviceFollowBox_number"><?php echo $display['num']; ?></p>
 							<dl>
 								<dt><?php echo $display['title']; ?></dt>
@@ -81,7 +81,7 @@
 					<?php endif; ?>
 
  	   				<?php if(0 < strcmp($display['num'], '02')) : ?>
-						<div class="serviceFollowBox is-next-top">
+						<div class="serviceFollowBox is-next-top  is-balloon">
 							<p class="serviceFollowBox_number"><?php echo $display['num']; ?></p>
 							<dl>
 								<dt><?php echo $display['title']; ?></dt>

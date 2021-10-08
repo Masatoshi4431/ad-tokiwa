@@ -1,17 +1,35 @@
 <?php
      $page = get_post( get_the_ID() );
      $slug = $page->post_name;
-
 ?>
+
+<?php
+	// よくある質問の文言
+	if(is_page('other-service')) {
+		$faq_text = "その他のサービス";
+	} elseif(is_page('production')) {
+		$faq_text = "看板製作";
+	} elseif(is_page('road-sign')) {
+		$faq_text = "ロードサイン";
+	} else {
+		$faq_text = "";
+	}
+?>
+
 <section class="commonFoot">
 	<div class="commonFootBox">
 		<div class="commonFootBoxItem">
 			<dl>
 				<dt><i class="far fa-envelope"></i></dt>
-				<dd>Contact<span>お問い合わせ</span></dd>
+				<dd>
+					<p class="commonFootBoxItem_title">Contact</p>
+					<div class="commonFootBoxItem_text">
+						<p>お問い合わせ</p>
+					</div>
+				</dd>
 			</dl>
 			<div class="button-more">
-				<a href="/ad-tokiwa/contact/"><span>Read more</span></a>
+				<a href="<?php echo esc_url( home_url( '/contact/' )); ?>"><span>Read more</span></a>
 			</div>
 		</div>
 	</div>
@@ -19,10 +37,16 @@
 		<div class="commonFootBoxItem">
 			<dl>
 				<dt><i class="fas fa-search"></i></dt>
-				<dd>FAQ<span>よくある質問</span></dd>
+				<dd>
+					<p class="commonFootBoxItem_title">FAQ</p>
+					<div class="commonFootBoxItem_text">
+						<p><?php echo $faq_text; ?></p>
+						<p>よくある質問</p>
+					</div>
+				</dd>
 			</dl>
 			<div class="button-more">
-				<a href="/ad-tokiwa/faq/<?php echo "#". $slug; ?>"><span>Read more</span></a>
+				<a href="<?php echo esc_url( home_url( '/faq/' )); ?><?php echo "#". $slug; ?>"><span>Read more</span></a>
 			</div>
 		</div>
 	</div>

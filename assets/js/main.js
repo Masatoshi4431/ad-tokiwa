@@ -222,10 +222,20 @@ $(function() {
 
 ================================================================= */
     setTimeout(function(){
-        $('.js-opening-logo').fadeIn(1600);
+        $('.js-opening-logo').fadeIn(1000);
     },500);
+
     setTimeout(function(){
-        $('.js-opening').fadeOut(500);
-    },3800);
+        $('.js-opening-logo').fadeOut(500);
+    },2000);
+
+    setTimeout(function(){
+        $('.js-opening-text').fadeIn(2000);
+    },3000);
+
+    setTimeout(function(){
+        $('.js-opening').fadeOut(1000);
+    },5500);
 
 });
+
