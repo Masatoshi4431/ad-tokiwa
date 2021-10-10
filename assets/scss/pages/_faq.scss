@@ -6,6 +6,242 @@
 			padding-top: 60px;
 		}
 
+		.container {
+			@include display-flex();
+
+			@include for-device(phone) {
+				@include flex-wrap(wrap);
+			}
+		}
+
+		.faqList {
+			margin-right: 5%;
+			width: 75%;
+
+			@include for-device(phone) {
+				margin-right: 0;
+				order: 2;
+				width: 100%;
+			}
+
+			.faqListBox {
+				@include for-device(phone) {
+					margin-top: 30px;
+				}
+
+				&:nth-child(n+2) {
+					margin-top: 60px;
+
+					@include for-device(phone) {
+						margin-top: 30px;
+					}
+				}
+
+				&_title {
+					@include font-size(22);
+
+					margin: 0 0 20px;
+
+					@include for-device(phone) {
+						@include font-size(18);
+
+						margin-bottom: 20px;
+					}
+				}
+
+				.faqListBoxitem {
+					border: 2px solid $color-green;
+					margin-top: 20px;
+					padding: 20px;
+
+					@include for-device(phone) {
+						padding: 10px;
+					}
+
+					.faqListBoxitemQuestion {
+						&_mark {
+							background: $color-green;
+							color: #fff;
+							font-weight: bold;
+							display: inline-block;
+							height: 30px;
+							line-height: 26px;
+							margin-right: 10px;
+							text-align: center;
+							width: 30px;
+
+							@include for-device(phone) {
+								height: 25px;
+								line-height: 23px;
+								width: 25px;
+							}							
+						}
+
+						&_title {
+							@include font-size(16);
+
+							@include for-device(phone) {	
+								@include font-size(13);
+
+								width: 78%;
+							}			
+						}
+					}
+
+					.faqBoxListItemAnswer {
+						@include display-flex();
+
+						&_mark {
+							border: 2px solid $color-green;
+							color: $color-green;
+							font-weight: bold;
+							display: inline-block;
+							height: 30px;
+							line-height: 26px;
+							margin-right: 10px;
+							text-align: center;
+							width: 30px;
+
+							@include for-device(phone) {
+								height: 25px;
+								line-height: 21px;
+								width: 25px;
+							}							
+						}
+
+						&_text {
+							@include font-size(16);
+
+							@include for-device(phone) {	
+								@include font-size(13);
+
+								width: 78%;
+							}
+						}
+					}
+
+					dt {
+						@include display-flex();
+
+						position: relative;
+
+ 						&::before,
+ 						&::after {
+ 							background: $color-green;
+ 							border-radius: 2px;
+							content: "";
+							display: block;
+							height: 2px;
+							position: absolute;
+							right: 20px;
+							top: 50%;
+							transform: translateY(-50%);
+							width: 18px;
+
+							@include for-device(phone) {
+								height: 1px;
+								right: 10px;
+								width: 15px;
+							}						
+ 						}
+						&::after {
+							transform: translateY(-50%) rotate(90deg);
+							transition: 0.5s;								
+						} 
+
+	 					&.is-active {
+ 							&::after {
+								transform: rotate(0);
+								transition: 0.5s;								
+ 							}
+						}
+					}
+
+					dd {
+						display: none;
+						padding-top: 20px;
+					}					
+				}
+			}
+		}
+
+		.faqNav {
+			width: 20%;
+
+			@include for-device(phone) {
+				order: 1;
+				width: 100%;
+			}
+
+			.faqNavList {
+				position: -webkit-sticky;
+				position: sticky;
+				top: 100px;
+
+				@include for-device(phone) {
+					@include display-flex();
+					@include flex-wrap(wrap);
+					@include justify-content(space-between);
+
+					position: relative;
+					top: 0;
+				}
+
+				li {
+					@include font-size(16);
+
+					&:nth-child(n+2) {
+						margin-top: 25px;
+
+						@include for-device(phone) {
+							margin-top: 0;
+						}
+					}
+
+					@include for-device(phone) {
+						@include font-size(13);
+
+						border-bottom: 1px solid $color-text;
+						margin-bottom: 10px;
+						padding: 0 2% 5px;
+						text-align: center;
+						width: 46%;
+					}
+
+					a {
+						color: $color-text;
+						position: relative;
+
+						&::after {
+							background: $color-green;
+							bottom: -10px;
+							content: "";
+							height: 2px;
+							left: 0;
+							position: absolute;
+							transition: all .3s;
+							transform: scale(0, 1);
+							transform-origin: left top;
+							width: 100%;
+
+							@include for-device(phone) {
+								display: none;
+							}
+						}
+
+						&:hover {
+							color: $color-green;
+
+							&::after {
+								transform: scale(1, 1);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/*
 		.faqNav {
 			.faqNavList {
 				@include display-flex();
@@ -20,10 +256,7 @@
 				}
 
 				li {
-					border-bottom: 1px solid $color-light-black;
 					margin-right: 40px;
-					padding-bottom: 10px;
-					transition: .2s;
 
 					@include for-device(phone) {
 						margin-right: 0;
@@ -34,13 +267,29 @@
 
 					a {
 						color: $color-text;
+						position: relative;
+
+						&::after {
+							background: $color-green;
+							bottom: -10px;
+							content: "";
+							height: 2px;
+							left: 0;
+							position: absolute;
+							transition: all .3s;
+							transform: scale(0, 1);
+							transform-origin: left top;
+							width: 100%;
+						}
 					}
 
 					&:hover {
-						border-bottom: 1px solid $color-green;
-
 						a {
 							color: $color-green;
+
+							&::after {
+								transform: scale(1, 1);
+							}
 						}
 					}
 				}
@@ -173,5 +422,6 @@
 				}
 			}
 		}
+		*/
 	}
 }

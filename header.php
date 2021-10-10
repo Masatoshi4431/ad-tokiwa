@@ -37,7 +37,7 @@
     	<div class="openingAnime_logo js-opening-logo">
     		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/tokiwa-logo.png" alt="">
 		</div>
-		<div class="openingAnimeBox   js-opening-text">
+		<div class="openingAnimeBox js-opening-text">
 			<div class="mainvisualHeadArea">
 				<div class="mainvisualHead">
 					<h1 class="mainvisualHead_title"><span>看板の、</span>その先へ。</h1>

@@ -18,6 +18,7 @@
 		</div>
 	</section>
 
+	<?php /*
 	<section class="section">
 		<div class="faqNav">
 			<div class="container">
@@ -47,23 +48,6 @@
 						</dl>
 					<?php endforeach; ?>
 				</div>
-				<!--<div class="faqBoxList" id="jr-advertisement">
-					<h2 class="faqBoxList_title">JR広告</h2>
-					<?php /* foreach($jr as $display) : */ ?>
-						<dl class="faqBoxListItem">
-							<dt class="js-accordion">
-								<p class="faqBoxListItem_questionMark">Q</p>
-								<p class="faqBoxListItem_title"><?php /* echo $display['question']; */ ?></p>
-							</dt>
-							<dd>
-								<div class="faqBoxListItemAnswer">
-									<p class="faqBoxListItem_answerMark">A</p>
-									<p class="faqBoxListItem_text"><?php /* echo $display['answer']; */ ?></p>
-								</div>
-							</dd>
-						</dl>
-					<?php /* endforeach; */ ?>
-				</div>-->
 				<div class="faqBoxList" id="production">
 					<h2 class="faqBoxList_title">看板制作</h2>
 					<?php foreach($signboard as $display) : ?>
@@ -101,8 +85,74 @@
 				</div>
 				</div>
 			</div>
-		</div>				
+		</div>		
 	</section>
+	*/ ?>
+
+	<section class="section">
+		<div class="container">
+			<div class="faqList">
+				<div class="faqListBox" id="road-sign">
+					<h2 class="faqListBox_title">ロードサイン</h2>
+					<?php foreach($road_sign as $display) : ?>
+						<dl class="faqListBoxitem">
+							<dt class="faqListBoxitemQuestion js-accordion">
+								<p class="faqListBoxitemQuestion_mark">Q</p>
+								<p class="faqListBoxitemQuestion_title"><?php echo $display['question']; ?></p>
+							</dt>
+							<dd>
+								<div class="faqBoxListItemAnswer">
+									<p class="faqBoxListItemAnswer_mark">A</p>
+									<p class="faqBoxListItemAnswer_text"><?php echo $display['answer']; ?></p>
+								</div>
+							</dd>
+						</dl>
+					<?php endforeach; ?>
+				</div>
+				<div class="faqListBox" id="production">
+					<h2 class="faqListBox_title">看板制作</h2>
+					<?php foreach($signboard as $display) : ?>
+						<dl class="faqListBoxitem">
+							<dt class="faqListBoxitemQuestion js-accordion">
+								<p class="faqListBoxitemQuestion_mark">Q</p>
+								<p class="faqListBoxitemQuestion_title"><?php echo $display['question']; ?></p>
+							</dt>
+							<dd>
+								<div class="faqBoxListItemAnswer">
+									<p class="faqBoxListItemAnswer_mark">A</p>
+									<p class="faqBoxListItemAnswer_text"><?php echo $display['answer']; ?></p>
+								</div>
+							</dd>
+						</dl>
+					<?php endforeach; ?>
+				</div>
+				<div class="faqListBox" id="other-service">
+					<h2 class="faqListBox_title">その他のサービス</h2>
+					<?php foreach($etc as $display) : ?>
+						<dl class="faqListBoxitem">
+							<dt class="faqListBoxitemQuestion js-accordion">
+								<p class="faqListBoxitemQuestion_mark">Q</p>
+								<p class="faqListBoxitemQuestion_title"><?php echo $display['question']; ?></p>
+							</dt>
+							<dd>
+								<div class="faqBoxListItemAnswer">
+									<p class="faqBoxListItemAnswer_mark">A</p>
+									<p class="faqBoxListItemAnswer_text"><?php echo $display['answer']; ?></p>
+								</div>
+							</dd>
+						</dl>
+					<?php endforeach; ?>
+				</div>
+			</div>
+			<div class="faqNav">
+				<ul class="faqNavList js-faq-anchor">
+					<li><a href="#road-sign">ロードサイン</a></li>
+					<li><a href="#production">看板製作</a></li>
+					<li><a href="#other-service">その他のサービス</a></li>	
+				</ul>
+			</div>
+		</div>
+	</section>					
 
 </main>
 

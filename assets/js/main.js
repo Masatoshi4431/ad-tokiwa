@@ -1,4 +1,23 @@
 $(function() {
+/* ================================================================
+
+    ページ内リンク
+
+==================================================================*/
+    var $faqAnchorLink = $(".js-faq-anchor li a");
+    var $bodyHtml      = $("body,html");
+
+    $faqAnchorLink.on('click', function() {
+        var elmHash = $(this).attr('href');
+        var pos     = $(elmHash).offset().top-100;
+
+        $bodyHtml.animate({
+            scrollTop: pos
+        },500);
+
+        return false;
+    });
+
 /*=================================================================
 
     記事のタブ切り替え
