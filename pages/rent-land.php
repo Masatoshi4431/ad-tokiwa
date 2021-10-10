@@ -73,7 +73,9 @@
 				<?php foreach($rent_land_removal as $display) : ?>
 					<li>
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/rent-land/<?php echo $display['img']; ?>.jpg" alt="<?php echo $display['title']; ?>">
-						<p class="rentLand_caption"><?php echo $display['title']; ?></p>
+						<div class="rentLand_captionBox">
+							<p class="rentLand_caption"><?php echo $display['title']; ?></p>
+						</div>
 					</li>
 				<?php endforeach; ?>
 			</ul>

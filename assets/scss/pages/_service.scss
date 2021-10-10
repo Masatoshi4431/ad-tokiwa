@@ -1,6 +1,8 @@
 .main {
 	&.service {
+		padding-bottom: 90px;
 		padding-top: 80px;
+		
 
 		@include for-device(phone) {
 			padding-top: 60px;
@@ -338,7 +340,7 @@
 					}
 
 					dt {
-						@include font-size(16);
+						@include font-size(15);
 
 						font-weight: bold;
 
@@ -657,7 +659,7 @@
 			li {
 				@include display-flex();
 
-				margin-top: 40px;
+				margin-top: 90px;
 				width: 48%;
 
 				@include for-device(phone) {
