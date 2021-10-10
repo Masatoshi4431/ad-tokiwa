@@ -95,7 +95,7 @@
 			<div class="serviceBox">
 				<p class="serviceBox_number">02</p>
 				<h2 class="serviceBox_title">Ad Recruit</h2>
-				<h3 class="serviceBox_lead">広告募集</h3>
+				<h3 class="serviceBox_lead">空き看板情報</h3>
 				<p class="serviceBox_text">交通量や人の流れが多い場所に随時追加設置しております。<br class="is-pc">空いて間もなく・新設したばかりの新着情報もお見逃しなく。</p>
 				<div class="button-more">
 					<a href="<?php echo esc_url( home_url( '/ad-recruit/' )); ?>"><span>Read more</span></a>

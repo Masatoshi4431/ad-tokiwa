@@ -6,7 +6,7 @@
 <?php
 	// よくある質問の文言
 	if(is_page('other-service')) {
-		$faq_text = "その他のサービス";
+		$faq_text = "その他サービス";
 	} elseif(is_page('production')) {
 		$faq_text = "看板製作";
 	} elseif(is_page('road-sign')) {
