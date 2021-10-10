@@ -1,11 +1,5 @@
 .main{
 	&.single{
-		padding-top: 120px;
-
-		@include for-device(phone) {
-			padding-top: 100px;
-		}
-
 		.singleHead {
 			&_inner {
 				@include display-flex();

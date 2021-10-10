@@ -88,5 +88,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js?<?php echo time(); ?>"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js?<?php echo time(); ?>"></script>
 </body>
 </html>

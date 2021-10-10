@@ -48,108 +48,68 @@
 		</div>
 	</div>
 
-	<header class="header js-headerScroll js-header-change">
+	<header class="header js-pageHeader js-header-change">
 		<div class="header_inner">
-			<h1 class="header_logo">
+			<div class="header_logo">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo_white.png" alt="株式会社常磐広告" class="is-before">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="株式会社常磐広告" class="is-after">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/tokiwa-logo.png" alt="株式会社常磐広告" class="is-after">
 				</a>
-			</h1>
-			<div class="headerNav">
-				<ul>
-					<li><a href="<?php echo esc_url( home_url( '/company/' )); ?>">会社概要</a></li>
-					<li class="js-hover"><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取扱サービス</a>
-						<div class="pageHeaderNavSub js-hover-menu">
-							<div class="pageHeaderNavSubArea">
-								<div class="pageHeaderNavSubHead">
-									<p class="pageHeaderNavSubHead_title">Service</p>
-									<p class="pageHeaderNavSubHead_lead">取扱サービス</p>
-								</div>
-								<div class="pageHeaderNavSubList">
-									<p><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取扱いサービスTOP</a></p>
-								</div>
-								<div class="pageHeaderNavSubList">
-									<p><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></p>
-									<p><a href="<?php echo esc_url( home_url( '/service/production/' )); ?>">看板製作</a></p>
-								</div>
-								<div class="pageHeaderNavSubList">
-									<p><a href="<?php echo esc_url( home_url( '/service/jr-advertisement/' )); ?>">JR広告</a></p>
-									<p><a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>">その他サービス</a></p>
-								</div>
-								<div class="pageHeaderNavSub_img">
-									<img src="https://conrize-demo.net/ad-tokiwa/wp-content/themes/conrize/module/images/common/drop-down-1.png" alt="">
-								</div>
+			</div>
+			<ul class="headerNav">
+				<li><a href="<?php echo esc_url( home_url( '/company/' )); ?>">会社概要</a></li>
+				<li class="js-headerHover"><a href="#">取り扱いサービス</a>	
+					<div class="headerNavDownArea js-headerHoverMenu">
+						<div class="headerNavDown">
+							<div class="headerNavDownHead">
+								<p class="headerNavDownHead_title">Service</p>
+								<p class="headerNavDownHead_lead">取り扱いサービス</p>
+							</div>
+							<div class="headerNavDownMenu">
+								<ul class="headerNavDownMenuList">
+									<li><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取扱いサービスTOP</a></li>
+								</ul>
+								<ul class="headerNavDownMenuList">
+									<li><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/service/production/' )); ?>">看板製作</a></li>
+								</ul>							
+								<ul class="headerNavDownMenuList">
+									<li><a href="<?php echo esc_url( home_url( '/service/jr-advertisement/' )); ?>">JR広告</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>">その他サービス</a></li>
+								</ul>
+							</div>
+							<div class="headerNavDownMenuThumb">
+								<img src="https://conrize-demo.net/ad-tokiwa/wp-content/themes/conrize/module/images/common/drop-down-1.png" alt="">
 							</div>
 						</div>
-					</li>
-					<li><a href="<?php echo esc_url( home_url( '/rent-land/' )); ?>">土地活用</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/works/' )); ?>">製作実績</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/faq/' )); ?>">よくある質問</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/contact/' )); ?>">お問い合わせ</a></li>
-					<li>
-						<ul class="pageHeaderNavSocial">
-							<li><a href="https://www.facebook.com/tokiwa1976/" target="_blank"><i class="fab fa-facebook-square icon-size"></i></a></li>
-							<li><a href="https://www.instagram.com/tokiwa_1976/" target="_blank"><i class="fab fa-instagram icon-size"></i></a></li>
-						</ul>
-					</li>							
-				</ul>
-			</div>
-			<div class="pageHeaderNav">
-				<ul class="js-headerNav-target">
-					<li><a href="<?php echo esc_url( home_url( '/company/' )); ?>">会社概要</a></li>
-					<li class="js-hover"><a href="">取扱サービス</a>
-						<div class="pageHeaderNavSub js-hover-menu">
-							<div class="pageHeaderNavSubArea">
-								<div class="pageHeaderNavSubHead">
-									<p class="pageHeaderNavSubHead_title">Service</p>
-									<p class="pageHeaderNavSubHead_lead">取扱サービス</p>
-								</div>
-								<div class="pageHeaderNavSubList">
-									<p><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取り扱いサービスTOP</a></p>
-								</div>
-								<div class="pageHeaderNavSubList">
-									<p><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></p>
-									<p><a href="<?php echo esc_url( home_url( '/service/production/' )); ?>">看板製作</a></p>
-								</div>
-								<div class="pageHeaderNavSubList">
-									<p><a href="<?php echo esc_url( home_url( '/service/jr-advertisement/' )); ?>">JR広告</a></p>
-									<p><a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>">その他サービス</a></p>
-								</div>
-								<div class="pageHeaderNavSub_img">
-									<img src="https://conrize-demo.net/ad-tokiwa/wp-content/themes/conrize/module/images/common/drop-down-1.png" alt="">
-								</div>
-							</div>
-						</div>
-					</li>
-					<li><a href="<?php echo esc_url( home_url( '/ad-recruit/' )); ?>">空き看板情報</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/rent-land/' )); ?>">土地活用</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/works/' )); ?>">製作実績</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/faq/' )); ?>">よくある質問</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/contact/' )); ?>">お問い合わせ</a></li>
-					<li>
-						<ul class="pageHeaderNavSocial">
-							<li><a href="https://www.facebook.com/tokiwa1976/" target="_blank"><i class="fab fa-facebook-square icon-size"></i></a></li>
-							<li><a href="https://www.instagram.com/tokiwa_1976/" target="_blank"><i class="fab fa-instagram icon-size"></i></a></li>
-						</ul>
-					</li>							
-				</ul>
-			</div>
-			<div class="sppageHeaderNav js-spHeaderMenu-toggle">
+					</div>
+				</li>
+				<li><a href="<?php echo esc_url( home_url( '/rent-land/' )); ?>">土地活用</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/works/' )); ?>">製作実績</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/faq/' )); ?>">よくある質問</a></li>
+				<li><a href="<?php echo esc_url( home_url( '/contact/' )); ?>">お問い合わせ</a></li>
+				<li>
+					<ul class="headerNavSocial">
+						<li><a href="https://www.facebook.com/tokiwa1976/" target="_blank"><i class="fab fa-facebook-square icon-size"></i></a></li>
+						<li><a href="https://www.instagram.com/tokiwa_1976/" target="_blank"><i class="fab fa-instagram icon-size"></i></a></li>
+					</ul>
+				</li>	
+			</ul>
+			<div class="topHeaderToggle js-headerToggle">
 				<span></span><span></span><span></span>
-			</div>				
+			</div>			
 		</div>
 	</header>
 
-	<div class="spHeaderMenu js-spHeaderMenu">
-		<div class="spHeaderMenuBox">
-			<ul class="spHeaderMenuList">
+	<div class="pageHeaderMenu js-headerToggleMenu">
+		<div class="pageHeaderMenuBox">
+			<ul class="pageHeaderMenuBoxList">
 				<li><a href="<?php echo esc_url( home_url( '/company/' )); ?>">会社概要</a></li>
-				<li class="spHeaderMenuDown js-accordion">
+				<li class="pageHeaderMenuBoxList_accordion js-accordion">
 					取り扱いサービス
 					<span></span><span></span>
 				</li>
-				<li style="display: none;">
+				<li style="display: none;" class="is-service-menu">
 					<ul>
 						<li><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取扱いサービスTOP</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></li>
@@ -165,4 +125,4 @@
 				<li><a href="<?php echo esc_url( home_url( '/contact/' )); ?>">お問い合わせ</a></li>
 			</ul>
 		</div>
-	</div>
+	</div>		

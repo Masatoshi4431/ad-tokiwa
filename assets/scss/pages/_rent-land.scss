@@ -1,11 +1,5 @@
 .main {
 	&.rentLand {
-		padding-top: 80px;
-
-		@include for-device(phone) {
-			padding-top: 60px;
-		}
-
 		.heading {
 			.text-center {
 				text-align: center;

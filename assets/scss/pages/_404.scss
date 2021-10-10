@@ -1,11 +1,5 @@
 .main{
 	&.notfound {
-		padding-top: 80px;
-
-		@include for-device(phone) {
-			padding-top: 60px;
-		}
-
 		.notfoundHead {
 			@include align-items(center);
 			@include display-flex();
