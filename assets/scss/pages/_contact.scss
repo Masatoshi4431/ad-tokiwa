@@ -113,6 +113,17 @@
 					}
 				}
 			}
+
+			&_radio {
+				&_button {
+					@include display-flex();
+					@include flex-wrap(wrap);
+
+					span {
+						width: 45%;
+					}
+				}
+			}
 		}
 
 		.formItemPrivacy {
@@ -187,8 +198,7 @@
 
 				@include for-device(phone) {
 					@include font-size(11);
-				}
-		
+				}	
 		}
 		
 		//上部の必須項目テキスト撤去
