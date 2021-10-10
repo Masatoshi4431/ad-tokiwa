@@ -1,11 +1,5 @@
 .main {
-	&.company {
-		padding-top: 80px;
-
-		@include for-device(phone) {
-			padding-top: 60px;
-		}
-		
+	&.company {		
 		.section-title {
 			@include for-device(phone) {
 				@include font-size(24);

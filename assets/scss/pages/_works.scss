@@ -1,11 +1,5 @@
 .main{	
 	&.works{
-		padding-top: 80px;
-
-		@include for-device(phone) {
-			padding-top: 60px;
-		}
-
 		.postNav {
 			margin: 0 auto;
 			max-width: 800px;

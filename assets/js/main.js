@@ -58,33 +58,6 @@ $(function() {
         $spHeaderMenu.toggleClass("is-open");
     });
 
-/*=================================================================
-
-    画面遷移時のアニメーション
-
-================================================================= */
-    
-    var $page_transition   = $(".js-page-transition");
-
-    $page_transition.fadeIn(2000);
-
-
-/*=================================================================
-
-    header ホバーメニュー
-
-================================================================= */    
-
-    var $menu    = $(".js-hover");
-    var $submenu = $(".js-hover-menu");
-
-    $menu.mouseover(function(){
-        $(this).children(".js-hover-menu").stop().slideDown();
-     });
-
-    $menu.mouseout(function(){
-        $submenu.stop().slideUp();
-    });
 
 /*=================================================================
 
@@ -121,65 +94,6 @@ $(function() {
 
 /*==============================================================
 
-    header固定スクロール
-
-===============================================================*/
-    var beforePos     = 0;
-    var $headerScroll = $(".js-headerScroll");
-
-    function scrollAnime() {
-        var elemTop = $(".js-headerMain").offset().top;
-        var scroll  = $(window).scrollTop();
-
-        if(scroll == beforePos) {
-           
-        } else if(elemTop > scroll || 0 > scroll - beforePos) {
-            $headerScroll.removeClass("is-upMove");
-            $headerScroll.addClass("is-downMove");
-            $spHeaderMenu_toggle.removeClass('is-active');
-            $spHeaderMenu.removeClass("is-open");
-        } else {
-            $headerScroll.addClass("is-upMove");
-            $headerScroll.removeClass("is-downMove"); 
-            $spHeaderMenu_toggle.removeClass('is-active');
-            $spHeaderMenu.removeClass("is-open");         
-        }
-        beforePos = scroll;
-    }
-
-    $(window).scroll(function() {
-        scrollAnime();
-    });
-
-    $(window).on('load', function() {
-        scrollAnime();
-    });
-
-/*==============================================================
-
-    header スマホメニュー
-
-=============================================================== */
-    var $header_trigger = $(".js-header-trigger");
-    var $header_menu    = $(".js-header-menu");
-
-    $header_trigger.on('click', function() {
-        $(this).toggleClass("is-active");
-
-        if($(this).hasClass("is-active")) {
-            $header_menu.addClass("is-active");
-        } else {
-            $header_menu.removeClass("is-active");
-        }
-    });
-
-    $header_menu.on('click', function() {
-        $header_menu.removeClass("is-active");
-        $header_trigger.removeClass("is-active");
-    });
-
-/*==============================================================
-
    mainvisual 【ページスクロール】
 
 =============================================================== */
@@ -200,27 +114,6 @@ $(function() {
 $(function() {
 /*=================================================================
 
-    header 切り替え
-
-================================================================= */
-
-    var $win          = $(window);
-    var $targetArea   = $(".js-target-area");
-    var $headerChange = $(".js-header-change");
-
-    $(window).on('load scroll' , function() {
-        var scrollTop = $win.scrollTop();
-        var areaTop   = $targetArea.offset().top;
-
-        if(scrollTop > areaTop && scrollTop) {
-            $headerChange.addClass("is-change");
-        } else {
-            $headerChange.removeClass("is-change");
-        }
-    });
-
-/*=================================================================
-
     記事一覧 タブ切り替え
 
 ================================================================= */
@@ -234,27 +127,6 @@ $(function() {
         $tab_list.removeClass("is-select");
         $(this).addClass('is-select');
     });
-
-/*=================================================================
-
-    OPENING アニメーション
-
-================================================================= */
-    setTimeout(function(){
-        $('.js-opening-logo').fadeIn(1000);
-    },500);
-
-    setTimeout(function(){
-        $('.js-opening-logo').fadeOut(500);
-    },2000);
-
-    setTimeout(function(){
-        $('.js-opening-text').fadeIn(2000);
-    },3000);
-
-    setTimeout(function(){
-        $('.js-opening').fadeOut(1000);
-    },5500);
 
 });
 

@@ -1,11 +1,5 @@
 .main {
 	&.contact {
-		padding-top: 80px;
-
-		@include for-device(phone) {
-			padding-top: 60px;
-		}
-
 		.section-text {
 			text-align: center;
 		}
@@ -217,6 +211,36 @@
 			text-align: center;
 			
 		}
-		
+
+		.wpcf7-form-control {
+			&.wpcf7-checkbox {
+				@include display-flex();
+				@include flex-wrap(wrap);
+
+				.wpcf7-list-item {
+					width: 35%;
+
+					@include for-device(phone) {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.wpcf7-form-control {
+			&.wpcf7-radio {
+				@include display-flex();
+
+				@include for-device(phone) {
+					@include flex-wrap(wrap);
+				}
+				
+				.wpcf7-list-item {
+					@include for-device(phone) {
+						width: 100%;
+					}
+				}
+			}
+		}
 	}
 }

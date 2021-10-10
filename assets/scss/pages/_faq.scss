@@ -1,11 +1,5 @@
 .main {
 	&.faq {
-		padding-top: 80px;
-
-		@include for-device(phone) {
-			padding-top: 60px;
-		}
-
 		.container {
 			@include display-flex();
 
@@ -119,7 +113,7 @@
 							}
 						}
 					}
-
+					
 					dt {
 						@include display-flex();
 

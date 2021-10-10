@@ -5,7 +5,7 @@
 	<section class="mainvisual">
 		<div class="mainvisualMovie">
 			<div class="mainvisualMovie_inner">
-				<video autoplay="" muted="" loop=""　playsinline autoplay muted loop>
+				<video webkit-playsinline playsinline muted autoplay loop>
 					<source src="http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/tokiwa-movie.mp4">
 				</video>
 			</div>
@@ -33,7 +33,7 @@
 		</div>
 	</section>
 
-	<section class="section-news js-headerMain js-target-area">
+	<section class="section-news js-target-area">
 		<div class="container">
 			<div class="section-news-title">
 				<h2>News</h2>

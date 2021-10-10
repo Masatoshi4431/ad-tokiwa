@@ -1,11 +1,5 @@
 .main {
 	&.news {
-		padding-top: 100px;
-
-		@include for-device(phone) {
-			padding-top: 50px;
-		}
-
 		.heading {
 			margin-top: 60px;
 

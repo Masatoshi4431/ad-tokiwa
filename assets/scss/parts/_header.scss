@@ -1,465 +1,674 @@
 /* ==============================================
 
-	page用ヘッダー
+	TOP用ヘッダー
 
 ===============================================*/
-	.pageHeader {
-		background: #fff;
-		border-bottom: 1px solid $color-light-gray;
-		position: fixed;
+.header {
+	background: rgba(0, 0, 0, .10);
+	height: 80px;
+	width: 100%;
+	z-index: 9999;
+
+	@include for-device(phone) {
+		height: 60px;
+	}
+
+	&_inner {
+		@include align-items(center);
+		@include display-flex();
+
+		height: 80px;
+		margin: 0 auto;
+		max-width: 1200px;
 		width: 100%;
-		z-index: 999;
 
-		&_inner {
-			@include align-items(center);
-			@include display-flex();
-			@include justify-content(space-between);
-			
-			height: 80px;
-			margin: 0 auto;
-			max-width: 1200px;
-			width: 100%;
+		@include for-device(tablet) {
+			padding: 0 20px;
+			width: auto;
+		}
+
+		@include for-device(phone) {
+			height: 60px;
+			padding: 0 20px;
+			width: auto;
+		}
+	}
+
+	&_logo {
+		width: 30%;
+
+		img {
+			height: 30px;
+			width: auto;
 
 			@include for-device(phone) {
-				height: 60px;
-				padding: 0 20px;
-				width: auto;
+				height: 22px;
 			}
 		}
 
-		&_logo {
-			img {
-				height: 26px;
-				width: auto;
+		.is-after {
+			display: none;
+		}
+	}
 
-				@include for-device(phone) {
-					height: 19px;
-					position: relative;
-					top: 4px;
-				}
-			}
+	.headerNav {
+		@include display-flex();
+		@include font-size(16);
+		@include justify-content(flex-end);
+
+		font-weight: bold;
+		width: 70%;
+
+		@include for-device(tablet) {
+			display: none;
 		}
 
-		&Nav {
-			@include for-device(tablet) {
-				display: none;
+		@include for-device(phone) {
+			display: none;
+		}
+
+		li {
+			&:nth-child(n+2) {
+				margin-left: 40px;
 			}
 
-			@include for-device(phone) {
-				display: none;
+			a {
+				color: #fff;
 			}
 
-			&Sub {
-				display: none;
-				background: rgba(255,255,255,0.95);
-				height: 180px;
-				left: 0;
-				margin: auto;
-				max-width: 1000px;
-				right: 0;
-				position: absolute;
-				top: 80px;
-				width: 100%;	
-
-				&Area {
-					@include display-flex();
-					@include justify-content(space-between);
-				
-				}
-
-				&Head {
-					margin-left: 5%;
-				    position: relative;
-				    top: 30px;
-
-					&_title {
-						@include font-size(30);
-					}
-
-					&_lead {
-						@include font-size(13);
-					}
-				}
-
-				&List {
-				    position: relative;
-				    top: 50px;
-
-					p {
-						& + p {
-							margin-top: 20px;
-						}
-					}
-				}
-
-				&_img {
-					position: relative;
-					top: 3px;
-
-					img {
-						height: 180px;
-						object-fit: cover;
-					}
-				}
-			}
-
-			ul {
+			.headerNavSocial {
 				@include display-flex();
-
-				align-items: center;
-				font-size: 15px;
-				font-weight: bold;
-				height: 80px;
-				justify-content: flex-end;
-
 
 				li {
 					&:nth-child(n+2) {
-						margin-left: 40px;
+						margin-left: 20px;
 					}
-
-					a {
-						color: $color-text;
-
-						&:hover {
-							color: $color-green;
-						}
-					}
-				}
-			}
-
-			&Social {
-				li {
-					width: 10%;
 
 					.icon-size {
-						font-size: 24px;
+						@include font-size(20);
 					}
 				}
 			}
 		}
 
-		.sppageHeaderNav {
+		.js-headerHover {
+			a {
+				transition: .2s;
+			}
+		}
+
+		.headerNavDownArea {
 			display: none;
+		}
 
-			@include for-device(tablet) {
-				display: block;
+		.headerNavDown {
+			@include align-items(center);
+			@include display-flex();
+			@include justify-content(space-between);
+
+			background: #fff;
+		    left: 0;
+		    margin: auto;
+		    max-width: 1000px;
+		    right: 0;
+		    position: absolute;
+		    top: 80px;
+		    width: 100%;
+
+		    .headerNavDownHead {
+		    	padding-left: 5%;
+
+		    	&_title {
+		    		@include font-size(32);
+
+		    		line-height: 1;
+		    	}
+
+		    	&_lead {
+		    		@include font-size(14);
+
+		    		line-height: 1;
+		    		margin-top: 10px;
+		    	}
+		    }
+
+		    .headerNavDownMenu {
+		    	@include display-flex();
+		    	@include justify-content(space-between);
+
+		    	padding: 0 5%;
+		    	width: 55%;
+
+		    	.headerNavDownMenuList {
+			    	li {
+			    		@include font-size(15);
+
+			    		margin: 0 0 20px;
+
+			    		a {
+			    			color: $color-text;
+			    		}
+			    	}
+		    	}
+		    }
+		}
+	}
+
+	&.is-fixed {
+		background: none;
+		left: 0;
+		position: fixed;
+		top: 0;
+	}
+
+	&.is-change {
+		background: #fff;
+
+		.header_logo {
+			.is-before {
+				display: none;
 			}
 
-			@include for-device(phone) {
+			.is-after {
 				display: block;
 			}
+		}
 
-			span {
-				background-color: $color-text;
-				display: block;
-				height: 2px;
-				position: absolute;
-				right: 20px;
-				width: 26px;
-
-				&:nth-child(1) {
-					top: 22px;
+		.headerNav {
+			li {
+				a {
+					color: $color-text;
 				}
+			}
+		}
 
-				&:nth-child(2) {
+		.headerNavDown {
+			background: rgba(255,255,255,0.95);
+		}
+
+		.topHeaderToggle {
+			span {
+				background-color: $color-text;	
+			}	
+		}
+
+		&.is-fixed {
+			box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+		}
+	}
+
+	.topHeaderToggle {
+		display: none;
+
+		@include for-device(tablet) {
+			display: block;
+		}
+
+		@include for-device(phone) {
+			display: block;
+		}
+
+		span {
+			background-color: #fff;
+			display: block;
+			height: 2px;
+			position: absolute;
+			right: 20px;
+			width: 26px;
+
+			&:nth-child(1) {
+				top: 22px;
+
+				@include for-device(tablet) {
 					top: 30px;
 				}
+			}
 
-				&:nth-child(3) {
+			&:nth-child(2) {
+				top: 30px;
+
+				@include for-device(tablet) {
 					top: 38px;
 				}
 			}
 
-			&.is-active {
-				span {
-					transition: all 0.3s;
+			&:nth-child(3) {
+				top: 38px;
 
-					&:nth-child(1) {
-						top: 30px;
-						transform: rotate(140deg);
-					}
-
-					&:nth-child(2) {
-						display: none;
-					}
-
-					&:nth-child(3) {
-						top: 30px;
-						transform: rotate(-315deg);
-					}
-				}		
+				@include for-device(tablet) {
+					top: 46px;
+				}
 			}
 		}
+
+		&.is-active {
+			span {
+				transition: all 0.3s;
+
+				&:nth-child(1) {
+					top: 30px;
+					transform: rotate(140deg);
+
+					@include for-device(tablet) {
+						top: 40px;
+					}
+				}
+
+				&:nth-child(2) {
+					display: none;
+				}
+
+				&:nth-child(3) {
+					top: 30px;
+					transform: rotate(-315deg);
+
+					@include for-device(tablet) {
+						top: 40px;
+					}
+				}
+			}		
+		}
 	}
+}
 
-	.spHeaderMenu {
+.headerrMenu {
+	display: none;
+
+	&.is-open {
 		background: #fff;
-		display: none;
+		display: block;
+		left: 0;
 		position: fixed;
-		transform: .2s;
+		top: 80px;
+		transition: .2s;
 		width: 100%;
-		z-index: 888;
+		z-index: 8888;
 
-		&.is-open {
-			display: block;
-		}
-
-		.spHeaderMenuBox {
-			background: $color-light-gray;
-			position: absolute;
+		@include for-device(phone) {
 			top: 60px;
-			width: 100%;
-			z-index: 888;
 		}
 
-		.spHeaderMenuList {
-			border-top: 1px solid $color-gray;
+		.pageHeaderMenuBoxList {
+			@include font-size(16);
 
-			li {
+			background: $color-light-gray;
+
+			@include for-device(phone) {
 				@include font-size(13);
+			}
+			
+			li {
+				border-top: 1px solid $color-gray;
 
-				border-bottom: 1px solid $color-gray;
+				a {
+					color: $color-text;
+					display: block;
+					padding: 10px 5%;
+				}
+			}
+
+			&_accordion {
+				padding: 10px 5%;
 				position: relative;
 
-				span {
-					background-color: $color-text;
+				&::before,
+				&::after {
+					background: $color-green;
+					border-radius: 2px;
+					content: "";
 					display: block;
 					height: 2px;
 					position: absolute;
-					right: 10px;
-					top: 25px;
+					right: 20px;
+					top: 50%;
+					transform: translateY(-50%);
 					width: 18px;
 
-					&:nth-child(2) {
-						top: 25px;
-						transform: rotate(90deg);
-					}		
+					@include for-device(phone) {
+						height: 1px;
+						right: 10px;
+						width: 15px;
+					}						
 				}
+				
+				&::after {
+					transform: translateY(-50%) rotate(90deg);
+					transition: 0.5s;								
+				} 
 
 				&.is-active {
 					background: $color-green;
 					color: #fff;
 
-					span {
-						background-color: #fff;
-						
-						&:nth-child(2) {
-							background-color: #fff;
-							transform: rotate(0deg);
-						}			
-					}				
-				}
-
-				a {
-					color: $color-text;
-					display: block;
-					padding: 15px 20px;
-				}
-
-				ul {
-					background: #fff;
-
-					li {
-						&:last-child {
-							border-bottom: 0px;
-						}
+					&::after {
+						background: #fff;
+						transform: rotate(0);
+						transition: 0.5s;								
 					}
 				}
 			}
 
-			.spHeaderMenuDown {
-				padding: 15px 20px;
+			.is-service-menu {
+				ul {
+					background: #fff;
+				}
+			}
+		}
+	}
+}
+
+
+/* ==============================================
+
+	pageHeader
+
+===============================================*/
+.pageHeader {
+	background: #fff;
+	height: 80px;
+	width: 100%;
+	z-index: 9999;
+
+	@include for-device(phone) {
+		height: 60px;
+	}
+
+	&.is-fixed {
+		box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+		left: 0;
+		position: fixed;
+		top: 0;
+	}
+
+	&_inner {
+		@include align-items(center);
+		@include display-flex();
+
+		height: 80px;
+		margin: 0 auto;
+		max-width: 1200px;
+		width: 100%;
+
+		@include for-device(tablet) {
+			padding: 0 20px;
+			width: auto;
+		}
+
+		@include for-device(phone) {
+			height: 60px;
+			padding: 0 20px;
+			width: auto;
+		}
+	}
+
+	&_logo {
+		width: 30%;
+
+		img {
+			height: 30px;
+			width: auto;
+
+			@include for-device(phone) {
+				height: 22px;
 			}
 		}
 	}
 
-/* ==============================================
+	.pageHeaderNav {
+		@include display-flex();
+		@include font-size(16);
+		@include justify-content(flex-end);
 
-	TOP用ヘッダー
+		font-weight: bold;
+		width: 70%;
 
-===============================================*/
-	.header {
-		position: fixed;
-		width: 100%;
-		z-index: 999;
-
-		&.is-change {
-			background: #fff;
-
-			.header_logo {
-				.is-before {
-					display: none;
-				}
-
-				.is-after {
-					display: block;
-				}
-			}
-
-			.headerNav {
-				display: none;
-			}
-
-			.pageHeaderNav {
-				display: block;
-
-				@include for-device(tablet) {
-					display: none;
-				}
-
-				@include for-device(phone) {
-					display: none;
-				}
-			}
-
-			.sppageHeaderNav {
-				span {
-					background-color: $color-text;
-				}
-			}
+		@include for-device(tablet) {
+			display: none;
 		}
 
-		&_inner {
-			@include align-items(center);
-			@include display-flex();
-			@include justify-content(space-between);
-			
-			height: 80px;
-			margin: 0 auto;
-			max-width: 1200px;
-			width: 100%;
-
-			@include for-device(phone) {
-				height: 60px;
-				padding: 0 20px;
-				width: auto;
-			}
+		@include for-device(phone) {
+			display: none;
 		}
 
-		&_logo {
-			.is-after {
-				display: none;
-			}
-			img {
-				height: 26px;
-				width: auto;
-
-				@include for-device(phone) {
-					height: 18px;
-				}
-			}
-		}
-
-		&Nav {
-			@include for-device(tablet) {
-				display: none;
+		li {
+			&:nth-child(n+2) {
+				margin-left: 40px;
 			}
 
-			@include for-device(phone) {
-				display: none;
+			a {
+				color: $color-text;
 			}
 
-			.is-hover-menu {
-				display: none;
-			}
-
-			ul {
+			.pageHeaderNavSocial {
 				@include display-flex();
-
-				align-items: center;
-				font-size: 15px;
-				font-weight: bold;
-				height: 80px;
-				justify-content: flex-end;
-
 
 				li {
 					&:nth-child(n+2) {
-						margin-left: 40px;
+						margin-left: 20px;
 					}
-
-					a {
-						color: #fff;
-
-						&:hover {
-							color: $color-green;
-						}
-					}
-				}
-				.pageHeaderNavSubList {
-
-					a {
-						color: $color-text;
-					}
-				}
-			}
-
-			&Social {
-				li {
-					width: 10%;
 
 					.icon-size {
-						font-size: 24px;
+						@include font-size(20);
 					}
 				}
 			}
 		}
 
-		.pageHeaderNav {
+		.js-headerHover {
+			a {
+				transition: .2s;
+			}
+		}
+
+		.pageHeaderNavDownArea {
 			display: none;
 		}
 
-		.sppageHeaderNav {
-			display: none;
+		.pageHeaderNavDown {
+			@include align-items(center);
+			@include display-flex();
+			@include justify-content(space-between);
 
-			@include for-device(tablet) {
-				display: block;
-			}
+			background: rgba(255,255,255,0.95);
+		    left: 0;
+		    margin: auto;
+		    max-width: 1000px;
+		    right: 0;
+		    position: absolute;
+		    top: 80px;
+		    width: 100%;
 
-			@include for-device(phone) {
-				display: block;
-			}
+		    .pageHeaderNavDownHead {
+		    	padding-left: 5%;
 
-			span {
-				background-color: #fff;
-				display: block;
-				height: 2px;
-				position: absolute;
-				right: 20px;
-				width: 26px;
+		    	&_title {
+		    		@include font-size(32);
 
-				&:nth-child(1) {
-					top: 22px;
-				}
+		    		line-height: 1;
+		    	}
 
-				&:nth-child(2) {
+		    	&_lead {
+		    		@include font-size(14);
+
+		    		line-height: 1;
+		    		margin-top: 10px;
+		    	}
+		    }
+
+		    .pageHeaderNavDownMenu {
+		    	@include display-flex();
+		    	@include justify-content(space-between);
+
+		    	padding: 0 5%;
+		    	width: 55%;
+
+		    	.pageHeaderNavDownMenuList {
+			    	li {
+			    		@include font-size(15);
+
+			    		margin: 0 0 20px;
+			    	}
+		    	}
+		    }
+		}
+	}
+
+	.spHeaderToggle {
+		display: none;
+
+		@include for-device(tablet) {
+			display: block;
+		}
+
+		@include for-device(phone) {
+			display: block;
+		}
+
+		span {
+			background-color: #000;
+			display: block;
+			height: 2px;
+			position: absolute;
+			right: 20px;
+			width: 26px;
+
+			&:nth-child(1) {
+				top: 22px;
+
+				@include for-device(tablet) {
 					top: 30px;
 				}
+			}
 
-				&:nth-child(3) {
+			&:nth-child(2) {
+				top: 30px;
+
+				@include for-device(tablet) {
 					top: 38px;
 				}
 			}
 
-			&.is-active {
-				span {
-					transition: all 0.3s;
+			&:nth-child(3) {
+				top: 38px;
 
-					&:nth-child(1) {
-						top: 30px;
-						transform: rotate(140deg);
-					}
+				@include for-device(tablet) {
+					top: 46px;
+				}
+			}
+		}
 
-					&:nth-child(2) {
-						display: none;
-					}
+		&.is-active {
+			span {
+				transition: all 0.3s;
 
-					&:nth-child(3) {
-						top: 30px;
-						transform: rotate(-315deg);
+				&:nth-child(1) {
+					top: 30px;
+					transform: rotate(140deg);
+
+					@include for-device(tablet) {
+						top: 40px;
 					}
-				}		
+				}
+
+				&:nth-child(2) {
+					display: none;
+				}
+
+				&:nth-child(3) {
+					top: 30px;
+					transform: rotate(-315deg);
+
+					@include for-device(tablet) {
+						top: 40px;
+					}
+				}
+			}		
+		}
+	}
+}
+
+.pageHeaderMenu {
+	display: none;
+
+	&.is-open {
+		background: #fff;
+		display: block;
+		left: 0;
+		position: fixed;
+		top: 80px;
+		transition: .2s;
+		width: 100%;
+		z-index: 8888;
+
+		@include for-device(phone) {
+			top: 60px;
+		}
+
+		.pageHeaderMenuBoxList {
+			@include font-size(16);
+
+			background: $color-light-gray;
+
+			@include for-device(phone) {
+				@include font-size(13);
+			}
+			
+			li {
+				border-top: 1px solid $color-gray;
+
+				a {
+					color: $color-text;
+					display: block;
+					padding: 10px 5%;
+				}
+			}
+
+			&_accordion {
+				padding: 10px 5%;
+				position: relative;
+
+				&::before,
+				&::after {
+					background: $color-green;
+					border-radius: 2px;
+					content: "";
+					display: block;
+					height: 2px;
+					position: absolute;
+					right: 20px;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 18px;
+
+					@include for-device(phone) {
+						height: 1px;
+						right: 10px;
+						width: 15px;
+					}						
+				}
+				
+				&::after {
+					transform: translateY(-50%) rotate(90deg);
+					transition: 0.5s;								
+				} 
+
+				&.is-active {
+					background: $color-green;
+					color: #fff;
+
+					&::after {
+						background: #fff;
+						transform: rotate(0);
+						transition: 0.5s;								
+					}
+				}
+			}
+
+			.is-service-menu {
+				ul {
+					background: #fff;
+				}
 			}
 		}
 	}
+}
