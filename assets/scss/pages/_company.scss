@@ -5,7 +5,7 @@
 		@include for-device(phone) {
 			padding-top: 60px;
 		}
-
+		
 		.section-title {
 			@include for-device(phone) {
 				@include font-size(24);
@@ -90,5 +90,6 @@
 				filter: grayscale(0%);				
 			}
 		}
-	}
+	}	
+	
 }

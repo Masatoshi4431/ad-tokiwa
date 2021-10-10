@@ -49,7 +49,7 @@
 	<section class="section">
 		<div class="section_inner">
 			<h2 class="section-title">JR東日本企画代理店</h2>
-			<h3  class="section-lead">製作事例</h3>
+			<h3  class="section-lead">取付イメージ</h3>
 			<ul class="serviceLineup">
 				<?php foreach($jrAd_production as $key) : ?>
 					<li class="serviceLineupBox">

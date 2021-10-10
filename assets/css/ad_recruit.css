@@ -4,7 +4,7 @@
 /* //////////////////////////////////////////////////////////////////// */
 
 /* ※※※※※ ↓ ↓ ↓ font確認用 本番環境では抹消のこと ↓ ↓ ↓ ※※※※※ */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');*/
 
 /* ==================================================
 	一覧ページ
@@ -115,7 +115,8 @@ section.el-container {
 }
 .ui.cards > .card {
     margin: 0 40px 40px 0 !important;
-    border: 1px solid #707070;
+    /*border: 1px solid #707070;*/
+    border: 1px solid #dcdcdc;
     width: calc(calc(100% - 80px) / 3);
 }
 .ui.cards > .card:nth-of-type(3n) {
@@ -130,6 +131,7 @@ section.el-container {
 }
 .kv-object-fit {
     width: 100%;
+    cursor: default;
     /*height: 270px;*/
     /*object-fit: cover !important;*/
 }
@@ -182,42 +184,39 @@ body label.element-label::before {
 .ui.card > .extra, .ui.cards > .card > .extra {
     border-top: 1px solid #707070 !important;
 }
-/*
-.ui.cards a.card, .ui.link.card, .ui.link.cards .card, a.ui.card {
+/*.ui.cards a.card, .ui.link.card, .ui.link.cards .card, a.ui.card {
     -webkit-transition: .3s;
     transition: .3s;
-}
-ui.link.cards .raised.card:hover, .ui.link.raised.card:hover, .ui.raised.cards a.card:hover, a.ui.raised.card:hover {
+}*/
+/*ui.link.cards .raised.card:hover, .ui.link.raised.card:hover, .ui.raised.cards a.card:hover, a.ui.raised.card:hover {
     border: 1px solid #707070;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transition: .3s;
     transition: .3s;
     opacity: 0.5;
-}
-.ui.cards a.card:hover, .ui.link.card:hover, .ui.link.cards .card:hover, a.ui.card:hover {
+}*/
+/*.ui.cards a.card:hover, .ui.link.card:hover, .ui.link.cards .card:hover, a.ui.card:hover {
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transform: none;
     transform: none;
-}
-*/
-a.kv-file-element img.kv-object-fit {
+}*/
+/*a.kv-file-element img.kv-object-fit {
     -webkit-transition: .3s;
     transition: .3s;
-}
-a.kv-file-element img.kv-object-fit:hover {
+}*/
+/*a.kv-file-element img.kv-object-fit:hover {
     -webkit-transition: .3s;
     transition: .3s;
     opacity: 0.5;
-}
-
+}*/
 a div.kv-text-element {
     width: 80%;
     text-align: center;
     color: #fff;
-	background: #8e8e8d;
-	margin: 20px auto 0 !important;
+    background: #8e8e8d;
+    margin: 20px auto 0 !important;
     padding: 20px 0;
     -webkit-transition: .3s;
     transition: .3s;
@@ -229,8 +228,6 @@ a div.kv-text-element:hover {
     -o-transition: 0.3s ease-in-out !important;
     transition: 0.3s ease-in-out !important;
 }
-
-
 .el-pagination {
     text-align: center;
     color: #2f2725;
@@ -244,10 +241,21 @@ a div.kv-text-element:hover {
 .el-pagination button:disabled {
     color: #8f8d8d;
 }
+div.file[data-v-2c484ebe] {
+    width: 100%;
+    float: none;
+}
 
 /* ==================================================
 	詳細ページ
 ================================================== */
+div.file[data-v-4081a2c7] {
+    width: 50%;
+    float: left;
+}
+.kv-element-has-value {
+    clear: both;
+}
 .ui.items .ui.item.raised {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -297,7 +305,7 @@ a div.kv-text-element:hover {
 	iframe
 ================================================== */
 iframe {
-	height: 5200px;
+    height: 2550px;
 }
 
 
@@ -322,13 +330,32 @@ iframe {
         margin-right: 0 !important;
     }
     .ui.cards > .card {
-        margin: 0 2% 60px !important;
+        margin: 0 2% 40px !important;
     }
-    .ui.cards > .card:nth-of-type(2n) {
+    /*.ui.cards > .card:nth-of-type(2n) {
+        margin-right: 2% !important;
+    }*/
+    .ui.cards > .card:nth-of-type(3n) {
         margin-right: 2% !important;
     }
-    .ui.stackable.cards > .card {
+    .ui.cards > .card:nth-last-of-type(2) {
+        margin-bottom: 0 !important;
+    }
+    .ui.cards > .card:last-of-type {
+        margin-bottom: 0 !important;
+    }
+    /*.ui.stackable.cards > .card {
         width: calc(100% - 4%) !important;
+    }*/
+    .ui.card > .content, .ui.cards > .card > .content {
+        padding: 0 10px;
+    }
+    .ui.stackable.cards > .card {
+        width: calc(calc(100% - 8%) / 2) !important;
+    }
+    .ui.stackable.cards > .card:last-of-type {
+        margin-right: auto !important;
+        margin-left: auto !important;
     }
     .ui.stackable.cards {
         display: flex !important;
@@ -336,22 +363,48 @@ iframe {
     .el-form-item__label {
         line-height: 1.8em;
     }
+    .el-pagination {
+        margin-top: 40px;
+        padding: 0;
+    }
+    a div.kv-text-element {
+        width: 90%;
+    }
 	
 /* ==================================================
 	詳細ページ
 ================================================== */
+    div.file[data-v-4081a2c7] {
+        width: 100%;
+        float: none;
+    }
+    .kv-element-has-value {
+        clear: both;
+    }
+    a div.kv-text-element {
+        margin: 10px auto 0 !important;
+        padding: 14px 0;
+    }
+    .single-line-text {
+        padding: 0 1em !important;
+    }
+    .drop-down {
+        padding: 0 1em !important;
+    }
     .ql-editor {
         width: 40%;
+        margin: 0 auto 10px;
     }
     .index-link {
         width: 38.4%;
     }
+
 /* ==================================================
 	iframe
 ================================================== */
-	iframe {
-		height: 20300px;
-	}	
+    iframe {
+        height: 2950px;
+    }
 }
 
 
@@ -378,11 +431,30 @@ iframe {
     .ui.cards > .card {
         margin: 0 2% 40px !important;
     }
-    .ui.cards > .card:nth-of-type(2n) {
+    /*.ui.cards > .card:nth-of-type(2n) {
+        margin-right: 2% !important;
+    }*/
+    .ui.cards > .card:nth-of-type(3n) {
         margin-right: 2% !important;
     }
-    .ui.stackable.cards > .card {
+    .ui.cards > .card:nth-last-of-type(2) {
+        margin-bottom: 0 !important;
+    }
+    .ui.cards > .card:last-of-type {
+        margin-bottom: 0 !important;
+    }
+    /*.ui.stackable.cards > .card {
         width: calc(100% - 4%) !important;
+    }*/
+    .ui.card > .content, .ui.cards > .card > .content {
+        padding: 0 10px;
+    }
+    .ui.stackable.cards > .card {
+        width: calc(calc(100% - 8%) / 2) !important;
+    }
+    .ui.stackable.cards > .card:last-of-type {
+        margin-right: auto !important;
+        margin-left: auto !important;
     }
     .ui.stackable.cards {
         display: flex !important;
@@ -390,10 +462,28 @@ iframe {
     .el-form-item__label {
         line-height: 1.8em;
     }
+    .el-pagination {
+        margin-top: 40px;
+        padding: 0;
+    }
+    a div.kv-text-element {
+        width: 90%;
+    }
 	
 /* ==================================================
 	詳細ページ
 ================================================== */
+    div.file[data-v-4081a2c7] {
+        width: 100%;
+        float: none;
+    }
+    .kv-element-has-value {
+        clear: both;
+    }
+    a div.kv-text-element {
+        margin: 10px auto 0 !important;
+        padding: 14px 0;
+    }
     .ql-editor {
         width: 60%;
     }
@@ -404,7 +494,7 @@ iframe {
 /* ==================================================
 	iframe
 ================================================== */
-	iframe {
-		height: 15200px;
-	}	
+    iframe {
+        height: 2760px;
+    }
 }
