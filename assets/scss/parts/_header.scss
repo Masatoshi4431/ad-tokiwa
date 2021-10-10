@@ -74,6 +74,10 @@
 
 			a {
 				color: #fff;
+    			
+    			&:hover {
+	    			color: $color-green;
+	    		}
 			}
 
 			.headerNavSocial {
@@ -111,9 +115,10 @@
 		    margin: auto;
 		    max-width: 1000px;
 		    right: 0;
-		    position: absolute;
+		    position: fixed;
 		    top: 80px;
 		    width: 100%;
+		    z-index: 9999;
 
 		    .headerNavDownHead {
 		    	padding-left: 5%;
@@ -147,6 +152,10 @@
 
 			    		a {
 			    			color: $color-text;
+
+			    			&:hover {
+			    				color: $color-green;
+			    			}
 			    		}
 			    	}
 		    	}
@@ -178,6 +187,10 @@
 			li {
 				a {
 					color: $color-text;
+
+	    			&:hover {
+	    				color: $color-green;
+	    			}
 				}
 			}
 		}
@@ -437,6 +450,10 @@
 
 			a {
 				color: $color-text;
+
+    			&:hover {
+    				color: $color-green;
+    			}
 			}
 
 			.pageHeaderNavSocial {
@@ -620,6 +637,10 @@
 					color: $color-text;
 					display: block;
 					padding: 10px 5%;
+
+		    		&:hover {
+	    				color: $color-green;
+	    			}
 				}
 			}
 
