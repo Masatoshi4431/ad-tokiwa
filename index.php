@@ -79,7 +79,7 @@
 				<p class="serviceBox_number">01</p>
 				<h2 class="serviceBox_title">Road Sign</h2>
 				<h3 class="serviceBox_lead">ロードサイン</h3>
-				<p class="serviceBox_text">記憶に刷込み、興味を引き認知度・商圏範囲を広げます。<br class="is-pc">『潜在顧客』から『お客様』に変わるきっかけとなります。</p>
+				<p class="serviceBox_text">『潜在顧客』をお客様の『お客様へ』。<br>24時間365日不眠不休でPRする営業マンとなります。</p>
 				<div class="button-more">
 					<a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>"><span>Read more</span></a>
 				</div>
@@ -96,7 +96,7 @@
 				<p class="serviceBox_number">02</p>
 				<h2 class="serviceBox_title">Ad Recruit</h2>
 				<h3 class="serviceBox_lead">空き看板情報</h3>
-				<p class="serviceBox_text">交通量や人の流れが多い場所に随時追加設置しております。<br class="is-pc">空いて間もなく・新設したばかりの新着情報もお見逃しなく。</p>
+				<p class="serviceBox_text">幹線道路沿いや地域に根ざした商圏に随時増設中。<br>リアルタイム更新の新着情報もお見逃しなく。</p>
 				<div class="button-more">
 					<a href="<?php echo esc_url( home_url( '/ad-recruit/' )); ?>"><span>Read more</span></a>
 				</div>
@@ -113,7 +113,7 @@
 				<p class="serviceBox_number">03</p>
 				<h2 class="serviceBox_title">Production</h2>
 				<h3 class="serviceBox_lead">看板製作</h3>
-				<p class="serviceBox_text">お客様によって必要とする看板は多種多様です。<br>御社の顔・販促となる世界にひとつだけのオリジナル看板を製作します。</p>
+				<p class="serviceBox_text">大事なのは集客・売上アップに繋がる看板。<br>世界にひとつだけのオーダーメイド看板を製作します。</p>
 				<div class="button-more">
 					<a href="<?php echo esc_url( home_url( '/service/production/' )); ?>"><span>Read more</span></a>
 				</div>
@@ -130,7 +130,7 @@
 				<h2 class="otherAreaBox_number">04</h2>
 				<h3 class="otherAreaBox_title">Other Service</h3>
 				<h4 class="otherAreaBox_lead">その他のサービス</h4>
-				<p class="otherAreaBox_text">看板に関わる様々なお困りごとに対応。メンテナンス・移設・撤去・申請代行・調査・交通広告・デジタルサイネージなど。</p>
+				<p class="otherAreaBox_text">看板に関わる様々なお困りごとに対応。看板の点検・修繕・撤去、各種申請代行や電気工事、デザイン、外注依頼までお気軽にご相談下さい。</p>
 				<div class="button-more">
 					<a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>"><span>Read more</span></a>
 				</div>
@@ -142,7 +142,7 @@
 				<h2 class="otherAreaBox_number">05</h2>
 				<h3 class="otherAreaBox_title">Rent Land</h3>
 				<h4 class="otherAreaBox_lead">土地活用</h4>
-				<p class="otherAreaBox_text">土地・壁面・屋上・デッドスペースを有効活用。毎年使用料を一括前払い。契約終了の際には撤去まで責任持って対応。</p>
+				<p class="otherAreaBox_text">空き土地・壁面・屋上・デッドスペースを有効活用しませんか？<br>常磐広告は万全のアフターフォローと安心の保険加入済。</p>
 				<div class="button-more">
 					<a href="<?php echo esc_url( home_url( '/rent-land/' )); ?>"><span>Read more</span></a>
 				</div>

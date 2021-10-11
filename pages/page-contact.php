@@ -20,11 +20,14 @@
 
 	<section class="section">
 		<div class="container">
-			<p class="section-text">下記の内容をご入力の上、「送信する」ボタンをクリックしてください。<br>内容を確認次第、担当よりご連絡させていただきます。</p>
-			<div class="contactForm">
-				<?php the_content(); ?>
-			</div>
-			<p class="contactSend_notes">※ご入力内容にミスがある場合、「入力内容に問題があります。確認して再度お試しください。」の注意書きが表示されますので、再度ご入力をお願いいたします。<br>※正しく送信された場合、「メッセージは送信されました。」が表示されます。</p>
+			<p class="section-text">ただいまお問い合わせはお電話で受け付けております。<br>下記電話番号へお問い合わせ下さい。</p>
+			<p class="section-text" style="color: #009977; margin-top: 30px; font-weight: bold; font-size:20px;">TEL.<a href="tel:029-212-5512" style="color: #009977;">029-212-5512</a><br>FAX.<a href="tel:029-212-5513" style="color: #009977;">029-212-5513</a></p>
+			
+			<!--<p class="section-text">下記の内容をご入力の上、「送信する」ボタンをクリックしてください。<br>内容を確認次第、担当よりご連絡させていただきます。</p>-->
+			<!--<div class="contactForm">-->
+				<?php /* the_content(); */ ?>
+			<!--</div>-->
+			<!--<p class="contactSend_notes">※ご入力内容にミスがある場合、「入力内容に問題があります。確認して再度お試しください。」の注意書きが表示されますので、再度ご入力をお願いいたします。<br>※正しく送信された場合、「メッセージは送信されました。」が表示されます。</p>-->
 		</div>
 	</section>
 
