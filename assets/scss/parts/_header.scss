@@ -429,7 +429,7 @@
 
 	.pageHeaderNav {
 		@include display-flex();
-		@include font-size(16);
+		@include font-size(15);
 		@include justify-content(flex-end);
 
 		font-weight: bold;

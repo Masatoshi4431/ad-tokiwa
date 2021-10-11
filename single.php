@@ -19,7 +19,7 @@
 								製作期間：<?php echo get_post_meta($post->ID, 'production_period', true); ?>
 								<span class="-slash">サイズ：<?php echo get_post_meta($post->ID, 'production_size', true); ?></span>
 							</p>
-							<p class="singleHeadDesc_comment"><?php echo get_post_meta($post->ID, 'production_comment', true); ?></p>
+							<p class="singleHeadDesc_comment"><?php the_content(); ?></p>
 						</div>
 						<dl class="singleHeadThumb">
 							<dt class="singleHeadThumb_main"><?php the_post_thumbnail(); ?></dt>
@@ -29,9 +29,6 @@
 							</dd>
 						</dl>
 					</div>
-				</div>
-				<div class="singleBody">
-					<?php the_content(); ?>
 				</div>
 			<?php endwhile; endif; ?>
 		</div>

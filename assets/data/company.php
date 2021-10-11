@@ -119,7 +119,7 @@
 		],
 		[
 			'title' => 'メールアドレス',
-			'text'  => 'info@ad-tokiwa.jp'
+			'text'  => '<a href="mailto:info@ad-tokiwa.jp">info@ad-tokiwa.jp</a>'
 		],
 	];
 ?>
