@@ -32,7 +32,7 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W82S6TC"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-
+	
 	<div class="openingAnime js-opening">
     	<div class="openingAnime_logo js-opening-logo">
     		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/tokiwa-logo.png" alt="">

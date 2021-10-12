@@ -5,7 +5,7 @@
 	<section class="mainvisual">
 		<div class="mainvisualMovie">
 			<div class="mainvisualMovie_inner">
-				<video webkit-playsinline playsinline muted autoplay loop>
+				<video class="js-movie" webkit-playsinline playsinline muted loop>
 					<source src="http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/tokiwa-movie.mp4">
 				</video>
 			</div>

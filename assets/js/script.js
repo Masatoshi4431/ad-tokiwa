@@ -7,6 +7,7 @@ $(function() {
     var $opening      = $(".js-opening");
     var $opening_logo = $(".js-opening-logo");
     var $opening_text = $(".js-opening-text");
+    var $movieStrat   = $(".js-movie");
 
     setTimeout(function(){
         $opening_logo.fadeIn(1000);
@@ -24,6 +25,10 @@ $(function() {
         $opening.fadeOut(1000);
     },5800);
 
+    $movieStrat.delay(6000).queue(function(next) {
+        $movieStrat.get(0).play();
+        next();
+    });
 
 /*=================================================================
 
