@@ -240,8 +240,8 @@
 					
 					@include for-device(phone) {
 						font-size: 15px;
-						right: -13%;
-						top: 38%;
+						right: -16%;
+						top: 28%;
 					}
 					
 				}
@@ -258,10 +258,17 @@
 				
 				.rentLand_caption {
 					
-					border: 1px solid #333;
+					background: $color-green;
+    				color: #fff;
 					display: inline-block;
 					font-size: 0.9rem;
-					padding: 0 10px;
+					padding: 5px 10px;
+					
+					@include for-device(phone) {
+						
+						font-size: 0.7rem;
+						
+					}
 					
 				}
 
@@ -280,7 +287,7 @@
 			}
 
 			&_text {
-				margin-top: 20px;
+				margin-top: 50px;
 			}
 
 			&_notes {

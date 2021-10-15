@@ -121,7 +121,7 @@
 			</ul>
 			<div class="servicePostMore">
 				<div class="button-more">
-					<a href="/ad-tokiwa/works/production/"><span>Read more</span></a>
+					<a href="/works/"><span>Read more</span></a>
 				</div>
 			</div>
 		</div>

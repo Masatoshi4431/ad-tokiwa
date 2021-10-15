@@ -49,15 +49,16 @@
 							</div>
 							<div class="pageHeaderNavDownMenu">
 								<ul class="pageHeaderNavDownMenuList">
-									<li><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取扱いサービスTOP</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取り扱いサービスTOP</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></li>
 								</ul>
 								<ul class="pageHeaderNavDownMenuList">
-									<li><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></li>
 									<li><a href="<?php echo esc_url( home_url( '/service/production/' )); ?>">看板製作</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/service/jr-advertisement/' )); ?>">JR広告</a></li>
 								</ul>							
 								<ul class="pageHeaderNavDownMenuList">
-									<li><a href="<?php echo esc_url( home_url( '/service/jr-advertisement/' )); ?>">JR広告</a></li>
 									<li><a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>">その他サービス</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/works/' )); ?>">製作実績</a></li>
 								</ul>
 							</div>
 							<div class="pageHeaderNavDownMenuThumb">
@@ -93,11 +94,12 @@
 				</li>
 				<li style="display: none;" class="is-service-menu">
 					<ul>
-						<li><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取扱いサービスTOP</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取り扱いサービスTOP</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/service/production/' )); ?>">看板製作</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/service/jr-advertisement/' )); ?>">JR広告</a></li>
-						<li class="is-last"><a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>">その他サービス</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>">その他サービス</a></li>
+						<li class="is-last"><a href="<?php echo esc_url( home_url( '/works/' )); ?>">製作実績</a></li>
 					</ul>
 				</li>
 				<li><a href="<?php echo esc_url( home_url( '/ad-recruit/' )); ?>">空き看板情報</a></li>

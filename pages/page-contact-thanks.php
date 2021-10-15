@@ -1,6 +1,7 @@
-<?php  /* Template Name: お問い合わせ */ ?>
+<?php  /* Template Name: お問い合わせ 完了画面 */ ?>
 <?php wp_head(); ?>
 <?php get_header("pages"); ?>
+
 
 <main class="main contact js-headerMain js-target-area">
 
@@ -18,7 +19,8 @@
 
 	<section class="section">
 		<div class="container">
-			<p class="section-text">下記の内容をご入力の上、「確認画面へ」ボタンをクリックしてください。</p>
+			
+			<p class="section-text">ご入力いただきありがとうございました。<br>内容を確認の上、担当者からご連絡いたします。</p>
 			<div class="contactForm">
 				<?php the_content(); ?>
 			</div>
