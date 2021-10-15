@@ -42,7 +42,7 @@
 				<div class="mainvisualHead">
 					<h1 class="mainvisualHead_title"><span>看板の、</span>その先へ。</h1>
 					<h2 class="mainvisualHead_lead">Beyond the sign.</h2>
-					<h3 class="mainvisualHead_text">私たちは、消費者の方と直接的な結びつきはありません。<br class="is-pc">しかし、私たちの仕事はお客様のお客様なしに成り立ちません。<br>お客様の思いを、看板のその先へ伝える。<br>これが常磐広告の使命です。</h3>
+					<h3 class="mainvisualHead_text">私たちは、消費者の方と直接的な結びつきはありません。<br class="is-pc">しかし、私たちの仕事はお客様のお客様なしには成り立ちません。<br>お客様の思いを、看板のその先へ伝える。<br>これが常磐広告の使命です。</h3>
 				</div>
 			</div>
 		</div>
@@ -67,15 +67,16 @@
 							</div>
 							<div class="headerNavDownMenu">
 								<ul class="headerNavDownMenuList">
-									<li><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取扱いサービスTOP</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/service/' )); ?>">取り扱いサービスTOP</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></li>
 								</ul>
 								<ul class="headerNavDownMenuList">
-									<li><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></li>
 									<li><a href="<?php echo esc_url( home_url( '/service/production/' )); ?>">看板製作</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/service/jr-advertisement/' )); ?>">JR広告</a></li>
 								</ul>							
 								<ul class="headerNavDownMenuList">
-									<li><a href="<?php echo esc_url( home_url( '/service/jr-advertisement/' )); ?>">JR広告</a></li>
 									<li><a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>">その他サービス</a></li>
+									<li><a href="<?php echo esc_url( home_url( '/works/' )); ?>">製作実績</a></li>
 								</ul>
 							</div>
 							<div class="headerNavDownMenuThumb">
@@ -115,7 +116,8 @@
 						<li><a href="<?php echo esc_url( home_url( '/service/road-sign/' )); ?>">ロードサイン</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/service/production/' )); ?>">看板製作</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/service/jr-advertisement/' )); ?>">JR広告</a></li>
-						<li class="is-last"><a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>">その他サービス</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/service/other-service/' )); ?>">その他サービス</a></li>
+						<li class="is-last"><a href="<?php echo esc_url( home_url( '/works/' )); ?>">製作実績</a></li>
 					</ul>
 				</li>
 				<li><a href="<?php echo esc_url( home_url( '/ad-recruit/' )); ?>">空き看板情報</a></li>

@@ -5,8 +5,8 @@
 	<section class="mainvisual">
 		<div class="mainvisualMovie">
 			<div class="mainvisualMovie_inner">
-				<video webkit-playsinline playsinline muted autoplay loop>
-					<source src="http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/tokiwa-movie.mp4">
+				<video class="js-movie" webkit-playsinline playsinline muted loop>
+					<source src="http://conrize-demo.net/ad-tokiwa-2/wp-content/uploads/2021/10/tokiwa-movie.mp4">
 				</video>
 			</div>
 		</div>
@@ -14,7 +14,7 @@
 			<div class="mainvisualHead">
 				<h1 class="mainvisualHead_title"><span>看板の、</span>その先へ。</h1>
 				<h2 class="mainvisualHead_lead">Beyond the sign.</h2>
-				<h3 class="mainvisualHead_text">私たちは、消費者の方と直接的な結びつきはありません。<br class="is-pc">しかし、私たちの仕事はお客様のお客様なしに成り立ちません。<br>お客様の思いを、看板のその先へ伝える。<br>これが常磐広告の使命です。</h3>
+				<h3 class="mainvisualHead_text">私たちは、消費者の方と直接的な結びつきはありません。<br class="is-pc">しかし、私たちの仕事はお客様のお客様なしには成り立ちません。<br>お客様の思いを、看板のその先へ伝える。<br>これが常磐広告の使命です。</h3>
 			</div>
 		</div>
 		<div class="mainvisualScroll">
@@ -119,7 +119,7 @@
 				</div>
 			</div>
 			<div class="serviceBox_img is-sp">
-				<img src="http://conrize-demo.net/ad-tokiwa/wp-content/uploads/2021/10/service_bg_3.jpg" alt="">
+				<img src="http://ad-tokiwa.jp/wp-content/uploads/2021/10/service_bg_4.jpg" alt="">
 			</div>
 		</div>
 	</section>

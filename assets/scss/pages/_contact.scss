@@ -73,7 +73,7 @@
 			}
 
 			span {
-				&.wpcf7-list-item { 
+				&.wpcf7-list-item, { 
 					display: block; 
 					margin-bottom: 10px;
 
@@ -171,6 +171,11 @@
 				@include for-device(phone) {
 					@include font-size(13);
 				}
+				
+				&:hover {
+					opacity: 0.5;
+				}
+				
 			}
 		}
 		
@@ -242,5 +247,34 @@
 				}
 			}
 		}
+		
+		.mwform-checkbox-field.horizontal-item  {
+			
+			display: block;
+			margin: 0 0 10px 1em;
+			width: 35%;
+			
+			@include for-device(phone) {
+				width: 100%;
+			}
+			
+		}
+		
+		.mwform-radio-field.horizontal-item {
+			
+			@include for-device(phone) {
+				
+				display: block;
+    			margin: 0 0 10px 1em;
+				width: 100%;
+			
+			}
+			
+		}
+		
+		.formItemBack {
+			margin-top: 50px;
+		}
+		
 	}
 }

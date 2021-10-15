@@ -375,27 +375,15 @@
 				}
 				
 				.adRecruitLink {
-						color: #333;
-						font-weight: bold;
-						line-height: 4.5em;
-						position: relative;
 					
-						&::before {
-						
-							content: "";
-							border-right: 2px solid #FDE584;
-							border-top: 2px solid #FDE584;
-							height: 7px;
-							left: -15px;
-							position: absolute;
-							top: 8px;
-							-webkit-transform: rotate(45deg);
-							transform: rotate(45deg);
-							width: 7px;
-						}
+					background: $color-green;
+					color: #fff;
+					line-height: 4.5em;
+					padding: 10px;
+					position: relative;
 					
 						&:hover {
-							text-decoration: underline;
+							opacity: 0.5;
 						}
 					
 				}

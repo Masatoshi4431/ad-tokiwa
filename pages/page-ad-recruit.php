@@ -15,7 +15,7 @@
 		</div>
 	</section>
 
-<iframe frameborder="0" scrolling="auto" src="https://viewer.kintoneapp.com/public/7518c24347991d7894da293558f73ea91ff3d4b537a47a076430efe6475a579a?iframe=true" title="空き看板情報" width="100%"></iframe>
+<iframe frameborder="0" scrolling="auto" src="https://ad-tokiwa.viewer.kintoneapp.com/public/7518c24347991d7894da293558f73ea91ff3d4b537a47a076430efe6475a579a?iframe=true" title="空き看板情報" width="100%"></iframe>
 
 
 </main>

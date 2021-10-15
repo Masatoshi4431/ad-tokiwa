@@ -1,6 +1,7 @@
-<?php  /* Template Name: お問い合わせ */ ?>
+<?php  /* Template Name: お問い合わせ（テスト） */ ?>
 <?php wp_head(); ?>
 <?php get_header("pages"); ?>
+
 
 <main class="main contact js-headerMain js-target-area">
 
