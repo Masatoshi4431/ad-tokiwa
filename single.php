@@ -14,6 +14,7 @@
 						<div class="singleHeadDesc">
 							<h1 class="singleHeadDesc_title"><?php the_title(); ?></h1>
 							<p class="singleHeadDesc_client"><?php echo get_post_meta($post->ID, 'production_client', true); ?></p>
+							<p class="singleHeadDesc_adress"><?php echo get_post_meta($post->ID, 'production_content', true); ?></p>
 							<p class="singleHeadDesc_adress"><?php echo get_post_meta($post->ID, 'production_address', true); ?></p>
 							<p class="singleHeadDesc_period">
 								製作期間：<?php echo get_post_meta($post->ID, 'production_period', true); ?>
