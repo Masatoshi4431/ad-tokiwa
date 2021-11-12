@@ -29,7 +29,7 @@
 				<ul class="postNavList">
 					<li class="js-tab-list is-select" style="display: none;"></li>
 					<li class="js-tab-list">ロードサイン</li>
-					<li class="js-tab-list">一般製作</li>
+					<li class="js-tab-list">看板製作</li>
 					<li class="js-tab-list">その他</li>
 				</ul>
 			</div>

@@ -42,7 +42,7 @@
 				<div class="mainvisualHead">
 					<h1 class="mainvisualHead_title"><span>看板の、</span>その先へ。</h1>
 					<h2 class="mainvisualHead_lead">Beyond the sign.</h2>
-					<h3 class="mainvisualHead_text">私たちは、消費者の方と直接的な結びつきはありません。<br class="is-pc">しかし、私たちの仕事はお客様のお客様なしには成り立ちません。<br>お客様の思いを、看板のその先へ伝える。<br>これが常磐広告の使命です。</h3>
+					<h3 class="mainvisualHead_text">私たちは、消費者の方と直接的な結びつきはありません。<br class="is-pc">しかし、私たちの仕事はお客様のお客様なしには成り立ちません。<br>お客様の想いを、看板のその先へ伝える。<br>これが常磐広告の使命です。</h3>
 				</div>
 			</div>
 		</div>
@@ -122,7 +122,6 @@
 				</li>
 				<li><a href="<?php echo esc_url( home_url( '/ad-recruit/' )); ?>">空き看板情報</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/rent-land/' )); ?>">土地活用</a></li>
-				<li><a href="<?php echo esc_url( home_url( '/works/' )); ?>">製作実績</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/faq/' )); ?>">よくある質問</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/contact/' )); ?>">お問い合わせ</a></li>
 			</ul>

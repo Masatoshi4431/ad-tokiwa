@@ -138,6 +138,20 @@
 			&_button {
 				margin-top: 20px;
 				text-align: center;
+				
+				.mwform-checkbox-field.horizontal-item {
+					@include font-size(15);
+					
+					width: 100%;
+					
+					@include for-device(phone) {
+						@include font-size(13);
+						
+						text-align: start;
+					}
+					
+				}
+				
 			}
 
 			.wpcf7-list-item-label {

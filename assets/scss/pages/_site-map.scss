@@ -1,0 +1,65 @@
+.main{	
+	&.siteMap {
+		
+		.siteMapList {
+			
+			margin-left: 10%;
+			
+		}
+		
+		.siteMapList_column {
+			@include font-size(16);
+			
+			display: inline-table;
+			width: calc(95% / 3);
+			
+			@include for-device(phone) {
+				width: 100%;
+			}
+			
+			li {
+				margin-bottom: 25px;
+				
+				&::before {
+					color: #097;
+					content: "■";
+					padding-right: 5px;
+					position: relative;
+					
+				}
+				
+				
+				.siteMapList_service {
+					padding-left: 20px;
+					padding-top: 18px;
+					
+					li {
+						&::before {
+							color: #097;
+							content: "ー";
+							position: relative;
+					
+				}
+					}
+					
+				}
+				
+				a {
+					
+					color: $color-text;
+					
+					&:hover {
+						text-decoration: underline;
+					}
+					
+				}
+				
+			}
+			
+			
+			
+		}
+			
+
+	}
+}

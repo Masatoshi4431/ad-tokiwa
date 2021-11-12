@@ -38,6 +38,21 @@ a.link:hover::after {
     opacity: 1;
     visibility: visible;
 }
+a.link:active {
+    transition: .3s;
+    opacity: 0.5;
+}
+.el-input-group__append {
+    transition: .3s;
+}
+.el-input-group__append:hover {
+    transition: .3s;
+    opacity: 0.5;
+}
+.el-input-group__append:active i.el-icon-search {
+    transition: .3s;
+    color: #2f2725;
+}
 .ui.header {
     display: none;
 }
@@ -495,6 +510,7 @@ iframe {
 	iframe
 ================================================== */
     iframe {
-        height: 2760px;
+        /*height: 2760px;*/
+        height: 2800px;
     }
 }

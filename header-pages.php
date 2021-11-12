@@ -104,7 +104,6 @@
 				</li>
 				<li><a href="<?php echo esc_url( home_url( '/ad-recruit/' )); ?>">空き看板情報</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/rent-land/' )); ?>">土地活用</a></li>
-				<li><a href="<?php echo esc_url( home_url( '/works/' )); ?>">製作実績</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/faq/' )); ?>">よくある質問</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/contact/' )); ?>">お問い合わせ</a></li>
 			</ul>

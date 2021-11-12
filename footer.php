@@ -64,6 +64,11 @@
 				<p class="is-adress">〒312-0002 茨城県ひたちなか市高野450-1</p>
 				<p>TEL.<span>029-212-5512</span></p>
 				<p>FAX.<span>029-212-5513</span></p>
+					<div class="footerAreaLink">
+						<p><a href="<?php echo esc_url( home_url( '/site-policy/' ) ); ?>">サイトポリシー</a></p>
+						<p><a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">個人情報保護方針</a></p>
+						<p><a href="<?php echo esc_url( home_url( '/site-map/' ) ); ?>">サイトマップ</a></p>
+					</div>
 			</div>
 			<div class="footerAreaSocial">
 				<ul>				

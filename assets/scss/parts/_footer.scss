@@ -167,6 +167,19 @@
 					text-align: center;
 				}
 			}
+			
+			.footerAreaLink {
+				margin-top: 20px;
+				
+				p {
+					@include font-size(14);
+					
+					a {
+						color: #fff;
+						text-decoration: underline;
+					}
+				}
+			}
 		}
 
 		&Social {
