@@ -297,6 +297,15 @@ add_editor_style('admin.css');
 
     }
 
+    function change_pre_get_posts($query){
+        if(!is_admin() && $query->is_main_query()){
+            if(is_category()){
+                $query->set('posts_per_page', 1);
+            }
+        }
+    }
+    add_action('pre_get_posts', 'change_pre_get_posts');
+
 /* ============================================================
 
    description keyword カスタムフィールド
