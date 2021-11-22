@@ -19,7 +19,7 @@
 			</div>
 		</div>
 		<div class="pageVisualThumb">
-			<?php the_post_thumbnail(); ?>
+			<img src="https://ad-tokiwa.jp/wp-content/uploads/2021/10/works-img.jpg" alt="">
 		</div>
 	</section>
 
@@ -27,13 +27,12 @@
 		<div class="container">
 			<div class="postNav">
 				<ul class="postNavList">
-					<li class="js-tab-list is-select" style="display: none;"></li>
-					<li class="js-tab-list">ロードサイン</li>
-					<li class="js-tab-list">看板製作</li>
-					<li class="js-tab-list">その他</li>
+					<li><a href="<?php echo esc_url( home_url( '/works/road-sign/' )); ?>">ロードサイン</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/works/production/' )); ?>">一般製作</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/works/etc/' )); ?>">その他</a></li>
 				</ul>
 			</div>
-			<div class="js-tab-contet">
+			<div class="">
 				<ul class="worksPost">
 					<?php
 					    $paged = get_query_var('paged', 1);
@@ -41,99 +40,6 @@
 					        'paged' => $paged,
 					        'post_type' => 'post',
 					        'posts_per_page' => 12,
-					    );
-					    $query = new WP_Query($args);
-					?>
-					<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-						<li>
-							<a href="<?php the_permalink(); ?>">
-								<dl class="worksPostBox">
-									<dt><?php the_post_thumbnail(''); ?></dt>
-									<dd>
-										<p><?php the_time("Y.m.d"); ?></p>
-										<h2><?php the_title(); ?></h2>
-									</dd>
-								</dl>
-							</a>
-						</li>
-					<?php endwhile;endif; ?>
-				</ul>
-				<div class="worksPostNav">
-					<?php wp_pagenavi(array('query' => $query)); ?>
-				</div>
-				<?php wp_reset_postdata(); ?>
-			</div>
-			<div class="js-tab-contet is-hide">
-				<ul class="worksPost">
-					<?php
-					    $paged = get_query_var('paged', 1);
-					    $args = array(
-					        'paged' => $paged,
-					        'post_type' => 'post',
-					        'posts_per_page' => 12,
-					        'category_name' => 'road-sign',
-					    );
-					    $query = new WP_Query($args);
-					?>
-					<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-						<li>
-							<a href="<?php the_permalink(); ?>">
-								<dl class="worksPostBox">
-									<dt><?php the_post_thumbnail(''); ?></dt>
-									<dd>
-										<p><?php the_time("Y.m.d"); ?></p>
-										<h2><?php the_title(); ?></h2>
-									</dd>
-								</dl>
-							</a>
-						</li>
-					<?php endwhile;endif; ?>
-				</ul>
-				<div class="worksPostNav">
-					<?php wp_pagenavi(array('query' => $query)); ?>
-				</div>
-				<?php wp_reset_postdata(); ?>
-			</div>
-			<div class="js-tab-contet is-hide">
-				<ul class="worksPost">
-					<?php
-					    $paged = get_query_var('paged', 1);
-					    $args = array(
-					        'paged' => $paged,
-					        'post_type' => 'post',
-					        'posts_per_page' => 12,
-					        'category_name' => 'production',
-					    );
-					    $query = new WP_Query($args);
-					?>
-					<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-						<li>
-							<a href="<?php the_permalink(); ?>">
-								<dl class="worksPostBox">
-									<dt><?php the_post_thumbnail(''); ?></dt>
-									<dd>
-										<p><?php the_time("Y.m.d"); ?></p>
-										<h2><?php the_title(); ?></h2>
-									</dd>
-								</dl>
-							</a>
-						</li>
-					<?php endwhile;endif; ?>
-				</ul>
-				<div class="worksPostNav">
-					<?php wp_pagenavi(array('query' => $query)); ?>
-				</div>
-				<?php wp_reset_postdata(); ?>
-			</div>
-			<div class="js-tab-contet is-hide">
-				<ul class="worksPost">
-					<?php
-					    $paged = get_query_var('paged', 1);
-					    $args = array(
-					        'paged' => $paged,
-					        'post_type' => 'post',
-					        'posts_per_page' => 12,
-					        'category_name' => 'etc',
 					    );
 					    $query = new WP_Query($args);
 					?>

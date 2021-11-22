@@ -14,7 +14,6 @@
 
 					background: #fff;
 					cursor: pointer;
-					padding: 20px 0;
 					text-align: center;
 					width: 33%;
 
@@ -22,9 +21,18 @@
 						@include font-size(13);
 					}
 
-					&.is-select {
+					a {
+						color: $color-text;
+						display: block;
+						padding: 20px 0;
+					}
+
+					&.is-current {
 						background: $color-green;
-						color: #fff;
+						
+						a {
+							color: #fff;
+						}
 					}
 				}
 			}
@@ -205,6 +213,11 @@
 				color: $color-text;
 				margin-right: 10px;
 				padding: 10px 15px;
+			}
+
+			.current {
+				background: $color-green;
+				color: #fff;
 			}
 
 			.nextpostslink,

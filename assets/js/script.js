@@ -116,4 +116,16 @@ $(function() {
         }
     });
 
+    var $postNav = $(".js-postNav");
+
+    $postNav.each(function(){
+        var $href = $(this).attr('href');
+
+        if(location.href.match($href)) {
+            $(this).parent().addClass('is-current');
+        } else {
+            $(this).parent().removeClass('is-current');
+        }
+    });
+
 });
