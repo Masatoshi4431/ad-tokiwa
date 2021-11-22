@@ -19,7 +19,7 @@
 			</div>
 		</div>
 		<div class="pageVisualThumb">
-			<img src="https://ad-tokiwa.jp/wp-content/uploads/2021/10/works-img.jpg" alt="">
+			<img src="https://ad-tokiwa.jp/wp-content/uploads/2021/11/works.jpg" alt="">
 		</div>
 	</section>
 
@@ -28,7 +28,7 @@
 			<div class="postNav">
 				<ul class="postNavList">
 					<li><a href="<?php echo esc_url( home_url( '/works/road-sign/' )); ?>">ロードサイン</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/works/production/' )); ?>">一般製作</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/works/production/' )); ?>">看板製作</a></li>
 					<li><a href="<?php echo esc_url( home_url( '/works/etc/' )); ?>">その他</a></li>
 				</ul>
 			</div>

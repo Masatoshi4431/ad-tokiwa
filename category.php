@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<div class="pageVisualThumb">
-			<img src="https://ad-tokiwa.jp/wp-content/uploads/2021/10/works-img.jpg" alt="">
+			<img src="https://ad-tokiwa.jp/wp-content/uploads/2021/11/works.jpg" alt="">
 		</div>
 	</section>
 
@@ -25,7 +25,7 @@
 			<div class="postNav js-postNav">
 				<ul class="postNavList">
 					<li><a href="<?php echo esc_url( home_url( '/works/road-sign/' )); ?>" class="js-postNav">ロードサイン</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/works/production/' )); ?>" class="js-postNav">一般製作</a></li>
+					<li><a href="<?php echo esc_url( home_url( '/works/production/' )); ?>" class="js-postNav">看板製作</a></li>
 					<li><a href="<?php echo esc_url( home_url( '/works/etc/' )); ?>" class="js-postNav">その他</a></li>
 				</ul>
 			</div>
@@ -42,7 +42,7 @@
 						);
 						$query = new WP_Query($args);
 					?>
-					<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+					<?php if (have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 						<li>
 							<a href="<?php the_permalink(); ?>">
 								<dl class="worksPostBox">
