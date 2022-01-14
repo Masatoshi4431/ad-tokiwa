@@ -142,7 +142,7 @@
 				<h2 class="otherAreaBox_number">05</h2>
 				<h3 class="otherAreaBox_title">Rent Land</h3>
 				<h4 class="otherAreaBox_lead">土地活用</h4>
-				<p class="otherAreaBox_text">空き土地・壁面・屋上・デッドスペースを有効活用しませんか？<br>常磐広告は万全のアフターフォローと安心の保険加入済。</p>
+				<p class="otherAreaBox_text">空き土地・壁面・屋上・デッドスペースを有効活用しませんか？常磐広告は万全のアフターフォローと安心の保険加入済。</p>
 				<div class="button-more">
 					<a href="<?php echo esc_url( home_url( '/rent-land/' )); ?>"><span>Read more</span></a>
 				</div>
